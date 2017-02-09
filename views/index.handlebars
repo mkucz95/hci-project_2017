@@ -1,8 +1,57 @@
+<!doctype html>
 <html>
+
+<!-- Title of tab / app -->
 <head>
-	<title>Test Page</title>
+	<title>Homepage</title>
+
+	<!-- Bootstrap to stylesheet -->
+	<link href = "/css/homepage.css" rel = "stylesheet">
 </head>
+
+<!-- Actual app -->
 <body>
-Begin here (or replace this with any static code already written).
+	<div align = "center">
+	<div class = "container">
+
+		<!-- Drag down box -->
+		<div class = "current" id = "top">
+			<p>Drag down to see current favor</p>
+		</div>
+
+		<!-- Menu box -->
+		<div class = "menu" id = "corner">
+			<div class = "menu" id = "line">
+			</div>
+			<div class = "menu" id = "line">
+			</div>
+			<div class = "menu" id = "line">
+			</div>
+		</div>
+		<div class = "placeholder" id = "menuplaceholder">
+		</div>
+
+		<!-- Current favors -->
+		<div class = "main" id = "bulk">
+			{{#each favor}}
+			<div class = "favors" id = "{{id}}">
+				<a href = "favors/{{name}}" class = "image">
+					<img src = "images/{{image}}" ... />
+					<p>{{name}}</p>
+				</a>
+			</div>
+			{{/each}}
+		</div>
+
+		<!-- Drag up box -->
+		<div class = "request" id = "bottom">
+			<p>Drag up to request a new favor</p>
+		</div>
+
+	</div>
+	</div>
+
 </body>
+
+<!-- End of file -->
 </html>
