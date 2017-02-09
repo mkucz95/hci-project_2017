@@ -1,0 +1,91 @@
+/* Whole app */
+body {
+	background-color: #cccccc;
+	padding: 5px;
+}
+
+body p {
+	line-height: 12px;
+	font-size-size: 12px;
+	padding: 10px;
+	text-align: justify;
+}
+
+/* Drag down to see current favor */
+.current {
+	position: absolute;
+	top: 0px;
+	height: 5%;
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000;
+}
+
+.current p {
+	text-align: center;
+}
+
+/* Menu */
+#corner {
+	float: left;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 6%;
+	width: 50px;
+	height: 50px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+}
+
+/* Inside menu box */
+#line {
+	height: 5px;
+	width: 30px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	margin-top: 7px;
+}
+
+/* To keep everything off line width menu */
+#menuplaceholder {
+	float:left;
+	width: 92%;
+	height: 50px;
+	margin-top: 7%;
+}
+
+/* Favor box */
+.main {
+	height: 70%;
+	width: 70%;
+	margin-top: 25%;
+	overflow: auto;
+}
+
+/* Each favor */
+.favors {
+	height: 120px;
+	width: 90%;
+}
+
+/* Picture */
+.image {
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	float: left;
+}
+
+/* Drag up to add new favor */
+.request {
+	position: absolute;
+	bottom: 0px;
+	height: 5%;
+	width: 100%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000;
+}
