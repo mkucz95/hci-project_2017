@@ -10,6 +10,13 @@ body p {
 	text-align: justify;
 }
 
+/* Back button */
+#back {
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
 /* Favour box */
 .main {
 	height: 100%;
