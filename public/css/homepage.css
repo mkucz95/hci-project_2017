@@ -1,12 +1,12 @@
 /* Whole app */
 body {
-	background-color: #cccccc;
+	background-color: #666A86;
 	padding: 5px;
 }
 
 body p {
 	line-height: 12px;
-	font-size-size: 12px;
+	font-size: 12px;
 	text-align: justify;
 }
 
@@ -18,7 +18,8 @@ body p {
 	width: 100%;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #000;
+	border-color: #fff;
+	background-color: #92B6B1;
 }
 
 .current p {
@@ -35,7 +36,8 @@ body p {
 	height: 50px;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #000000;
+	border-color: #fff;
+	background-color: #92B6B1;
 }
 
 /* Inside menu box */
@@ -44,24 +46,27 @@ body p {
 	width: 30px;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #000000;
+	border-color: #fff;
 	margin-top: 7px;
+	background-color: #666A86;
 }
 
 /* Favour box */
 .main {
 	height: 70%;
-	width: 70%;
-	background-color: #ffffff;
-	/*overflow-y: scroll;*/
+	width: 95%;
+	margin-top: 3%;
+	position: fixed;
+	overflow-y: scroll;
 }
 
 /* Each favour */
 .favours {
 	height: 120px;
 	width: 90%;
-	background-color: #aabbcc;
+	background-color: #92B6B1;
 	padding:15px;
+	margin-bottom: 15px;
 }
 
 /* Picture */
@@ -81,7 +86,8 @@ body p {
 	width: 100%;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #000;
+	border-color: #fff;
+	background-color: #92B6B1;
 }
 
 .request p {
