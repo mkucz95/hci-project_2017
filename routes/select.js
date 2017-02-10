@@ -1,7 +1,5 @@
 var data = require('../data.json');
 
-<<<<<<< HEAD
-
 exports.viewFavour= function(req, res) { 
 	
 	var id = req.params.id; 
@@ -24,8 +22,8 @@ exports.viewFavour= function(req, res) { 
 		'description': description
 	});
 	console.log(subject);
+}
 
-=======
 exports.view= function(req, res) { 
 	res.render('select', {
 		'image': data.image,
@@ -35,5 +33,4 @@ exports.view= function(req, res) { 
 		'subject': 'data.subject',
 		'description': 'data.description'
 	});
->>>>>>> db188beca5e62446e63c6112e5a84286cfc3e4e6
 };
