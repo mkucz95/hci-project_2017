@@ -29,7 +29,7 @@
 
 		<!-- Menu box -->
 		<a href="/html/menu.html">
-		<div class = "menu" id = "corner">
+		<div class = "corner" id = "menu">
 			<div class = "menu" id = "line">
 			</div>
 			<div class = "menu" id = "line">
@@ -42,14 +42,13 @@
 		<!-- Current favors -->
 		<div class = "main" id = "bulk">
 		{{#each favours}}
+			<a  href="select/{{id}}">
 			<div class = "favours" id = "{{id}}">
-				<img src = "images/{{image}}" class = "image">
-				<a  href="select/{{id}}">
+				<img src = "images/{{image}}" class = "image" href = "/html/profile.html">
 					<h4>{{name}}</h4>
-					<h2> {{subject}} <h2>
-				</a>
+					<h2> {{subject}} </h2>
 			</div>
-			
+			</a>	
 		{{/each}}
 
 		</div>
