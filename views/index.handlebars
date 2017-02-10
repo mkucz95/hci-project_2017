@@ -18,11 +18,14 @@
 	<div class = "container">
 
 		<!-- Drag down box -->
-		<div class = "current" id = "top">
+		<a  href="/html/current.html">
+		<div class = "current" id = "top"> 
 			<p>Drag down to see current favor</p>
 		</div>
+	</a>
 
 		<!-- Menu box -->
+		<a href="/html/menu.html">
 		<div class = "menu" id = "corner">
 			<div class = "menu" id = "line">
 			</div>
@@ -31,21 +34,28 @@
 			<div class = "menu" id = "line">
 			</div>
 		</div>
+	</a>
 
 		<!-- Current favors -->
+		<a  href="/html/select.html">
 		<div class = "main" id = "bulk">
 			{{#each favours}}
 			<div class = "favours" id = "{{id}}">
 				<img src = "images/{{image}}" class = "image">
 				<p>{{name}}</p>
+			
 			</div>
 			{{/each}}
 		</div>
+	</a>
 
 		<!-- Drag up box -->
+		 <a href = "/html/request.html">
 		<div class = "request" id = "bottom">
 			<p>Drag up to request a new favor</p>
 		</div>
+		</a>
+
 
 	</div>
 	</div>
