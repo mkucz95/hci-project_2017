@@ -1,0 +1,39 @@
+{
+  "favours": [
+      { 
+        "name": "Tester",
+        "image": "sample.png",
+        "id": "favour1"
+      },
+      { 
+        "name": "Sample",
+        "image": "sample.png",
+        "id": "favour2"
+      },
+      {
+        "name": "Help",
+        "image": "sample.png",
+        "id": "favour3"
+      },
+      {
+        "name": "Me",
+        "image": "sample.png",
+        "id": "favour4"
+      },
+      {
+        "name": "Please",
+        "image": "sample.png",
+        "id": "favour5"
+      },
+      {
+        "name": "I",
+        "image": "sample.png",
+        "id": "favour6"
+      },
+      {
+        "name": "beg",
+        "image": "sample.png",
+        "id": "favour7"
+      }
+  ]
+}

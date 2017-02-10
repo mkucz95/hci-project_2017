@@ -2,21 +2,9 @@
  * GET home page.
  */
 
-exports.view = function(req, res) {
-  res.render('index');
-};
+// Getting our favour data
+var data = require('../data.json');
 
 exports.view = function( req, res ) {
-	res.render( 'index', {
-		'favors': [
-			{ 'name': 'Sample',
-			'image': 'sample.png',
-			'id': 'favor1'
-			},
-			{ 'name': 'Sample',
-				'image': 'sample.png',
-				'id': 'favor2'
-			}
-		]
-	})
+	res.render( 'index', data );
 }

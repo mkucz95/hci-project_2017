@@ -7,6 +7,9 @@
 
 	<!-- Bootstrap to stylesheet -->
 	<link href = "/css/homepage.css" rel = "stylesheet">
+
+	<!-- Viewtype that prevents from zooming out when changing to phone -->
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 </head>
 
 <!-- Actual app -->
@@ -28,17 +31,13 @@
 			<div class = "menu" id = "line">
 			</div>
 		</div>
-		<div class = "placeholder" id = "menuplaceholder">
-		</div>
 
 		<!-- Current favors -->
 		<div class = "main" id = "bulk">
-			{{#each favor}}
-			<div class = "favors" id = "{{id}}">
-				<a href = "favors/{{name}}" class = "image">
-					<img src = "images/{{image}}" ... />
-					<p>{{name}}</p>
-				</a>
+			{{#each favours}}
+			<div class = "favours" id = "{{id}}">
+				<img src = "images/{{image}}" class = "image">
+				<p>{{name}}</p>
 			</div>
 			{{/each}}
 		</div>
