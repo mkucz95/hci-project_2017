@@ -42,14 +42,15 @@
 		<!-- Current favors -->
 		<div class = "main" id = "bulk">
 		{{#each favours}}
+			<a  href="select/{{id}}">
 			<div class = "favours" id = "{{id}}">
+				<a href="/html/profile.html">
 				<img src = "images/{{image}}" class = "image">
-				<a  href="select/{{id}}">
+				</a>
 					<h4>{{name}}</h4>
 					<h2> {{subject}} <h2>
-				</a>
 			</div>
-			
+			</a>	
 		{{/each}}
 
 		</div>

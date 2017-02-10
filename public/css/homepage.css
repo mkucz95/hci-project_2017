@@ -8,6 +8,8 @@ body p {
 	line-height: 12px;
 	font-size: 12px;
 	text-align: justify;
+	color: #000;
+	text-decoration: none;
 }
 
 /* Drag down to see current favor */
@@ -65,8 +67,8 @@ body p {
 	height: 120px;
 	width: 90%;
 	background-color: #92B6B1;
-	padding:15px;
-	margin-bottom: 15px;
+	padding: 15px;
+	margin-bottom: 10px;
 }
 
 .favours h1,h2,h3,h4,h5,h6 {
@@ -97,4 +99,9 @@ body p {
 
 .request p {
 	text-align: center;
+}
+
+/* Removing underline from all hyperlinks */
+a {
+	text-decoration: none;
 }
