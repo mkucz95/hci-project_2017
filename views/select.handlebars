@@ -3,10 +3,10 @@
 
 <!-- Title of tab / app -->
 <head>
-	<title>Homepage</title>
+	<title>Select Favour</title>
 
 	<!-- Bootstrap to stylesheet -->
-	<link href = "/css/acceptFavour.css" rel = "stylesheet">
+	<link href = "/css/select.css" rel = "stylesheet">
 
 	<!-- Viewtype that prevents from zooming out when changing to phone -->
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -18,19 +18,20 @@
 	<div class = "container">
 
 		<!-- Requesting Favor -->
+
 		<div class = "main" id = "bulk">
 			<div class = "favours" id = "{{id}}">
 				<!-- Image -->
 				<img src = "images/{{image}}" class = "image">
 				<!-- Subject -->
-				<p>{{name}}</p>
-				<p>Time: {{time}}</p>
-				<p>Location: {{location}}</p>
+				<h2>{{name}}</h2>
+				<h4>Time: {{time}}</h4>
+				<h4>Location: {{location}}</h4>
 				<div class = "box" id = "description">
 					<p>{{description}}</p>
 				</div>
 			</div>
-		</div>
+		</div>		
 
 	</div>
 	</div>
