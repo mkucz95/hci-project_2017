@@ -68,7 +68,10 @@ body p {
 	width: 90%;
 	background-color: #92B6B1;
 	padding: 15px;
-	margin-bottom: 10px;
+	border-width: 10px 0px 2px 0px;
+	border-style: solid;
+	border-top-color: #fff;
+	border-bottom-color: #000;
 }
 
 .favours h1,h2,h3,h4,h5,h6 {
