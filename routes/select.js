@@ -1,7 +1,12 @@
 var data = require('../data.json');
 
 exports.view= function(req, res) { 
-	var name = req.params.name; 
-
-	res.render('select', data);
+	res.render('select', {
+		'image': data.image,
+		'id': data.id,
+		'time': data.time,
+		'location': 'location',
+		'subject': 'data.subject',
+		'description': 'data.description'
+	});
 };
