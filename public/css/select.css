@@ -45,12 +45,17 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: 15px;
 }
 
-/* Description box */
+/* Description */
 .box {
 	height: 50%;
 	width: 90%;
 	position: fixed;
 	overflow: auto;
+}
+
+.box p {
+	font-size: 13px;
+	color: #fff;
 }
 
 /* Accept button */
