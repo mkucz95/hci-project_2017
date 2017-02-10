@@ -3,10 +3,14 @@
 
 <!-- Title of tab / app -->
 <head>
+<<<<<<< HEAD:views/select.handlebars
+	<title>Select Favour</title>
+=======
 	<title>Accept Favor</title>
+>>>>>>> cfd86dadc2db46879159915116c0a97034a8c3bd:views/acceptFavour.handlebars
 
 	<!-- Bootstrap to stylesheet -->
-	<link href = "/css/acceptFavour.css" rel = "stylesheet">
+	<link href = "/css/select.css" rel = "stylesheet">
 
 	<!-- Viewtype that prevents from zooming out when changing to phone -->
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -22,19 +26,21 @@
 	</a>
 
 		<!-- Requesting Favor -->
+
 		<div class = "main" id = "bulk">
 			<div class = "favours" id = "{{id}}">
 				<!-- Image -->
 				<img src = "images/{{image}}" class = "image">
 				<!-- Subject -->
-				<p>{{name}}</p>
-				<p>Time: {{time}}</p>
-				<p>Location: {{location}}</p>
+				<h1> {{subject}} </h1>
+				<h2>{{name}}</h2>
+				<h4>Time: {{time}}</h4>
+				<h4>Location: {{location}}</h4>
 				<div class = "box" id = "description">
 					<p>{{description}}</p>
 				</div>
 			</div>
-		</div>
+		</div>		
 
 	</div>
 	</div>

@@ -11,7 +11,7 @@ body p {
 }
 
 /* Favour box */
-.main {   
+.main {
 	height: 100%;
 	width: 100%;
 }
@@ -26,3 +26,9 @@ body p {
 }
 
 /* Description box */
+.box {
+	height: 50%;
+	width: 90%;
+	position: fixed;
+	overflow: auto;
+}

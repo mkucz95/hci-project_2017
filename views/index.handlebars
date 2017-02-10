@@ -37,17 +37,19 @@
 	</a>
 
 		<!-- Current favors -->
-		<a  href="/html/select.html">
 		<div class = "main" id = "bulk">
-			{{#each favours}}
+		{{#each favours}}
+		<a  href="select/{{name}}">
 			<div class = "favours" id = "{{id}}">
 				<img src = "images/{{image}}" class = "image">
-				<p>{{name}}</p>
-			
+				<h4>{{name}}</h4>
+				<h2> {{subject}} <h2>
 			</div>
-			{{/each}}
+			</a>
+		{{/each}}
+
 		</div>
-	</a>
+
 
 		<!-- Drag up box -->
 		 <a href = "/html/request.html">
