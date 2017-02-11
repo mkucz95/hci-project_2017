@@ -21,20 +21,5 @@ exports.viewFavour= function(req, res) { 
 		'subject': subject,
 		'description': description
 	});
-<<<<<<< HEAD
 
-=======
-	console.log(subject);
-}
-
-exports.view= function(req, res) { 
-	res.render('select', {
-		'image': data.image,
-		'id': data.id,
-		'time': data.time,
-		'location': 'location',
-		'subject': 'data.subject',
-		'description': 'data.description'
-	});
->>>>>>> 208cbf8b0c8f0363b042d4400fd56982d2ec574a
 };

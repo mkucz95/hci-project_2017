@@ -1,7 +1,7 @@
 /* Whole app */
 body {
 	background-color: #666A86;
-	padding: 5px;
+	padding-top: 70px;
 }
 
 body p {
@@ -63,19 +63,9 @@ body p {
 }
 
 /* Each favour */
-.favours {
-	height: 120px;
-	width: 90%;
-	background-color: #92B6B1;
-	padding: 15px;
-	border-width: 10px 0px 2px 0px;
-	border-style: solid;
-	border-top-color: #fff;
-	border-bottom-color: #000;
-}
+
 
 .favours h1,h2,h3,h4,h5,h6 {
-	color: #000;
 	text-align: justify;
 }
 

@@ -1,7 +1,7 @@
 /* Whole app */
 body {
 	background-color: #666A86;
-	padding: 5px;
+	padding-top: 70px;
 }
 
 body p {
@@ -71,10 +71,6 @@ h1,h2,h3,h4,h5,h6 {
 	background-color: #92B6B1;
 }
 
-.button p {
-	text-align: center;
-	color: #000;
-}
 
 /* Getting rid of underline from href */
 a {

@@ -18,62 +18,54 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
+
+
 </head>
 
 <!-- Actual app -->
 <body>
+<nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
+   <div class="container-fluid">
+   <!-- Brand and toggle get grouped for better mobile display -->
+   <div class="navbar-header">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menubar" aria-expanded="false">
+   <span class="sr-only">Toggle navigation</span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   <span class="icon-bar"></span>
+   </button>
+   <img alt="Brand" src="/images/#">
+   </div>
 
-
-
-	<nav class="navbar navbar-default navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-	 <div class="container-fluid">
-	 <!-- Brand and toggle get grouped for better mobile display -->
-	 <div class="navbar-header">
-	 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	 <span class="sr-only">Toggle navigation</span>
-	 <span class="icon-bar"></span>
-	 <span class="icon-bar"></span>
-	 <span class="icon-bar"></span>
-	 </button>
-	 </div>
-
-	 <!-- Collect the nav links, forms, and other content for toggling -->
-	 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	 <ul class="nav navbar-nav">
-	 <li class="dropdown">
-	 <a href="#" class="dropdown-toggle btn navbar-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
-	 <ul class="dropdown-menu">
-	 <li><a href="#">option 1</a></li>
-	 <li><a href="#">option2</a></li>
-	 <li><a href="#">option</a></li>
-	 <li role="separator" class="divider"></li>
-	 <li><a href="#">option</a></li>
-	 </ul>
-	 </li>
-	 <li class="pic">
-        	    <img alt="Brand" src="/images/#">
-       	</li>
-	 </ul>
-	 <!-- code for the right side of the navbar -->
-	 </div><!-- /.navbar-collapse -->
-	 </div><!-- /.container-fluid -->
-	 </nav>
+   <!-- Collect the nav links, forms, and other content for toggling -->
+   <div class="collapse navbar-collapse" id="menubar">
+ 
+   <li><a href="#">Profile</a></li>
+   <li><a href="#">Settings</a></li>
+   <li role="separator" class="divider"></li>
+   <li><a href="#">Sort Favours</a></li>
+   </ul>
+   <!-- code for the right side of the navbar -->
+   </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+   </nav>
 
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
-    <ul class="nav navbar-nav navbar-right">
-		<li><a  href="/html/request.html" class="navbar-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span> request favour</span> </a>
+    <ul class="nav navbar-nav">
+		<li><a  href="/html/request.html" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false"> <span> request favour</span> </a>
 		<div class = "current"> 
 		</div>
-		</a></li>
+		</a>
+
+		<a href="/html/current.html" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false"> <span> current favour</span> </a>
+		<div class = "current"> 
+		</div>
+
+	</li>
     </ul>
 
-    <ul class="nav navbar-nav navbar-left">
-    <li><a  href="/html/current.html" class="navbar-btn navbar-left" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span> current favour</span> </a>
-		<div class = "current"> 
-		</div>
-		</li>
-	</ul>
+    
   </div>
 </nav>
 
@@ -82,18 +74,22 @@
 	<div class = "container">
 
 		<!-- Current favors -->
-		<div class = "main" id = "bulk">
 		{{#each favours}}
-			<a  href="select/{{id}}">
-			<div class = "favours" id = "{{id}}">
-				<img src = "images/{{image}}" class = "image" href = "/html/profile.html">
-					<h4>{{name}}</h4>
-					<h2> {{subject}} </h2>
-			</div>
-			</a>	
-		{{/each}}
+		<div class="panel panel-primary">
+	<a  href="select/{{id}}">		
+  <div class="panel-heading favours" id="{{id}}">
+  	<img src = "images/{{image}}" class = "image" href = "/html/profile.html">
+    <h3 class="panel-title">{{subject}}</h3>
+    <h3 class="panel-title">{{name}}</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</a>
 
-		</div>
+</div>
+  		{{/each}}
+
 
 	</div>
 	</div>
