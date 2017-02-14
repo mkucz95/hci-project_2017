@@ -21,7 +21,6 @@ exports.viewFavour= function(req, res) { 
 		'subject': subject,
 		'description': description
 	});
-<<<<<<< HEAD
  
 	console.log(subject);
 }
@@ -35,7 +34,5 @@ exports.view= function(req, res) { 
 		'subject': 'data.subject',
 		'description': 'data.description'
 	});
-=======
->>>>>>> 46ef0fae67827c1bb240e2a0b4b0647fc8fe61ea
 
 };
