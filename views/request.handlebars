@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<title>Request Favour</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/request.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/js/request.js"></script>
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<h1>Request a Favour Screen</h1>
+	
+	<nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="btn">
+						<a href = '..'>
+							<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+						</a>
+					</button>
+					<img alt="Brand" src="/images/#">
+
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div align = "center">
+			<div class = "container">
+
+				<!-- Favor to Request -->
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Favour Subject: </span>
+					<input type="text" class="form-control" placeholder="general subject of your favour" aria-describedby="basic-addon1">
+				</div>
+
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Favour Time: </span>
+					<input type="text" class="form-control" placeholder="when you need the favour done by" aria-describedby="basic-addon1">
+				</div>
+
+				<input id="pac-input" class="controls" type="text"
+				placeholder="Enter a location">
+				<div id="map"></div>
+				<div id="infowindow-content">
+					<span id="place-name"  class="title"></span><br>
+					Favour Location <span id="place-id"></span><br>
+					<span id="place-address"></span>
+				</div>
+
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Location Description: </span>
+					<input type="text" class="form-control" placeholder="where you need the favour" aria-describedby="basic-addon1">
+				</div>
+
+
+				
+				<!-- Accept Button -->
+				<nav class="navbar navbar-default navbar-fixed-bottom">
+					<div class="container">
+						<ul class="nav navbar-nav">
+							<li><a href = "/html/requestconfirm.html" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false"> <span> SUBMIT FAVOUR</span> </a>
+								<div class = "current"> 
+								</div>
+							</a>
+
+						</li>
+					</ul>
+
+
+				</div>
+			</nav>
+
+		</div>
+	</div>
+	<!-- from https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOMXd7rno4R-ng4TFNG3ZM9NHB4WLOsXM&libraries=places&callback=initMap"
+	async defer></script>
+
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

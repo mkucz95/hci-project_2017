@@ -11,50 +11,75 @@
 	<!-- Viewtype that prevents from zooming out when changing to phone -->
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
-	<!-- Bootstraps --><!--
+	<!-- Bootstraps -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
 <!-- Actual app -->
 <body>
-	<div align = "center">
-	<div class = "container">
 
-		<!--Back to Home Button-->
-		<div class = "corner" id = "back">
-			<a href = "..">
-			<img src = "/images/back.png" class = "image" id = "back">
-			</a>
-		</div>
+    <nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
+    <div class="container-fluid">
 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    	<!-- Back button -->
+	    <button type="button" class="btn" id="back">
+	      	<a href = '..'>
+	    	<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+	    	</a>
+	    </button>
+
+	    <!-- Logo button -->
+    	<img alt="Brand" src="/images/logo-here.png" id="logo">
+ 
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Main part of page -->
+ 	<div class = "main-container" align="center">
+ 
 		<!-- Favor Requested -->
-		<div class = "main" id = "bulk">
-			<div class = "favours" id = "{{id}}">
+		<div class="panel panel-primary">
+			<!-- Main details of favour -->
+	    	<div class="panel-heading favours" id="top">
 				<!-- Image -->
 				<img src = "../images/{{image}}" class = "image">
 				<!-- Subject -->
-				<h1> {{subject}} </h1>
-				<h2>{{name}}</h2>
-				<h4>Time: {{time}}</h4>
-				<h4>Location: {{location}}</h4>
-				<div class = "box" id = "description">
+				<h1 class="panel-title" id="sub">{{subject}} </h1>
+				<h2 class="panel-title" id="name">{{name}}</h2>
+			</div>
+
+			<!-- Description of favour -->
+			<div class="panel-body" id="bottom">
+				<h4 id="time">Time: {{time}}</h4>
+				<h4 id="loc">Location: {{location}}</h4>
+				<div class="description">
 					<p>{{description}}</p>
 				</div>
 			</div>
 		</div>
 
-		<!-- Accept Button -->
-		<a href = "/html/accept.html">
-		<div class = "button" id = "accept">
-			<p>Accept</p>
-		</div>
-		</a>
-
-	</div>
 	</div>
 
+	<!-- Accept Button -->
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+ 	    <div class="container">
+	 	    <ul class="nav navbar-nav">
+				<li>
+					<a href = "/html/accept.html" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>accept favour</span></a>
+					</a>
+				</li>
+		    </ul>
+	  </div>
+	</nav>
+
+	<!-- Bootstrap -->
 	<script src="https://code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 
