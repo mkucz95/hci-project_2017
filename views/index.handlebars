@@ -15,6 +15,7 @@
 
 	<!-- Bootstraps-->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
+<<<<<<< HEAD
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,11 +23,17 @@
 
 
 
+=======
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+>>>>>>> f7f095c2dd2b2df524b29bbb7034872a520d909a
 
 </head>
 
 <!-- Actual app -->
 <body>
+<<<<<<< HEAD
 
 <div id="wrapper">
 
@@ -141,9 +148,78 @@
    </nav>
 -->
 
+=======
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menubar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img alt="Brand" id="logo" src="/images/logo-here.png">
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="menubar">
+     
+        <!-- Inside of navigation bar -->
+        <li><a href="html/profile.html"><span id="pro">Profile</span></a></li>
+        <li><a href="html/settings.html"><span id="set">Settings</span></a></li>
+        <li><a href="html/sort.html"><span id="sort">Sort Favours</span></a></li>
+        </ul>
+
+      <!-- Right side of the navbar -->
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Favors list container -->
+	<div class = "favour-container" align = "center">
+
+		<!-- Current favors -->
+		{{#each favours}}
+		<div class="panel panel-primary" id="favours">
+    	<a  href="select/{{id}}">		
+        <div class="panel-heading favours" id="{{id}}">
+          <!-- Image -->
+        	<img src = "images/{{image}}" class = "image" href = "/html/profile.html">
+          <!-- Subject -->
+          <h3 class="panel-title" id="sub">{{subject}}</h3>
+          <!-- Name -->
+          <h3 class="panel-title" id="name">{{name}}</h3>
+        </div>
+        <div class="panel-body" id="bod">
+          <span>Panel content</span>
+        </div>
+      </a>
+    </div>
+  	{{/each}}
+  </div>
+>>>>>>> f7f095c2dd2b2df524b29bbb7034872a520d909a
+
+  <!-- Bottom buttons -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li>
+          <!-- Request favor button -->
+          <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>request favour</span></a>
+          </a>
+
+          <!-- Current favor button -->
+          <a href="/html/current.html" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>current favour</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
 
 </body>
 
