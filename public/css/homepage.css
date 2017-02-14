@@ -65,6 +65,10 @@ body {
 	float: left;
 	margin-right: 5px;
 }
+#menubar{
+	    list-style: none;
+}
+
 
 /* Bottom buttons */
 #button {
