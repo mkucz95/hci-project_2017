@@ -1,25 +1,31 @@
 <!doctype html>
 <html>
   <head>
-    <title>Current Favour</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- Title of tab / app -->
+    <title>Current Favour</title>
+
+    <!-- Bootstrap to stylesheet -->
+    <link href = "/css/current.css" rel = "stylesheet">
+
+    <!-- Prevent zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstraps -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min. css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-  </head>
-  <body>
+</head>
+<body>
 
     <h1>Current Favour</h1>
     
     <!-- Favor Requested -->
     <div class="panel panel-primary">
       <!-- Main details of favour -->
-        <div class="panel-heading favours" id="top">
-
-        <!-- Subject -->
+      <div class="panel-heading favours" id="top">
         <h1 class="panel-title" id="sub">{{subject}} </h1>
       </div>
 
@@ -34,27 +40,22 @@
     </div>
 
     <!-- Accept Button -->
-        <nav class="navbar navbar-default navbar-fixed-bottom">
-          <div class="container">
-            <ul class="nav navbar-nav">
-              <li><a href = ".." class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false"> <span> CANCEL FAVOUR</span> </a>
-                <!-- <div class="alert alert-success alert-warning" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-Do You Want to Cancel?</div>-->
-                <div class = "current"> 
-                </div>
-              </a>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href = ".." class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>CANCEL FAVOUR</span> </a>
+            <!-- <div class="alert alert-success alert-warning" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Do You Want to Cancel?</div>-->
 
-                  <a  href=".." class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>CONFIRM COMPLETION</span></a>
-              </a>
+            <a  href=".." class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>CONFIRM COMPLETION</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-            </li>
-          </ul>
-
-
-        </div>
-      </nav>
-
+  <!-- jQuery and boostraps -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   

@@ -1,0 +1,34 @@
+/* Whole app */
+body {
+	padding-top: 70px;
+	text-decoration: none;
+}
+
+/* Logo properties */
+#logo {
+	height: 40px;
+	width: 40px;
+	margin: 5px;
+	float: right;
+}
+
+
+
+/* Bottom buttons */
+#button {
+	color: #fff;
+	width: 70%;
+	margin-left: 15%;
+	border-radius: 5px;
+	text-transform: uppercase;
+	background-color: #99add6;
+}
+
+/* Removing underline from all hyperlinks */
+a {
+	line-height: 12px;
+	font-size: 12px;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+}

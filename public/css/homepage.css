@@ -9,6 +9,7 @@ body {
 	height: 40px;
 	width: 40px;
 	margin: 5px;
+	float: right;
 }
 
 /* Navigational Bar */
@@ -65,8 +66,9 @@ body {
 	float: left;
 	margin-right: 5px;
 }
-#menubar{
-	    list-style: none;
+
+#menubar {
+	 list-style: none;
 }
 
 
