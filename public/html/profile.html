@@ -3,6 +3,13 @@
   <head>
     <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "/css/homepage.css" rel = "stylesheet">
+
+    <!-- Bootstraps-->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -17,8 +24,53 @@
     
   </head>
   <body>
-    <h1>Profile Screen</h1>
-    <h3><a href="..">to home screen</a> </h3>
-    <h3><a href="menu.html">back to menu</a> </h3>
+    <nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="btn " type="button" data-toggle="collapse" data-target="#menubar" aria-expanded="false" aria-controls="collapseExample" id="ham">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+          <a href = ".."><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="menubar">
+          <div class="card card-block">
+        <!-- Inside of navigation bar -->
+        <li><a href="profile.html"><span id="pro">Profile</span></a></li>
+        <li><a href="settings.html"><span id="set">Settings</span></a></li>
+        <li><a href="sort.html"><span id="sort">Sort Favours</span></a></li>
+      </ul>
+
+    </div>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class="container">
+      <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#stats">Stats</a></li>
+      <li><a data-toggle="tab" href="#menu1">Posted Favours</a></li>
+      <li><a data-toggle="tab" href="#menu2">Completed Favours</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="stats" class="tab-pane fade in active">
+        <h3>Stats</h3>
+        <p>Some content.</p>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3>Posted Favours</h3>
+        <p>Some content in menu 1.</p>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h3>Completed Favours</h3>
+        <p>Some content in menu 2.</p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
   </body>
 </html>
