@@ -1,0 +1,83 @@
+/* Whole app */
+body {
+	padding-top: 70px;
+	text-align: justify;
+}
+
+/* Back button */
+#back {
+	margin: 5px;
+	color: #003399;
+}
+
+/* Logo */
+#logo {
+	height: 40px;
+	width: 40px;
+	margin: 5px;
+	float: right;
+}
+
+/* Favour box */
+.main-container {
+	width: 90%;
+	margin-left: 5%;
+}
+
+/* Picture */
+.image {
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	float: left;
+	margin-right: 5px;
+}
+
+/* Favor box top part */
+#top {
+	background-color: #99add6;
+}
+
+#sub,#name {
+	text-align: justify;
+	line-height: 15px;
+	color: #fff;
+}
+
+/* Favor box bottom part */
+#bottom {
+	text-align: justify;
+	font-size: 12px;
+	line-height: 12px;
+	color: #000;
+}
+
+#time,#loc {
+	text-align: justify;
+	line-height: 13px;
+	color: #000;
+}
+
+.description {
+	text-align: justify;
+	font-size: 12px;
+	line-height: 12px;
+	color: #000;
+	overflow-y: auto;
+}
+
+/* Accept button */
+#button {
+	color: #fff;
+	width: 70%;
+	margin-left: 15%;
+	border-radius: 5px;
+	background-color: #99add6;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* Getting rid of underline from href */
+a {
+	text-decoration: none;
+}
