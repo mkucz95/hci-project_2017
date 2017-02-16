@@ -8,6 +8,8 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 
+
+var login = require('./routes/login');
 var index = require('./routes/index');
 var select = require('./routes/select');
 var request = require('./routes/request');
@@ -40,7 +42,10 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
+//app.get('/', login.view);
+//app.get('/index', index.view)
+
+app.get('/', index.view)
 app.get('/select/:id', select.viewFavour);
 app.get('/request', request.view);
 app.get('/requestconfirm', requestconfirm.view);

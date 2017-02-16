@@ -27,9 +27,9 @@
   <!-- Navigation bar -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menubar" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#menubar" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -40,59 +40,66 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="menubar">
-     
+
         <!-- Inside of navigation bar -->
         <li><a href="html/profile.html"><span id="pro">Profile</span></a></li>
         <li><a href="html/settings.html"><span id="set">Settings</span></a></li>
         <li><a href="html/sort.html"><span id="sort">Sort Favours</span></a></li>
-        </ul>
+      </ul>
 
       <!-- Right side of the navbar -->
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-  <!-- Favors list container -->
-	<div class = "favour-container" align = "center">
+<!-- Favors list container -->
+<div class = "favour-container" align = "center">
 
-		<!-- Current favors -->
-		{{#each favours}}
-		<div class="panel panel-primary" id="favours">
-    	<a  href="select/{{id}}">		
-        <div class="panel-heading favours" id="{{id}}">
-          <!-- Image -->
-        	<img src = "images/{{image}}" class = "image" href = "/html/profile.html">
-          <!-- Subject -->
-          <h3 class="panel-title" id="sub">{{subject}}</h3>
-          <!-- Name -->
-          <h3 class="panel-title" id="name">{{name}}</h3>
-        </div>
-        <div class="panel-body" id="bod">
-          <span>Panel content</span>
-        </div>
+  <!-- Current favors -->
+  {{#each favours}}
+  <div class="panel panel-primary" id="favours">
+   <a  href="select/{{id}}">		
+    <div class="panel-heading favours" id="{{id}}">
+      <!-- Image -->
+      <img src = "images/{{image}}" class = "image" href = "/html/profile.html">
+      <!-- Subject -->
+      <h3 class="panel-title" id="sub">{{subject}}</h3>
+      <!-- Name -->
+      <h3 class="panel-title" id="name">{{name}}</h3>
+    </div>
+    <div class="panel-body" id="bod">
+      <span>Panel content</span>
+    </div>
+  </a>
+</div>
+{{/each}}
+</div>
+
+<!-- Bottom buttons -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li>
+        <!-- Request favor button -->
+        <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>request favour</span></a>
       </a>
-    </div>
-  	{{/each}}
+
+      <!-- Current favor button -->
+      <!--{{#if current=='true'}}-->
+      <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>current favour</span></a>
+      <!--{{else}}-->
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+        </button>
+        You have no current favour</div>
+        <!--{{/if}}-->
+      </li>
+    </ul>
   </div>
+</nav>
 
-  <!-- Bottom buttons -->
-  <nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-      <ul class="nav navbar-nav">
-        <li>
-          <!-- Request favor button -->
-          <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>request favour</span></a>
-          </a>
-
-          <!-- Current favor button -->
-          <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>current favour</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 </body>
 

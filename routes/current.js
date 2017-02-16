@@ -5,7 +5,7 @@ exports.viewFavour= function(req, res) { 
 	var id = req.params.id; 
 	console.log(id);
 
-/*	var name = data.favours[id-1].name;
+	var name = data.favours[id-1].name;
 	var image = data.favours[id-1].image;
 	var time = data.favours[id-1].time;
 	var location = data.favours[id-1].location;
@@ -21,6 +21,6 @@ exports.viewFavour= function(req, res) { 
 		'subject': subject,
 		'description': description
 	});
- */
-	//console.log(subject);
+ 
+	console.log(subject);
 }
