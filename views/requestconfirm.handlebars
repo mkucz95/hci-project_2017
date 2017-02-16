@@ -1,33 +1,45 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Confirm Submission</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+<head>
+
+  <!-- Title of tab / app -->
+  <title>Confirm Submission</title>
+
+
+  <!-- Bootstrap to stylesheet -->
+  <link href = "/css/requestconfirm.css" rel = "stylesheet">
+
+  <!-- Not zoom -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstraps -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="btn">
-            <a href = 'request'>
-              <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
-            </a>
-          </button>
-          <img alt="Brand" src="/images/#">
+</head>
+<body>
 
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+  <!-- Navigation bar on top, meaning back and logo -->
+  <nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="btn" id="back">
+          <a href = 'request'>
+            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+          </a>
+        </button>
+        <a href='..'><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
 
-    <h1>Confirm Favour Request</h1>
-    
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <h1>Confirm Favour Request</h1>
+  
     <!-- Favor Requested -->
     <div class="panel panel-primary">
       <!-- Main details of favour -->
@@ -47,33 +59,26 @@
       </div>
     </div>
 
-<div class="alert alert-info" role="alert"><p>Please confirm your request</p></div>
+    <div class="alert alert-info" role="alert"><p>Please confirm your request</p></div>
 
     <!-- Accept Button -->
-        <nav class="navbar navbar-default navbar-fixed-bottom">
-          <div class="container">
-            <ul class="nav navbar-nav">
-              <li><a href = ".." class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false"> <span> CONFIRM REQUEST</span> </a>
-                <!-- <div class="alert alert-success alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  Favour Requested
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href = ".." class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>CONFIRM REQUEST</span> </a>
+            <!-- <div class="alert alert-success alert-dismissible" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+Favour Requested
 </div>-->
-                <div class = "current"> 
-                </div>
-              </a>
+          <a  href=".." class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>CANCEL REQUEST</span></a>
 
-                  <a  href=".." class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>CANCEL REQUEST</span></a>
-              </a>
-
-            </li>
-          </ul>
-
-
-        </div>
-      </nav>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
-  
-  </body>
+
+</body>
 </html>
