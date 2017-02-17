@@ -13,7 +13,7 @@ exports.viewFavour= function(req, res) {
 	var description= data.favours[id-1].description;
 
 
-	res.render('select', {
+	res.render('current', {
 		'name': name,
 		'image': image,
 		'time': time,
