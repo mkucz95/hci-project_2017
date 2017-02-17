@@ -1,6 +1,6 @@
 /* Whole app */
 body {
-	padding-top: 70px;
+	padding-top: 55px;
 	text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ body {
 
 /* Favour box */
 .favour-container {
-	height: 70%;
+	height: 73%;
 	width: 90%;
 	margin-left: 5%;
 	padding-left: 10px;
@@ -42,14 +42,15 @@ body {
 	position: fixed;
 	overflow-y: auto;
 	background-color: #337ab7;
+	border-radius: 4px;
 }
 
 /* Each favour */
 #favours {
 	height: 120px;
 	width: 100%;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	background-color: #ffffff;
+	border-radius: 4px;
 }
 
 #favours h1,h2,h3,h4,h5,h6 {
@@ -66,12 +67,21 @@ body {
 	text-decoration: none;
 }
 
+#name {
+	padding-top: 15px;
+}
+
+#space {
+	color: #337ab7;
+}
+
 /* Picture */
 .image {
-	height: 100px;
-	width: 100px;
+	height: 120px;
+	width: 120px;
 	border-radius: 100px;
 	float: left;
+	padding: 10px;
 	margin-right: 5px;
 }
 
@@ -83,13 +93,13 @@ body {
 	border-radius: 5px;
 	text-transform: uppercase;
 	background-color: #337ab7;
+	text-align: center;
 }
 
 /* Removing underline from all hyperlinks */
 a {
 	line-height: 12px;
 	font-size: 12px;
-	text-align: center;
 	color: #000;
 	text-decoration: none;
 }
