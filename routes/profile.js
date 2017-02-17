@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Getting our favour data
 var data = require('../current.json');
 
@@ -19,3 +20,16 @@ exports.view = function( req, res ) { 
 		'description': description
 	});
 };
+=======
+/*
+ * GET home page.
+ */
+
+// Getting our favour data
+var data = require('../data.json');
+
+exports.view = function( req, res ) {
+	res.render( 'profile', data );
+}
+//add current function for json
+>>>>>>> e7df80a8eda2f68ca0e51165f16c5e050a13bdb8
