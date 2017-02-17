@@ -33,11 +33,6 @@ body {
 	margin-right: 5px;
 }
 
-/* Favor box top part */
-#top {
-	background-color: #99add6;
-}
-
 #sub,#name {
 	text-align: justify;
 	line-height: 15px;
@@ -72,7 +67,7 @@ body {
 	width: 70%;
 	margin-left: 15%;
 	border-radius: 5px;
-	background-color: #99add6;
+	background-color: #337ab7;
 	text-align: center;
 	text-transform: uppercase;
 }

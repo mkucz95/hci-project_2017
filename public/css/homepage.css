@@ -29,7 +29,7 @@ body {
 }
 
 #main {
-	background-color: #003399;
+	background-color: #337ab7;
 }
 
 /* Favour box */
@@ -41,7 +41,7 @@ body {
 	padding-right: 10px;
 	position: fixed;
 	overflow-y: auto;
-	background-color: #99add6;
+	background-color: #337ab7;
 }
 
 /* Each favour */
@@ -82,7 +82,7 @@ body {
 	margin-left: 15%;
 	border-radius: 5px;
 	text-transform: uppercase;
-	background-color: #99add6;
+	background-color: #337ab7;
 }
 
 /* Removing underline from all hyperlinks */

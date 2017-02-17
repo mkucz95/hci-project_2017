@@ -57,10 +57,9 @@ body {
 #button {
   color: #fff;
   width: 70%;
-  margin-left: 15%;
   border-radius: 5px;
   text-transform: uppercase;
-  background-color: #99add6;
+  background-color: #337ab7;
 }
 
 /* Removing underline from all hyperlinks */
