@@ -4,6 +4,10 @@ body {
 	text-decoration: none;
 }
 
+#ham {
+	margin: 8px 5px;
+}
+
 /* Logo properties */
 #logo {
 	height: 40px;
@@ -12,7 +16,26 @@ body {
 	float: right;
 }
 
+/* Favour box */
+.main-container {
+	width: 90%;
+	margin-left: 5%;
+}
 
+/* Picture */
+.image {
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	float: left;
+	margin-right: 5px;
+}
+
+.panel h1,h2,h3,h4,h5,h6 {
+	text-align: justify;
+	line-height: 15px;
+	color: #fff;
+}
 
 /* Bottom buttons */
 #button {
