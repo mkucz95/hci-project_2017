@@ -15,7 +15,8 @@ var select = require('./routes/select');
 var request = require('./routes/request');
 var requestconfirm = require('./routes/requestconfirm');
 var current = require('./routes/current');
-// Example routw
+var login = require('./routes/login');
+// Example route
 // var user = require('./routes/user');
 
 var app = express();
@@ -50,6 +51,7 @@ app.get('/select/:id', select.viewFavour);
 app.get('/request', request.view);
 app.get('/requestconfirm', requestconfirm.view);
 app.get('/current/:id', current.viewFavour);
+app.get('/login', login.view);
 // Example route
 // app.get('/users', user.list);
 
