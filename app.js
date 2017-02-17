@@ -15,6 +15,7 @@ var select = require('./routes/select');
 var request = require('./routes/request');
 var requestconfirm = require('./routes/requestconfirm');
 var current = require('./routes/current');
+var profile = require('./routes/profile');
 // Example route
 // var user = require('./routes/user');
 
@@ -51,6 +52,7 @@ app.get('/request', request.view);
 app.get('/requestconfirm', requestconfirm.view);
 app.get('/current/:id', current.viewFavour);
 app.get('/index', index.view);
+app.get('/profile', profile.view);
 // Example route
 // app.get('/users', user.list);
 
