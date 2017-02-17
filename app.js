@@ -42,15 +42,12 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-//app.get('/', login.view);
-//app.get('/index', index.view)
-
-app.get('/', login.view)
+app.get('/', login.view);
+app.get('/index', index.view);
 app.get('/select/:id', select.viewFavour);
 app.get('/request', request.view);
 app.get('/requestconfirm', requestconfirm.view);
 app.get('/current/:id', current.viewFavour);
-app.get('/index', index.view);
 // Example route
 // app.get('/users', user.list);
 
