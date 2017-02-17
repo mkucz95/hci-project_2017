@@ -10,7 +10,8 @@ exports.viewFavour= function(req, res) {
 	var time = data.favours[id-1].time;
 	var location = data.favours[id-1].location;
 	var subject = data.favours[id-1].subject;
-	var description= data.favours[id-1].description;
+	var description = data.favours[id-1].description;
+
 
 
 	res.render('current', {
