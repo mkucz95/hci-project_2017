@@ -48,7 +48,7 @@ app.get('/index', index.view);
 app.get('/select/:id', select.viewFavour);
 app.get('/request', request.view);
 app.get('/requestconfirm', requestconfirm.view);
-app.get('/current/:id', current.viewFavour);
+app.get('/current', current.viewFavour);
 app.get('/index', index.view);
 app.get('/profile', profile.view);
 // Example route

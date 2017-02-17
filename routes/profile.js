@@ -1,6 +1,7 @@
+// Getting our favour data
 var data = require('../current.json');
 
-exports.viewFavour= function(req, res) {
+exports.view = function( req, res ) { 
 
 	var name = data.current[0].name;
 	var image = data.current[0].image;
@@ -9,7 +10,7 @@ exports.viewFavour= function(req, res) {
 	var subject = data.current[0].subject;
 	var description= data.current[0].description;
 
-	res.render('current', {
+	res.render('profile', {
 		'name': name,
 		'image': image,
 		'time': time,
@@ -17,5 +18,4 @@ exports.viewFavour= function(req, res) {
 		'subject': subject,
 		'description': description
 	});
-
-}
+};
