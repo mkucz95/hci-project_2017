@@ -1,8 +1,8 @@
 var data = require('../data.json');
 
-exports.viewFavour= function(req, res) { 
+exports.viewFavour= function(req, res) {
 	
-	var id = req.params.id; 
+	var id = req.params.id;
 	console.log(id);
 
 	var name = data.favours[id-1].name;
