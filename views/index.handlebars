@@ -13,7 +13,7 @@
 
 	<!-- Bootstraps-->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -58,27 +58,32 @@
 
 
 <!-- Favors list container -->
-<div class = "favour-container" align = "center">
+<div class = "favour-container" id="favour-container" align="center">
 
   <!-- Current favors -->
   {{#each favours}}
-  <div class="panel panel-primary" id="favours">
-   <a  href="select/{{id}}">		
-    <div class="panel-heading favours" id="{{id}}">
-      <!-- Image -->
-      <img src = "images/{{image}}" class = "image" href = "/html/profile.html">
-      <!-- Subject -->
-      <h3 class="panel-title" id="sub">{{subject}}</h3>
-      <!-- Name -->
-      <h3 class="panel-title" id="name">{{name}}</h3>
-    </div>
-    <div class="panel-body" id="bod" align="right">
-      <span><h5 id="time">Time: {{time}}</h5>
-        <h5 id="loc">Location: {{location}}</h5></span>
-    </div>
-  </a>
-</div>
-{{/each}}
+  <div id="favours">
+    <a  href="select/{{id}}">		
+      <!-- Favour head -->
+      <div id="head"> 
+        <!-- Image -->
+        <img src = "images/{{image}}" class = "image" href = "/html/profile.html">
+        <!-- Name -->
+        <h3 id="name">{{name}}</h3>
+      </div> 
+      <!-- Favour body -->
+      <div id="bod"> 
+        <!-- Subject, Time, Location -->
+        <span>
+          <h5 id="sub">{{subject}}</h5>
+          <h5 id="time">By {{time}}</h5>
+          <h5 id="loc">To {{location}}</h5>
+        </span>
+      </div> 
+    </a>
+  </div>
+  {{/each}}
+  <p id="space">...</p>
 </div>
 
 <!-- Bottom buttons -->
