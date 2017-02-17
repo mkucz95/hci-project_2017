@@ -3,7 +3,7 @@
   <head>
     <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href = "/css/homepage.css" rel = "stylesheet">
+    <link href = "/css/profile.css" rel = "stylesheet">
 
     <!-- Bootstraps-->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -37,10 +37,10 @@
       <div class="collapse navbar-collapse" id="menubar">
           <div class="card card-block">
         <!-- Inside of navigation bar -->
-        <li><a href="/profile"><span id="pro">Profile</span></a></li>
+        <li><a href="profile.html"><span id="pro">Profile</span></a></li>
         <li><a href="settings.html"><span id="set">Settings</span></a></li>
         <li><a href="sort.html"><span id="sort">Sort Favours</span></a></li>
-        <li><a href=".."><span id="sort">Log Out</span></a></li>
+        <li><a href="sort.html"><span id="log">Log Out</span></a></li>
       </ul>
 
     </div>
@@ -64,6 +64,27 @@
       <div id="menu1" class="tab-pane fade">
         <h3>Posted Favours</h3>
         <p>Some content in menu 1.</p>
+        <!-- The example favor -->
+        <div id="favours">
+          <a  href="select/{{id}}">   
+            <!-- Favour head -->
+            <div id="head"> 
+              <!-- Image -->
+              <img src = "images/{{image}}" class = "image" href = "/html/profile.html">
+              <!-- Name -->
+              <h3 id="name">{{name}}</h3>
+            </div> 
+            <!-- Favour body -->
+            <div id="bod"> 
+              <!-- Subject, Time, Location -->
+              <span>
+                <h5 id="sub">{{subject}}</h5>
+                <h5 id="time">By {{time}}</h5>
+                <h5 id="loc">To {{location}}</h5>
+              </span>
+            </div> 
+          </a>
+        </div>
       </div>
       <div id="menu2" class="tab-pane fade">
         <h3>Completed Favours</h3>
