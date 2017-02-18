@@ -65,17 +65,17 @@
 
   <!-- Current favors -->
   {{#each favours}}
-  <div id="favours">
+    <div class="panel panel-primary">
     <a  href="select/{{id}}">		
       <!-- Favour head -->
-      <div id="head"> 
+        <div class="panel-heading favours" id="top">
         <!-- Image -->
         <img src = "images/{{image}}" class = "image" href = "/html/profile.html">
         <!-- Name -->
         <h3 id="name">{{name}}</h3>
       </div> 
       <!-- Favour body -->
-      <div id="bod"> 
+<div class="panel-body" id="bottom">
         <!-- Subject, Time, Location -->
         <span>
           <h5 id="sub">{{subject}}</h5>

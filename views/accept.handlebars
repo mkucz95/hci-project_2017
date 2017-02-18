@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <!-- Title of tab / app -->
+  <title>Accept Selected Favour</title>
+
+
+  <!-- Bootstrap to stylesheet -->
+  <link href = "/css/requestconfirm.css" rel = "stylesheet">
+
+  <!-- Not zoom -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstraps -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <!-- Navigation bar on top, meaning back and logo -->
+  <nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="btn" id="back">
+          <a href = 'request'>
+            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+          </a>
+        </button>
+
+        <a class="navbar-brand" href="">Accept Selected Favour</a>
+
+        <a href='/index'><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  
+    <!-- Favor Requested -->
+    <div class="panel panel-primary">
+      <!-- Main details of favour -->
+        <div class="panel-heading favours">
+
+        <!-- Subject -->
+        <h1 class="panel-title" id="sub">Subject{{subject}} </h1>
+      </div>
+
+      <!-- Description of favour -->
+      <div class="panel-body" id="bottom">
+        <h4 id="time">Time: {{time}}</h4>
+        <h4 id="loc">Location: {{location}}</h4>
+        <div class="description">
+          <p>{{description}}</p>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<a href="/index">
+<div class="modal fade" id="acceptFavour" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Favour Accepted</h4>
+      </div>
+      <div class="modal-body">
+        Your successfuly accepted to do a favour for {{name}}
+        <br>
+        <br>
+        <small>Note: You can only accept one favour at a time. Go to current favour to see your task</small>
+      </div>
+      <div class="modal-footer">
+
+      <button type="button" class="btn btn-primary">OK</button>
+      </div>
+    </div>
+  </div> 
+</div></a>
+
+
+
+<a href="/index">
+<div class="modal fade" id="noAccept" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog alert alert-danger" role="document">
+    <strong>You did not accept the favour for {{name}}</strong>
+
+
+      <button type="button" class="btn">OK</button>
+  </div> 
+</div></a>
+
+
+
+
+    <!-- Accept Button -->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href = "#" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#acceptFavour">
+  Accept Task
+</button> </a>
+            
+          <a  href="request" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="cancelRequest"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#noAccept">
+  Cancel Acceptance
+</button></a>
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+<script src="/js/jquery-1.11.0.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/click.js"></script>
+
+
+</body>
+</html>
