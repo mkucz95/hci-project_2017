@@ -4,6 +4,11 @@ body {
 	text-decoration: none;
 }
 
+#ham {
+	margin: 8px 5px;
+	float: left;
+}
+
 /* Logo properties */
 #logo {
 	height: 40px;
@@ -12,6 +17,10 @@ body {
 	float: right;
 }
 
+.nav-brand{
+	margin:0;
+	float:none;
+}
 
 
 /* Bottom buttons */

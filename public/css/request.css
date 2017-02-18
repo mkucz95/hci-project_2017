@@ -37,6 +37,11 @@ body {
   display: inline;
 }
 
+#map{
+  width:10%;
+  height:10%;
+}
+
 /* Visual format stuff */
 
 /* Logo properties */

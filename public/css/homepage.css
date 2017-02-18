@@ -6,6 +6,7 @@ body {
 
 #ham {
 	margin: 8px 5px;
+	float: left;
 }
 
 /* Logo properties */
@@ -16,6 +17,10 @@ body {
 	float: right;
 }
 
+.nav-brand{
+	margin:0;
+	float:none;
+}
 /* Navigational Bar */
 #menubar { 
 	list-style: none;

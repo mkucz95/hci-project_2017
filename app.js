@@ -16,6 +16,9 @@ var request = require('./routes/request');
 var requestconfirm = require('./routes/requestconfirm');
 var current = require('./routes/current');
 var profile = require('./routes/profile');
+var googleMapsClient = require('@google/maps').createClient({
+  key: 'AIzaSyCOMXd7rno4R-ng4TFNG3ZM9NHB4WLOsXM'
+});
 // Example route
 // var user = require('./routes/user');
 
@@ -53,6 +56,8 @@ app.get('/index', index.view);
 app.get('/profile', profile.view);
 // Example route
 // app.get('/users', user.list);
+
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

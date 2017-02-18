@@ -8,14 +8,20 @@ body {
 #back {
 	margin: 5px;
 	color: #003399;
+	float: left;
 }
 
-/* Logo */
+/* Logo properties */
 #logo {
 	height: 40px;
 	width: 40px;
 	margin: 5px;
 	float: right;
+}
+
+.nav-brand{
+	margin:0;
+	float:none;
 }
 
 /* Centering top text */

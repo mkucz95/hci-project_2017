@@ -32,13 +32,15 @@
             <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
           </a>
         </button>
+
+        <a class="navbar-brand" href="">Please Confirm Request</a>
+
         <a href='/index'><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
 
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
-  <h3 id = "title">Please Confirm Favour Request</h3>
   
     <!-- Favor Requested -->
     <div class="panel panel-primary">
@@ -59,24 +61,86 @@
       </div>
     </div>
 
+    <div id="noConfirmModal" class="modal fade">
+      <div class="modal-content alert alert-danger alert-dismissible fade in" role="alert">
+      <button type="button" class="close" data-dismissible="alert" aria-lable="Close"></button>
+      <h6>You Did Not Submit a Favour Request </h6>
+      <p>
+      <button type="button" class="btn">OK</button></p>
+      </div>
+    </div>
+
+
+<a href="/index">
+    <div id="requestConfirmModal" class="modal fade">
+      <div class="modal-content alert alert-danger alert-dismissible fade in" role="alert">
+      <button type="button" class="close" data-dismissible="alert" aria-lable="Close"></button>
+      <h6>You Succesfully Submit a Favour Request </h6>
+      <p>
+      <button type="button" class="btn">OK</button></p>
+      </div>
+    </div>
+</a>
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<a href="/index">
+<div class="modal fade" id="confirmRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Favour Request Submitted</h4>
+      </div>
+      <div class="modal-body">
+        Your favour request was successfully submitted
+      </div>
+      <div class="modal-footer">
+
+      <button type="button" class="btn btn-primary">OK</button>
+      </div>
+    </div>
+  </div> 
+</div></a>
+
+
+
+<a href="/index">
+<div class="modal fade" id="noConfirmRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog alert alert-danger" role="document">
+    <strong>Your Favour Request was Cancelled</strong>
+
+
+      <button type="button" class="btn">OK</button>
+  </div> 
+</div></a>
+
+
+
+
     <!-- Accept Button -->
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container">
         <ul class="nav navbar-nav">
-          <li><a href = "/index" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>confirm request</span> </a>
-            <!-- <div class="alert alert-success alert-dismissible" role="alert">
-<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-Favour Requested
-</div>-->
-          <a  href="request" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>cancel request</span></a>
+          <li><a href = "#" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#confirmRequest">
+  Confirm Request
+</button> </a>
+            
+          <a  href="request" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="cancelRequest"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#noConfirmRequest">
+  Cancel Request
+</button></a>
 
           </li>
         </ul>
       </div>
     </nav>
+    
+<script src="/js/jquery-1.11.0.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/click.js"></script>
 
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -10,6 +10,8 @@
 
 	<!-- Bootstrap to stylesheet -->
 	<link href="/css/request.css" rel="stylesheet">
+	<link href="/css/map.css" rel="stylesheet">
+
 
 	<!-- Bootstraps -->
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -46,6 +48,7 @@
 			<div class = "container">
 
 				<!-- Favor to Request -->
+				<form id="requestFavour" role="form" method="push" action="">
 				<div class="input-group">
 					<span class="input-group-addon" id="basic-addon1">Favour Subject: </span>
 					<input type="text" class="form-control" placeholder="General subject of favour" aria-describedby="basic-addon1">
@@ -67,14 +70,23 @@
 					<input type="text" class="form-control" placeholder="Describe the favour" aria-describedby="basic-addon1">
 				</div>
 
-				<!--			<input id="pac-input" class="controls" type="text" placeholder="Where favour must occur">
-				<div id="infowindow-content">
-					<span id="place-name"  class="title"></span><br>
-					Favour Location <span id="place-id"></span><br>
-					<span id="place-address"></span>
-				</div>
-			</input> -->
+     <!-- <div>
+        <div id="title">
+          Specify Favour Location
+        </div>
+      </div>
+      <div id="pac-container">
+        <input id="pac-input" type="text"
+            placeholder="Enter a location">
+      </div>
 
+
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon">
+      <span id="place-name"  class="title"></span><br>
+      <span id="place-address"></span>
+    </div>-->
 
 				
 				<!-- Accept Button -->
@@ -86,15 +98,18 @@
 						</ul>
 					</div>
 				</nav>
+				</form>
 		</div>
 	</div>
 	<!-- from https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOMXd7rno4R-ng4TFNG3ZM9NHB4WLOsXM&libraries=places&callback=initMap"
-	async defer></script>
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOMXd7rno4R-ng4TFNG3ZM9NHB4WLOsXM&libraries=places&callback=initialize"  async defer></script>-->
 
 
+
+<script src="/js/jquery-1.11.0.js"></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/map.js"></script>
 
 </body>
 </html>
