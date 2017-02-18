@@ -16,9 +16,9 @@ var request = require('./routes/request');
 var requestconfirm = require('./routes/requestconfirm');
 var current = require('./routes/current');
 var profile = require('./routes/profile');
-var googleMapsClient = require('@google/maps').createClient({
+/*var googleMapsClient = require('@google/maps').createClient({
   key: 'AIzaSyCOMXd7rno4R-ng4TFNG3ZM9NHB4WLOsXM'
-});
+});*/
 // Example route
 // var user = require('./routes/user');
 
