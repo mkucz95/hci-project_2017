@@ -5,11 +5,10 @@ $(document).ready(function() {
 	initializePage();
 })
 
-function initializePage() {
-	console.log("Javascript connected!");
 
+ $(window).load(function(){
 
-	var url = window.location.href;
+ 	var url = window.location.href;
 	var urlSlice = url.slice(url.length-14, url.length);
 	console.log("url path: " + url);
 		console.log("url slice: " + urlSlice);
@@ -17,9 +16,14 @@ function initializePage() {
 
 	if(urlSlice === "showModal=true"){
 		console.log("true");
-		$('#myModal').on('shown.bs.modal', function () {
-			$('#myInput').focus()
-		})
+		        $('#myModal').modal('show');
+
 	}
+	
+
+    });
+
+function initializePage() {
+	console.log("Javascript connected!");
 	
 }
