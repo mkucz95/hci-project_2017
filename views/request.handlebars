@@ -30,91 +30,115 @@
 <body>
 	
 	<nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="btn" id="back">
-						<a href = '/index'>
-							<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
-						</a>
-					</button>
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="btn" id="back">
+					<a href = '/index'>
+						<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+					</a>
+				</button>
 
-			        <!-- Title of page -->
-			        <a class="navbar-brand" href="">What You're Doing</a>
+				<!-- Title of page -->
+				<a class="navbar-brand" href="">What You're Doing</a>
 
-					<!-- Logo photo -->
-					<a href = "/index"><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
+				<!-- Logo photo -->
+				<a href = "/index"><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
 
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
 
-		<div align = "center">
-			<div class = "maincontainer">
+	<div align = "center">
+		<div class = "maincontainer">
 
-				<!-- Favor to Request -->
-				<form id="requestFavour" role="form" method="push" action="">
-				<div class="input-group">
-					<span class="input-group-addon" id="basic-addon1">Favour Subject: </span>
-					<input type="text" class="form-control" placeholder="General subject of favour" aria-describedby="basic-addon1">
+
+			<!-- Modal -->
+				<!--<div class="modal fade" id="confirmRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myModalLabel">Favour Request Submitted</h4>
+							</div>
+							<div class="modal-body">
+								Your favour request was successfully submitted
+							</div>
+							<div class="modal-footer">
+
+								<input type="submit" id="submitBtn" class="btn navbar-btn navbar-left btn-primary btn-lg" data-toggle="modal" data-target="#confirmRequest" value="Confirm Request"></input>
+							</div>
+						</div>
+					</div> 
+				</div>-->
+
+
+
+				<a href="/request">
+					<div class="modal fade" id="noConfirmRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog alert alert-danger" role="document">
+							<strong>Your Favour Request was Cancelled</strong>
+
+
+							<button type="button" class="btn">OK</button>
+						</div> 
+					</div></a>
+
+
+					<!-- Favor to Request -->
+					<!--open form-->
+
+					<form id="requestFavour" role="form" method="GET" action="/add">
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+						</div>
+						<div class="form-group">
+							<label for="subject">Favour Subject:</label>
+							<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+						</div>
+
+
+						<div class="form-group">
+							<label for="time">Favour Time:</label>
+							<input type="text" class="form-control" id="time" placeholder="Time" name="time">
+						</div>
+
+
+						<div class="form-group">
+							<label for="location">Favour Location:</label>
+							<input type="text" class="form-control" id="location" placeholder="Location" name="location">
+						</div>
+
+						<div class="form-group">
+							<label for="description">Favour Description:</label>
+							<input type="text" class="form-control" id="description" placeholder="Description" name="description">
+						</div>
+
+						<!-- Accept Button -->
+						<nav class="navbar navbar-default navbar-fixed-bottom">
+							<div class="container">
+								<ul class="nav navbar-nav">
+									<li>
+										<input type="submit" id="submitBtn" class="btn navbar-btn navbar-left btn-primary btn-lg" value="Confirm Request"></input>
+
+										<a  href="request" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="cancelRequest"><button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#noConfirmRequest">
+											Cancel Request
+										</button></a>
+
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</form>
 				</div>
-
-				<div class="input-group">
-					<span class="input-group-addon" id="basic-addon1">Favour Time: </span>
-					<input type="text" class="form-control" placeholder="When favour must be finished by" aria-describedby="basic-addon1">
-				</div>
-
-	
-				<div class="input-group">
-					<span class="input-group-addon" id="basic-addon1">Favour Location </span>
-					<input type="text" class="form-control" placeholder="Details on location (like room number)" aria-describedby="basic-addon1">
-				</div>
-
-				<div class="input-group">
-					<span class="input-group-addon" id="basic-addon1">Favour Description: </span>
-					<input type="text" class="form-control" placeholder="Describe the favour" aria-describedby="basic-addon1">
-				</div>
-
-     <!-- <div>
-        <div id="title">
-          Specify Favour Location
-        </div>
-      </div>
-      <div id="pac-container">
-        <input id="pac-input" type="text"
-            placeholder="Enter a location">
-      </div>
-
-
-    <div id="map"></div>
-    <div id="infowindow-content">
-      <img src="" width="16" height="16" id="place-icon">
-      <span id="place-name"  class="title"></span><br>
-      <span id="place-address"></span>
-    </div>-->
-
-				
-				<!-- Accept Button -->
-				<nav class="navbar navbar-default navbar-fixed-bottom">
-					<div class="container">
-						<ul class="nav navbar-nav">
-							<li><a href = "../requestconfirm" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>SUBMIT FAVOUR</span></a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-				</form>
-		</div>
-	</div>
-	<!-- from https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder-->
-	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOMXd7rno4R-ng4TFNG3ZM9NHB4WLOsXM&libraries=places&callback=initialize"  async defer></script>-->
+			</div>
 
 
 
-<script src="/js/jquery-1.11.0.js"></script>
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/map.js"></script>
+			<script src="/js/jquery-1.11.0.js"></script>
+			<script src="https://code.jquery.com/jquery.js"></script>
+			<script src="/js/bootstrap.min.js"></script>
+			<script src="/js/click.js"></script>
 
-</body>
-</html>
+		</body>
+		</html>
