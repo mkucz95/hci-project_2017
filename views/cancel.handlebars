@@ -8,7 +8,7 @@
 
 
   <!-- Bootstrap to stylesheet -->
-  <link href = "/css/requestconfirm.css" rel = "stylesheet">
+  <link href = "/css/cancel.css" rel = "stylesheet">
 
   <!-- Not zoom -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,9 +33,11 @@
           </a>
         </button>
 
+        <!-- Title of page -->
         <a class="navbar-brand" href=""></a>
 
-        <a href='/index'><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
+        <!-- Logo -->
+        <a href="/index"><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
 
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -59,15 +61,16 @@
 
 
 
-    <!-- Accept Button -->
+    <!-- Cancel Button -->
     <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container">
         <ul class="nav navbar-nav">
           <li>
-          <a  href="request" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="cancelRequest"><button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#cancel">
-  Cancel Current Favour
-</button></a>
-
+            <a  href="request" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="cancelRequest">
+              <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#cancel" id="button">
+                Cancel Current Favour
+              </button>
+            </a>
           </li>
         </ul>
       </div>

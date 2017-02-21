@@ -6,6 +6,7 @@ body {
 
 #ham {
 	margin: 8px 5px;
+	float: left;
 }
 
 /* Logo properties */
@@ -18,8 +19,10 @@ body {
 
 /* Favour box */
 .main-container {
+	height: 80%;
 	width: 90%;
-	margin-left: 5%;
+	position: fixed;
+	overflow-y: auto;
 }
 
 /* Picture */

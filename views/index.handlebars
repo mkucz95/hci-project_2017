@@ -35,9 +35,10 @@
           <span class="glyphicon glyphicon-menu-hamburger"></span>
         </button>
 
-        <!-- Logo photo -->
+        <!-- Title at top -->
         <a class="navbar-brand" href="">What People Need</a>
 
+        <!-- Logo photo -->
         <a href="/index"><img id="logo" src="/images/logo-here.png"></a>
         
       </div>
@@ -64,6 +65,7 @@
 <div class = "favour-container" id="favour-container" align="center">
 
   <!-- Current favors -->
+  <p id="space">...</p>
   {{#each favours}}
     <div class="panel panel-primary">
     <a  href="select/{{id}}">		
@@ -72,10 +74,10 @@
         <!-- Image -->
         <img src = "images/{{image}}" class = "image" href = "/html/profile.html">
         <!-- Name -->
-        <h3 class="panel-title" id="name">{{name}}</h3>
+        <h2 class="panel-title" id="name">{{name}}</h2>
       </div> 
       <!-- Favour body -->
-<div class="panel-body" id="bottom">
+      <div class="panel-body" id="bottom">
         <!-- Subject, Time, Location -->
         <span>
           <h5 id="sub">{{subject}}</h5>

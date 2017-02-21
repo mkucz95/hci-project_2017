@@ -17,10 +17,12 @@ body {
 	float: right;
 }
 
-.nav-brand{
-	margin:0;
-	float:none;
+/* Centering the title of page */
+.navbar-brand {
+	margin: 0;
+	float: none;
 }
+
 /* Navigational Bar */
 #menubar { 
 	list-style: none;
@@ -61,14 +63,14 @@ body {
 #favours h1,h2,h3,h4,h5,h6 {
 	line-height: 12px;
 	text-align: justify;
-	/*color: #000;*/
+	color: #000;
 	text-decoration: none;
 }
 
-#sub,#name,#bod {
+#sub,#name,#bod,#time,#loc {
 	line-height: 12px;
 	text-align: justify;
-	/*color: #000;*/
+	color: #000;
 	text-decoration: none;
 }
 
@@ -98,7 +100,6 @@ body {
 	border-radius: 5px;
 	text-transform: uppercase;
 	background-color: #337ab7;
-	text-align: center;
 }
 
 /* Removing underline from all hyperlinks */
@@ -107,4 +108,5 @@ a {
 	font-size: 12px;
 	color: #000;
 	text-decoration: none;
+	text-align: center;
 }

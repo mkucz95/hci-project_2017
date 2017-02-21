@@ -4,7 +4,7 @@ body {
 	text-decoration: none;
 }
 
-#ham {
+#back {
 	margin: 8px 5px;
 	float: left;
 }
@@ -24,12 +24,17 @@ body {
 
 /* The favour box */
 .panel {
-	height: 70%;
+	height: 60%;
 	width: 90%;
 	float: left;
 	margin-left: 5%;
 	position: fixed;
 	overflow-y: auto;
+}
+
+/* Dialogue boxes' buttons */
+#diabutton {
+	text-align: center;
 }
 
 /* Bottom buttons */

@@ -44,6 +44,13 @@ body {
 
 /* Visual format stuff */
 
+/* Lowering so not hidden behind menu */
+.maincontainer {
+  width: 90%;
+  margin-top: 70px;
+  text-decoration: none;
+}
+
 /* Logo properties */
 #logo {
   height: 40px;
@@ -54,8 +61,8 @@ body {
 
 /* Back button */
 #back {
-  margin: 5px;
-  color: #003399;
+  float: left;
+  margin: 8px 5px;
 }
 
 /* Bottom buttons */
