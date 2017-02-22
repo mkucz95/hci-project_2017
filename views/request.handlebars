@@ -34,7 +34,7 @@
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="btn" id="back">
-					<a href = '/index'>
+					<a href = '/index?showModal=fals'>
 						<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
 					</a>
 				</button>
@@ -43,7 +43,7 @@
 				<a class="navbar-brand" href="">What You're Doing</a>
 
 				<!-- Logo photo -->
-				<a href = "/index"><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
+				<a href = "/index?showModal=fals"><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
 
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
@@ -73,15 +73,7 @@
 
 
 
-				<a href="/request">
-					<div class="modal fade" id="noConfirmRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-						<div class="modal-dialog alert alert-danger" role="document">
-							<strong>Your Favour Request was Cancelled</strong>
-
-
-							<button type="button" class="btn">OK</button>
-						</div> 
-					</div></a>
+				
 
 
 					<!-- Favor to Request -->
@@ -121,7 +113,7 @@
 									<li>
 										<input type="submit" id="submitBtn" class="btn navbar-btn navbar-left btn-primary btn-lg" value="Confirm Request"></input>
 
-										<a  href="request" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="cancelRequest"><button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#noConfirmRequest">
+										<a href="index?showModal=fals" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="cancelRequest"><button type="button" class="btn btn-danger btn-lg" >
 											Cancel Request
 										</button></a>
 

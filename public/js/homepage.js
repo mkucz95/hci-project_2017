@@ -16,10 +16,14 @@ $(document).ready(function() {
 
 	if(urlSlice === "showModal=true"){
 		console.log("true");
-		        $('#myModal').modal('show');
+		 $('#myModal').modal('show');
 
 	}
-	
+
+	if(urlSlice ==="showModal=false")
+		console.log("false");
+		$('#noConfirmRequest').modal('show');
+
 
     });
 
