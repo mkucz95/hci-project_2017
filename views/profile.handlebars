@@ -32,6 +32,13 @@
             <span class="glyphicon glyphicon-menu-hamburger"></span>
           </button>
 
+          <!-- Title of page -->
+          <a class="navbar-brand" href="">Profile</a>
+
+          <!-- Logo -->
+          <a href = "/index"><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
+        </div>
+
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="menubar">
             <div class="card card-block">
@@ -43,13 +50,6 @@
               </ul>
             </div>
           </div><!-- /.navbar-collapse -->
-
-
-          <!-- Title of page -->
-          <a class="navbar-brand" href="">Profile</a>
-
-          <!-- Logo -->
-          <a href = "/index"><img alt="Brand" src="/images/logo-here.png" id="logo"></a>
 
       </div><!-- /.container-fluid -->
     </nav>
@@ -97,13 +97,17 @@
       <!-- Second tab -->
       <div id="menu1" class="tab-pane fade">
         <h3>Completed Favours</h3>
-        <p>None yet</p>
+        <div class = "table" id = "done">
+          <p>You have completed 0 favours.</p>
+        </div>
       </div>
 
       <!-- Third tab -->
       <div id="menu2" class="tab-pane fade">
         <h3>Statistics</h3>
-        <p>None yet</p>
+        <div class="table" id="owe">
+          <p>You currently owe 0 favours.</p>
+        </div>
       </div>
 
     </div>

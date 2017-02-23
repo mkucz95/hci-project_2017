@@ -4,7 +4,7 @@
   <title>Login With Facebook</title>
 
   <!-- Bootstrap to stylesheet -->
-  <link href = "/css/homepage.css" rel = "stylesheet">
+  <link href = "/css/login.css" rel = "stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
@@ -15,33 +15,23 @@
 </head>
 <body>
 
-   <!-- Navigation bar -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-      
-
-        <!-- Logo photo -->
-        <a href=""><img id="logo" src="/images/logo-here.png"></a>
-        
-      </div>
-  </div><!-- /.container-fluid -->
-</nav>
     <div align = "center">
       <div class = "container">
 
-        <!-- Favor to Request -->
-        <div class="input-group">
+        <!-- Username -->
+        <div class="input-group" id="enterU">
           <span class="input-group-addon" id="basic-addon1">Username: </span>
-          <input type="text" class="form-control" placeholder="Fave Or" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="Favian Ore" aria-describedby="basic-addon1">
         </div>
 
-        <div class="input-group">
+        <!-- Password -->
+        <div class="input-group" id="enterP">
           <span class="input-group-addon" id="basic-addon1">Password: </span>
-          <input type="password" class="form-control" placeholder="•••••••" aria-describedby="basic-addon1">
+          <input type="password" class="form-control" placeholder="••••••••••" aria-describedby="basic-addon1">
         </div>
-    <nav class="navbar navbar-default navbar-fixed-bottom">
+
+        <!-- Bottom Login button -->
+        <nav class="navbar navbar-default navbar-fixed-bottom">
           <div class="container">
             <ul class="nav navbar-nav">
               <li><a href = "/index" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>Login</span></a>
@@ -49,8 +39,7 @@
             </ul>
           </div>
         </nav>
-
-        
+ 
   <div id="fb-root"></div>
 <!--
   Below we include the Login Button social plugin. This button uses

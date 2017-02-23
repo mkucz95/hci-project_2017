@@ -40,6 +40,30 @@ body {
 	color: #fff;
 }
 
+.body p {
+	text-align: justify;
+}
+
+/* Completed Favours tab */
+#done {
+	padding: 10px;
+	border: 1px solid #337ab7;
+}
+
+#done p {
+	text-align: center;
+}
+
+/* Statistics tab */
+#owe {
+	padding: 10px;
+	border: 1px solid #337ab7;
+}
+
+#owe p {
+	text-align: center;
+}
+
 /* Bottom buttons */
 #button {
 	color: #fff;
