@@ -3,6 +3,7 @@
       { 
         "name": "Ben",
         "from": "",
+        "status": "",
         "image": "sample.png",
         "id": "1",
         "time": "today",
@@ -12,6 +13,8 @@
       },
       { 
         "name": "Mat",
+         "from": "",
+        "status": "",
         "image": "sample.png",
         "id": "2",
         "time": "today",
@@ -21,6 +24,8 @@
       },
       {
         "name": "Jeff",
+        "from": "",
+        "status": "",
         "image": "sample.png",
         "id": "3",
         "time": "today",
@@ -30,6 +35,8 @@
       },
       {
         "name": "Scott",
+        "from": "",
+        "status": "",
         "image": "sample.png",
         "id": "4",
         "time": "today",
@@ -39,6 +46,8 @@
       },
       {
         "name": "Eve",
+        "from": "",
+        "status": "",
         "image": "sample.png",
         "id": "5",
         "time": "today",
@@ -48,6 +57,8 @@
       },
       {
         "name": "Kuzco",
+        "from": "",
+        "status": "",
         "image": "sample.png",
         "id": "6",
         "time": "today",
@@ -57,6 +68,8 @@
       },
       {
         "name": "Warden",
+        "from": "",
+        "status": "",
         "image": "sample.png",
         "id": "7",
         "time": "today",

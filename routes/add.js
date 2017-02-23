@@ -1,4 +1,5 @@
 var data = require("../data.json");
+var user = require("../user.json");
 
 exports.addFavour = function(req, res) {    
 	// Your code goes here
@@ -11,12 +12,14 @@ exports.addFavour = function(req, res) { 
 	var description= req.query.description;
 	var id = 5;
 	var from = "";
+	var status = "";
 
 
 	//add new object to JSON file data.json
 	var newFavour = {
 		name: name,
         from: "",
+        status: "",
         id: "",
         time: time,
         location: location,
@@ -32,6 +35,6 @@ exports.addFavour = function(req, res) { 
 	console.log(subject);
 	console.log(description);
 
-	res.redirect('/index?showModal=true');
+	res.redirect('/index?showModal=1');
 	//take you back to index route
  }

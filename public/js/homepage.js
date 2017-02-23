@@ -14,15 +14,29 @@ $(document).ready(function() {
 		console.log("url slice: " + urlSlice);
 
 
-	if(urlSlice === "showModal=true"){
+	if(urlSlice === "showModal=1"){
 		console.log("true");
-		 $('#myModal').modal('show');
+		 $('#requestConfirm').modal('show');
 
 	}
 
-	if(urlSlice ==="showModal=false")
+	if(urlSlice ==="showModal=2"){
 		console.log("false");
 		$('#noConfirmRequest').modal('show');
+	}
+
+	if(urlSlice ==="showModal=3"){
+		console.log("false");
+		$('#completed').modal('show');
+	}
+
+	if(urlSlice ==="showModal=4"){
+		console.log("false");
+		$('#cancelled').modal('show');
+	}
+
+
+
 
 
     });

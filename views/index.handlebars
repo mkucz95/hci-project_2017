@@ -91,10 +91,12 @@
   <p id="space">...</p>
 </div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+<!--REQUEST MODALS-->
+<div class="modal fade" id="requestConfirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <div class="modal-header">
+              <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Favour Request Submitted</h4>
               </div>
               <div class="modal-body">
@@ -102,11 +104,70 @@
               </div>
               <div class="modal-footer">
 
-                <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#confirmRequest">OK</button>
+                <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#requestConfirm" data-dismiss="modal">OK</button>
               </div>
             </div>
           </div> 
         </div>
+
+
+          <div class="modal fade" id="noConfirmRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog alert alert-danger" role="document">
+
+              <strong>Your Favour Request was Cancelled</strong>
+
+              <button type="button" class="btn" data-toggle="modal" data-target="#noConfirmRequest" data-dismiss="modal">OK</button>
+            </div> 
+          </div>
+
+
+<!--CANCEL/COMPLETE MODALS-->
+<div class="modal fade" id="completed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Favour Completed</h4>
+              </div>
+              <div class="modal-body">
+                Your successfully completed your favour. Thanks!
+              </div>
+              <div class="modal-footer">
+
+                <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#completed" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+
+          <div class="modal fade" id="cancelled" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog alert alert-danger" role="document">
+              <strong>Your Cancelled the Favour You were doing</strong>
+            <div class="modal-body">
+              Please notify the person you were doing it for
+            </div>
+              <button type="button" class="btn" data-toggle="modal" data-target="#cancelled" data-dismiss="modal">OK</button>
+            </div> 
+          </div>
+
+<!--ACCEPTED MODALS-->
+<div class="modal fade" id="accepted" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Favour Accetped</h4>
+              </div>
+              <div class="modal-body">
+                You successfully accepted to do a favour.
+              </div>
+              <div class="modal-footer">
+
+                <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#accepted" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div> 
+        </div>
+
 
 <!-- Bottom buttons -->
 <nav class="navbar navbar-default navbar-fixed-bottom">

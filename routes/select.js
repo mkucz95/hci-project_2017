@@ -25,7 +25,7 @@ exports.viewFavour= function(req, res) { 
 	console.log(subject);
 }
 
-exports.view= function(req, res) { 
+exports.view = function(req, res) { 
 	res.render('select', {
 		'image': data.image,
 		'id': data.id,

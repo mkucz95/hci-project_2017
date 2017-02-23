@@ -8,7 +8,7 @@ var data = require('../data.json');
 exports.view = function( req, res ) {
 	//make new variable here to filter
 
-	var timeSort = []; //create new empty array to store all non expired favours
+	var timeSort = new Array(); //create new empty array to store all non expired favours
 
 
 	for(i=0; i<data.length; i++){
@@ -21,6 +21,6 @@ exports.view = function( req, res ) {
 	}
 
 	//res.render('index', timeSort) //pass in the filtered variable
-	res.render( 'index', data ); 
+	res.render('index', timeSort ); 
 }
 //add current function for json
