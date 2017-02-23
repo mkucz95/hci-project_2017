@@ -12,7 +12,7 @@ exports.addFavour = function(req, res) { 
 	var description= req.query.description;
 	var id = 5;
 	var from = "";
-	var status = "";
+	var status = "active";
 
 
 	//add new object to JSON file data.json
