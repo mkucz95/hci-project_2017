@@ -13,9 +13,10 @@ exports.view = function( req, res ) {
 
 	/*for(i=0; i<data.length; i++){
 		var jsonDate = data.favours[i].time;
-		var currentDate = javascript function;
+		var dateObj = new Date();
+		var currentTime = dateObj.toJSON();
 		var status = data.favours[i].status;
-		if(jsonDate>currentDate && status ==="active"){ //only include the favours that people can select
+		if(jsonDate>currentTime && status ==="active"){ //only include the favours that people can select
 			timeSort.push(data.favour[i]);
 		}
 	}*/
@@ -23,4 +24,3 @@ exports.view = function( req, res ) {
 	//res.render('index', timeSort) //pass in the filtered variable
 	res.render('index', data ); 
 }
-//add current function for json
