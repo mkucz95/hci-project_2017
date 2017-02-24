@@ -51,7 +51,7 @@ exports.view = function( req, res ) { 
 		'time': time,
 		'location': location,
 		'subject': subject,
-		'description': description
+		'description': description,
 		'inDebt': inDebt,
 		'completed': completed
 	});
