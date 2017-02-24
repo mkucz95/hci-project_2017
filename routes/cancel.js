@@ -6,9 +6,9 @@ exports.cancelled = function( req, res ) {
 	console.log("cancelled called for id: " + id);
 
 	data.favours[id-1].status = "cancelled";
-	data.favours[id-1].from = user[0].name;
+	data.favours[id-1].from = "";
 
-	console.log(user[0].name + "status: cancelled");
+	console.log(user.user[0].name + "status: cancelled");
 
 	res.redirect('/index?showModal=4');
 }
