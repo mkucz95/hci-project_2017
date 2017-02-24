@@ -13,8 +13,8 @@
       },
       { 
         "name": "Mat",
-         "from": "",
-        "status": "",
+         "from": "Ben Test",
+        "status": "inProgress",
         "image": "sample.png",
         "id": "2",
         "time": "today",

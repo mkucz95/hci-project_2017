@@ -19,18 +19,20 @@ exports.viewFavour= function(req, res) {
       ]
 
       var userName = "";
-      for(i=0; i<user.length; i++){
+
+      for(i=0; i<user.user.length; i++){
+      	console.log("entered loop1")
       	if(user.user[i].status ==="active"){
       		userName = user.user[i].name;
-      		break;
+      		console.log("username: " +userName);
       	}
       }
 
 
-      for(i=0; i<data.length; i++){
+      for(i=0; i<data.favours.length; i++){
       	if(data.favours[i].from === userName && data.favours[i].status === "inProgress"){
-      		currentFavour = data.favours[i];
-      		break;
+      		currentFavour.push(data.favours[i]);
+      		console.log("current favour: " + data.favours[i]);
       	}
       }
 
@@ -42,6 +44,7 @@ exports.viewFavour= function(req, res) {
 	var description= currentFavour[0].description;
 	var id = currentFavour[0].id;
 	id = 1;
+
 
 	res.render('current', {
 		'name': name,
