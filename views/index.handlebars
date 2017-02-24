@@ -68,7 +68,7 @@
   <p id="space">...</p>
   {{#each favours}}
     <div class="panel panel-primary">
-    <a  href="select/{{id}}">		
+    <a  href="/select/{{id}}">		
       <!-- Favour head -->
         <div class="panel-heading favours" id="top">
         <!-- Image -->
@@ -104,7 +104,7 @@
               </div>
               <div class="modal-footer">
 
-                <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#requestConfirm" data-dismiss="modal">OK</button>
+                <button class="btn btn-primary btn-small" data-target="#requestConfirm" data-dismiss="modal">OK</button>
               </div>
             </div>
           </div> 
@@ -116,7 +116,7 @@
 
               <strong>Your Favour Request was Cancelled</strong>
 
-              <button type="button" class="btn" data-toggle="modal" data-target="#noConfirmRequest" data-dismiss="modal">OK</button>
+              <button type="button" class="btn" data-target="#noConfirmRequest" data-dismiss="modal">OK</button>
             </div> 
           </div>
 
@@ -133,7 +133,7 @@
               </div>
               <div class="modal-footer">
 
-                <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#completed" data-dismiss="modal">OK</button>
+                <button class="btn btn-primary btn-small" data-target="#completed" data-dismiss="modal">OK</button>
               </div>
             </div>
           </div> 
@@ -159,10 +159,13 @@
               </div>
               <div class="modal-body">
                 You successfully accepted to do a favour.
+                <br>
+              <small>Note: You can only accept one favour at a time. Go to current favour to see your task</small>
+
               </div>
               <div class="modal-footer">
 
-                <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#accepted" data-dismiss="modal">OK</button>
+                <button class="btn btn-primary btn-small" data-target="#accepted" data-dismiss="modal" aria-label="Close">OK</button>
               </div>
             </div>
           </div> 

@@ -10,14 +10,3 @@ function initializePage() {
 }
 
 
-
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
-
-
-
-$('#noConfirmRequest').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
-

@@ -66,6 +66,7 @@
 
       <!-- First tab -->
       <div id="menu0" class="tab-pane fade in active">
+        {{#if requestBool}}
         <p>The current favour you are requesting</p>
         <!-- Main part of page -->
         <div class = "main-container" align="center" id="5">
@@ -92,6 +93,13 @@
           </div>
 
         </div>
+
+        {{else}}
+        <br><br>
+        <div class="alert alert-info" role="alert">You are currently not requesting a favour</div> 
+
+        {{/if}}
+
       </div>
 
       <!-- Second tab -->

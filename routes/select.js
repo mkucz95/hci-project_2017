@@ -19,7 +19,8 @@ exports.viewFavour= function(req, res) { 
 		'time': time,
 		'location': location,
 		'subject': subject,
-		'description': description
+		'description': description,
+		'id': id
 	});
  
 	console.log(subject);
@@ -32,7 +33,8 @@ exports.view = function(req, res) { 
 		'time': data.time,
 		'location': 'location',
 		'subject': 'data.subject',
-		'description': 'data.description'
+		'description': 'data.description',
+		'id': id
 	});
 
 };

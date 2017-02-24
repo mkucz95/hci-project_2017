@@ -9,34 +9,36 @@ $(document).ready(function() {
  $(window).load(function(){
 
  	var url = window.location.href;
-	var urlSlice = url.slice(url.length-14, url.length);
+	var urlSlice = url.slice(url.length-11, url.length);
 	console.log("url path: " + url);
 		console.log("url slice: " + urlSlice);
 
 
 	if(urlSlice === "showModal=1"){
-		console.log("true");
+		console.log("showModal=1");
 		 $('#requestConfirm').modal('show');
 
 	}
 
 	if(urlSlice ==="showModal=2"){
-		console.log("false");
+		console.log("showModal=2");
 		$('#noConfirmRequest').modal('show');
 	}
 
 	if(urlSlice ==="showModal=3"){
-		console.log("false");
+		console.log("showModal=3");
 		$('#completed').modal('show');
 	}
 
 	if(urlSlice ==="showModal=4"){
-		console.log("false");
+		console.log("showModal=4");
 		$('#cancelled').modal('show');
 	}
 
-
-
+	if(urlSlice ==="showModal=5"){
+		console.log("showModal=5");
+		$('#accepted').modal('show');
+	}
 
 
     });
