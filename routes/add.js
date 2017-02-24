@@ -10,7 +10,8 @@ exports.addFavour = function(req, res) { 
 	var location = req.query.location;
 	var subject = req.query.subject;
 	var description= req.query.description;
-	var id = 5;
+	var id = data.favours.length;
+	var image = "sample.png"
 	var from = "";
 	var status = "active";
 
@@ -20,7 +21,8 @@ exports.addFavour = function(req, res) { 
 		name: name,
         from: "",
         status: "",
-        id: "",
+        image: image,
+        id: id+1,
         time: time,
         location: location,
         subject: subject,

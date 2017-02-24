@@ -13,7 +13,7 @@
       },
       { 
         "name": "Mat",
-         "from": "Ben Test",
+        "from": "Ben Test",
         "status": "inProgress",
         "image": "sample.png",
         "id": "2",
