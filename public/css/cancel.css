@@ -1,0 +1,51 @@
+/* Whole app */
+body {
+	padding-top: 70px;
+	text-decoration: none;
+}
+
+#back {
+	margin: 8px 5px;
+	float: left;
+}
+
+/* Logo properties */
+#logo {
+	height: 40px;
+	width: 40px;
+	margin: 5px;
+	float: right;
+}
+
+.nav-brand{
+	margin: 0;
+	float: none;
+}
+
+/* The favour box */
+.panel {
+	height: 60%;
+	width: 90%;
+	float: left;
+	margin-left: 5%;
+	position: fixed;
+	overflow-y: auto;
+}
+
+/* Bottom buttons */
+#button {
+	color: #fff;
+	width: 70%;
+	margin-left: 15%;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Removing underline from all hyperlinks */
+a {
+	line-height: 12px;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+}
