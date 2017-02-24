@@ -11,7 +11,7 @@ exports.addFavour = function(req, res) { 
 	var subject = req.query.subject;
 	var description= req.query.description;
 	var id = data.favours.length;
-	var image = "sample.png"
+	var image = user.user[0].image;
 	var from = "";
 	var status = "active";
 
@@ -19,17 +19,20 @@ exports.addFavour = function(req, res) { 
 	//add new object to JSON file data.json
 	var newFavour = {
 		name: name,
-        from: "",
-        status: "",
+        from: from,
+        status: status,
         image: image,
-        id: id+1,
+        //id: id+1,
+        id: 1,
         time: time,
         location: location,
         subject: subject,
         description: description
 	}
 
-	data.favours.push(newFavour);
+	//data.favours.push(newFavour);
+	user.user[0].status = "active";
+	user.user.push(newFavour);
 
 	console.log(name);
 	console.log(time);

@@ -44,6 +44,11 @@ body {
 	text-align: justify;
 }
 
+/* Current favour tab */
+#describe {
+	text-align: justify;
+}
+
 /* Completed Favours tab */
 #done {
 	padding: 10px;

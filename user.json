@@ -1,18 +1,15 @@
 {
 	"user":[
-	{
+	{	
 		"name": "Ben Test",
-		"status": "active",
-		"image": "sample.png"
-	}
-	],
-	"favour":[
-	{
-		"id": "",
-		"time": "",
-		"location": "",
-		"subject": "",
-		"description": ""
+		"from": "",
+		"status": "",
+		"image": "sample.png",
+		"id": "0",
+		"time": "none",
+		"location": "none",
+		"subject": "none",
+		"description": "none"
 	}
 	]
 }

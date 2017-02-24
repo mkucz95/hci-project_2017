@@ -7,15 +7,15 @@ exports.view = function( req, res ) { 
 
 	var requesting = [ //favour that current user wants
       { 
-        "name": "",
-        "from": "",
-        "status": "",
-        "image": "",
-        "id": "",
-        "time": "",
-        "location": "",
-        "subject": "",
-        "description": ""
+        "name": user.user[0].name,
+        "from": user.user[0].from,
+        "status": user.user[0].status,
+        "image": user.user[0].image,
+        "id": user.user[0].id,
+        "time": user.user[0].time,
+        "location": user.user[0].location,
+        "subject": user.user[0].subject,
+        "description": user.user.description
     } ]
 
 //count up all stats and find the favour that you requested
@@ -36,16 +36,27 @@ exports.view = function( req, res ) { 
 		}
 	}
 
-	var name = requesting.name;
-	var image = requesting.image;
-	var time = requesting.time;
-	var location = requesting.location;
-	var subject = requesting.subject;
-	var description= requesting.description;
+	// Favour you are requesting
+	var name = user.user[0].name;
+	var image = user.user[0].image;
+	var time = user.user[0].time;
+	var location = user.user[0].location;
+	var subject = user.user[0].subject;
+	var description = user.user[0].description;
+	var status = user.user[0].status;
 
 	var requestBool = true;
-	if(requesting.status ===""){
+	if(status ===""){
 		requestBool = false;
+	}
+
+	if( requestBool )
+	{
+		name = user.user[1].name;
+		time = user.user[1].time;
+		location = user.user[1].location;
+		subject = user.user[1].subject;
+		description = user.user[1].description;
 	}
 
 	res.render('profile', {
