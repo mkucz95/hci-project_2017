@@ -4,7 +4,24 @@ var user = require('../user.json');
 
 exports.view = function( req, res ) { 
 
+	// Count up all stats and find the favour that you requested
+	var completed = 0;
+	var inDebt = 0;
 
+	for(i=0; i<data.length; i++){
+		if(data.favours[i].from === user.user.name && data.favours[i].status === "completed"){
+			completed++;
+		}
+
+		if(data.favours[i].name === user.user.name && data.favours[i].status === "active"){
+			var requesting = data.favours[i];
+		}
+
+		if(data.favours[i].name === user.user.name && data.favours[i].status === "completed"){
+			inDebt++;
+		}
+	}
+/*
 	var requesting = [ //favour that current user wants
       { 
         "name": user.user[0].name,
@@ -17,24 +34,6 @@ exports.view = function( req, res ) { 
         "subject": user.user[0].subject,
         "description": user.user.description
     } ]
-
-//count up all stats and find the favour that you requested
-	var completed = 0;
-	var inDebt = 0;
-
-	for(i=0; i<data.length; i++){
-		if(data.favours[i].from === user.user[0].name && data.favours[i].status === "completed"){
-			completed++;
-		}
-
-		if(data.favours[i].name === user.user[0].name && data.favours[i].status === "active"){
-			var requesting = data.favours[i];
-		}
-
-		if(data.favours[i].name === user.user[0].name && data.favours[i].status === "completed"){
-			inDebt++;
-		}
-	}
 
 	// Favour you are requesting
 	var name = user.user[0].name;
@@ -69,5 +68,10 @@ exports.view = function( req, res ) { 
 		'inDebt': inDebt,
 		'completed': completed,
 		'requestBool': requestBool
+	});*/
+
+	res.render('profile', {
+		'completed': completed,
+		'inDebt': inDebt
 	});
 };

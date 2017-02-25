@@ -18,6 +18,7 @@ var accept = require('./routes/accept');
 var add = require('./routes/add');
 var completed = require('./routes/completed');
 var cancel = require('./routes/cancel');
+var own = require('./routes/own');
 /*var googleMapsClient = require('@google/maps').createClient({
   key: 'AIzaSyCOMXd7rno4R-ng4TFNG3ZM9NHB4WLOsXM'
 });*/
@@ -59,6 +60,7 @@ app.get('/accept/:id', accept.confirmed);
 app.get('/add', add.addFavour);
 app.get('/completed/:id', completed.finished);
 app.get('/cancel/:id', cancel.cancelled);
+app.get('/own', own.view);
 // Example route
 // app.get('/users', user.list);
 

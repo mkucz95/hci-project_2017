@@ -66,12 +66,19 @@ body {
 }
 
 /* Bottom buttons */
+input[type=submit] {
+  margin: 1px;
+  color: #fff;
+  width: 64%;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
 #button {
   color: #fff;
   width: 70%;
   border-radius: 5px;
   text-transform: uppercase;
-  background-color: #337ab7;
 }
 
 /* Removing underline from all hyperlinks */

@@ -6,9 +6,9 @@ exports.finished = function( req, res ) {
 	console.log("finished called for id: " + id);
 
 	data.favours[id-1].status = "completed";
-	data.favours[id-1].from = user.user[0].name;
+	data.favours[id-1].from = user.user.name;
 
-	console.log("from "+ user.user[0].name + "status: completed");
+	console.log("from "+ user.user.name + "status: completed");
 
 	res.redirect('/index?showModal=3');
 }

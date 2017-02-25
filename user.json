@@ -1,9 +1,11 @@
 {
-	"user":[
+	"user":
 	{	
 		"name": "Ben Test",
 		"from": "",
 		"status": "",
+		"ownRequestStatus": false,
+		"otherRequestStatus": false,
 		"image": "sample.png",
 		"id": "0",
 		"time": "none",
@@ -11,5 +13,4 @@
 		"subject": "none",
 		"description": "none"
 	}
-	]
 }

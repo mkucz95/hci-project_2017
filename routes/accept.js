@@ -6,11 +6,11 @@ exports.confirmed = function( req, res ) {
 	console.log("accept called for id: " + id);
 
 	data.favours[id-1].status = "inProgress";
-	data.favours[id-1].from = user.user[0].name;
+	data.favours[id-1].from = user.user.name;
 
-	console.log("from "+ user.user[0].name + "status: inProgress");
+	console.log("from "+ user.user.name + "status: inProgress");
+
+	user.user.otherRequestStatus = true;
 
 	res.redirect('/index?showModal=5');
 }
-
-
