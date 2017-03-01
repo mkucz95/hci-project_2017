@@ -69,28 +69,45 @@
       </ul>
 
     <div class="tab-content">
-
       <!-- First tab -->
-      
-
-
-      <!-- Second tab -->
       <div id="menu1" class="tab-pane fade">
         <h3>Completed Favours</h3>
         <div class = "table" id = "done">
           <p>You have completed {{completed}} favours.</p>
         </div>
+
+        <div> Level: {{level}} </div>
+         <div class="progress">
+          <div class="progress-bar {{progressBar}} progress-bar-striped active" role="progressbar" aria-valuenow="{{progressVal}}" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+            <span class="sr-only"> {{levelUp}} till you level up</span>
+          </div>
+        </div>
+        <div>{{levelUp}} till you level up</div>
+
       </div>
 
-      <!-- Third tab -->
+      <!-- Second tab -->
       <div id="menu2" class="tab-pane fade">
         <h3>Statistics</h3>
         <div class="table" id="owe">
           <p>You currently owe {{inDebt}} favours.</p>
         </div>
+
+
+          <div> <strong>Completed vs Owed </strong> Who wins? </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: {{completedPercent}}%">
+              <span class="sr-only">Completed (success)</span>
+            </div>
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: {{owedPercent}}%">
+              <span class="sr-only">Owed (danger)</span>
+            </div>
+          </div>
+
+
       </div>
 
-
+      <!-- Third tab -->
       {{#if requestBool}}
         <div id="menu3" class="tab-pane fade in active">
         <p>The current favour you are requesting</p> 
@@ -102,7 +119,6 @@
               <div class="panel-heading favours" id="top">
               <img src = "../images/{{image}}" class = "image">
               <h1 class="panel-title" id="sub">{{subject}}</h1>
-              <h2 class="panel-title" id="name">{{name}}</h2>
             </div> 
 
             <!-- Description of favour -->
@@ -121,8 +137,10 @@
         <br><br>
         <div class="alert alert-info" role="alert">You are currently not requesting a favour</div> 
         {{/if}}
-
     </div>
+
+
+
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>
