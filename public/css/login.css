@@ -1,6 +1,19 @@
 /* Whole app */
 body {
+	padding-top: 55px;
 	text-decoration: none;
+}
+
+/* Logo properties */
+#logo {
+	height: 40px;
+	width: 40px;
+	margin: 5px;
+	float: right;
+}
+
+#title{
+	padding-left: 25%;
 }
 
 /* Main body */
@@ -10,12 +23,12 @@ body {
 
 /* Lowering uesrname bar */
 #enterU {
-	margin-top: 60%;
+	margin-top: 20%;
 }
 
 /* Separating password bar a bit */
 #enterP {
-	margin-top: 2%;
+	margin-top: 5%;
 }
 
 /* Picture */

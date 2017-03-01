@@ -9,6 +9,15 @@ body {
 	float: left;
 }
 
+#title{
+	padding-left: 25%;
+}
+
+#list li{
+	    list-style-type: none;
+	    text-decoration: none;
+}
+
 /* Logo properties */
 #logo {
 	height: 40px;

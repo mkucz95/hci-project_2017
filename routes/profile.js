@@ -2,61 +2,65 @@
 var data = require('../data.json');
 var user = require('../user.json');
 
+
 exports.view = function( req, res ) { 
 
 	// Count up all stats and find the favour that you requested
 	var completed = 0;
 	var inDebt = 0;
+	var requesting = //create empty placeholder for what user is requesting
+      { 
+        "name": "",
+        "from": "",
+        "status": "",
+        "image": "",
+        "id": "",
+        "time": "",
+        "location": "",
+        "subject": "",
+        "description": ""
+    };
 
-	for(i=0; i<data.length; i++){
+	for(i=0; i<data.favours.length; i++){
 		if(data.favours[i].from === user.user.name && data.favours[i].status === "completed"){
 			completed++;
 		}
 
 		if(data.favours[i].name === user.user.name && data.favours[i].status === "active"){
-			var requesting = data.favours[i];
+			 //if we find what user is actually requesting.
+			 requesting.name = data.favours[i].name;
+			 requesting.from = data.favours[i].from;
+			 requesting.status = data.favours[i].status;
+			 requesting.image = data.favours[i].image;
+			 requesting.id = data.favours[i].id;
+			 requesting.time = data.favours[i].time;
+			 requesting.location = data.favours[i].location;
+			 requesting.subject = data.favours[i].subject;
+			 requesting.description = data.favours[i].description;
 		}
 
 		if(data.favours[i].name === user.user.name && data.favours[i].status === "completed"){
 			inDebt++;
 		}
 	}
-/*
-	var requesting = [ //favour that current user wants
-      { 
-        "name": user.user[0].name,
-        "from": user.user[0].from,
-        "status": user.user[0].status,
-        "image": user.user[0].image,
-        "id": user.user[0].id,
-        "time": user.user[0].time,
-        "location": user.user[0].location,
-        "subject": user.user[0].subject,
-        "description": user.user.description
-    } ]
-
 	// Favour you are requesting
-	var name = user.user[0].name;
-	var image = user.user[0].image;
-	var time = user.user[0].time;
-	var location = user.user[0].location;
-	var subject = user.user[0].subject;
-	var description = user.user[0].description;
-	var status = user.user[0].status;
 
+
+//is your request not yet accepted
 	var requestBool = true;
-	if(status ===""){
-		requestBool = false;
+	var length = requesting.length;
+	if(requesting.status === ""){
+		requestBool = false; //did not find a requesting favour
 	}
-
-	if( requestBool )
-	{
-		name = user.user[1].name;
-		time = user.user[1].time;
-		location = user.user[1].location;
-		subject = user.user[1].subject;
-		description = user.user[1].description;
-	}
+		
+//define all the variables, not all will be displayed depending on requestBool
+		var name = user.user.name;
+		var time = requesting.time;
+		var location = requesting.location;
+		var subject = requesting.subject;
+		var description = requesting.description;
+		var image = requesting.image;
+	
 
 	res.render('profile', {
 		'name': name,
@@ -68,10 +72,5 @@ exports.view = function( req, res ) { 
 		'inDebt': inDebt,
 		'completed': completed,
 		'requestBool': requestBool
-	});*/
-
-	res.render('profile', {
-		'completed': completed,
-		'inDebt': inDebt
 	});
 };

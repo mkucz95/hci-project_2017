@@ -9,6 +9,10 @@ body {
 	float: left;
 }
 
+#title{
+	padding-left: 17%;
+}
+
 /* Logo properties */
 #logo {
 	height: 40px;

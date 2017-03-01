@@ -21,11 +21,14 @@ exports.view = function( req, res ) {
 		}
 	}*/
 
+
+//	var name = user.user[0].name;
 	var ownRequest = user.user.ownRequestStatus;
 	var otherRequest = user.user.otherRequestStatus;
 
 	//res.render('index', timeSort) //pass in the filtered variable
 	res.render('index', {
+		//'name': name,
 		'favours': data.favours,
 		'ownRequest': ownRequest,
 		'otherRequest': otherRequest
