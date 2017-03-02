@@ -96,7 +96,8 @@ exports.view = function( req, res ) { 
 	var completedPercent = completed/totalFavours * 100;
 		
 //define all the variables, not all will be displayed depending on requestBool
-		var name = user.user.name;
+		var userName = user.user.name;
+		var forName = requesting.name;
 		var time = requesting.time;
 		var location = requesting.location;
 		var subject = requesting.subject;
@@ -105,7 +106,8 @@ exports.view = function( req, res ) { 
 	
 
 	res.render('profile', {
-		'name': name,
+		'userName': userName,
+		'forName': forName,
 		'image': image,
 		'time': time,
 		'location': location,
