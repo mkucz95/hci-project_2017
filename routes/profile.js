@@ -59,7 +59,7 @@ exports.view = function( req, res ) { 
 	var progressVal = "0";
 	
 	level = 1 + Math.floor(completed/5);  //whole number
-	levelUp = completed%5; //how many needed to get multiple of 5
+	levelUp = 5 - completed%5; //how many needed to get multiple of 5
 
 
 	if(levelUp == 1){
