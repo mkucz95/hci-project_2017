@@ -23,6 +23,11 @@ exports.view = function( req, res ) {
 			continue; //skip this request if it is the person's who submited it
 		}
 
+		if(jsonDate < currentTime){
+			data.favours[i].status = "expired";
+			continue; //dont add old requests
+		}
+
 		if(status === "active" ){ //only include the favours that people can select
 			timeSort[timeSort.length]= data.favours[i];
 		}
