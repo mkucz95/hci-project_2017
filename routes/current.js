@@ -4,7 +4,7 @@ var user = require('../user.json');
 exports.viewFavour= function(req, res) {
 
 
-	var currentFavour =[
+	var currentFavour =
       { 
         "name": "",
         "from": "",
@@ -16,33 +16,23 @@ exports.viewFavour= function(req, res) {
         "subject": "",
         "description": ""
       }
-      ]
+      
 
-      var userName = "";
-
-      for(i=0; i<user.user.length; i++){
-      	console.log("entered loop1")
-      	if(user.user[i].status ==="active"){
-      		userName = user.user[i].name;
-      		console.log("username: " +userName);
-      	}
-      }
+      var userName = user.user.name; 
 
       for(i=0; i<data.favours.length; i++){
       	if(data.favours[i].from === userName && data.favours[i].status === "inProgress"){
-      		currentFavour.push(data.favours[i]);
-      		console.log("current favour: " + data.favours[i]);
+      		currentFavour=data.favours[i];
       	}
       }
 
-	var name = currentFavour[0].name;
-	var image = currentFavour[0].image;
-	var time = currentFavour[0].time;
-	var location = currentFavour[0].location;
-	var subject = currentFavour[0].subject;
-	var description= currentFavour[0].description;
-	var id = currentFavour[0].id;
-	id = 1;
+	var name = currentFavour.name;
+	var image = currentFavour.image;
+	var time = currentFavour.time;
+	var location = currentFavour.location;
+	var subject = currentFavour.subject;
+	var description= currentFavour.description;
+	var id = currentFavour.id;
 
 
 	res.render('current', {
