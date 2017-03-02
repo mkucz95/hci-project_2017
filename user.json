@@ -2,15 +2,7 @@
 	"user":
 	{	
 		"name": "Ben Test",
-		"from": "",
-		"status": "",
-		"ownRequestStatus": false,
-		"otherRequestStatus": false,
-		"image": "sample.png",
-		"id": "0",
-		"time": "none",
-		"location": "none",
-		"subject": "none",
-		"description": "none"
+		
+		"image": "sample.png"
 	}
 }
