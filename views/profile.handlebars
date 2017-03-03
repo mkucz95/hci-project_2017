@@ -123,18 +123,20 @@
 
             <!-- Description of favour -->
             <div class="panel-body" id="bottom">
-              <h4 id="time">By {{time}}</h4>
-              <h4 id="loc">At {{location}}</h4>
+              <div class="well">
+                <h4 id="time">By {{time}}</h4>
+                <h4 id="loc">At {{location}}</h4>
+              </div>
               <div class="description" id="describe">
                 <p>{{description}}</p>
               </div>
             </div>
+            <!-- Withdraw button -->
+            <a href="/withdraw/{{id}}" role="button" aria-haspopup="true" aria-expanded="false" id="withdraw button"><button type="button" class="btn btn-danger btn-smll" id="button">
+              Cancel Request
+            </button></a>
+
           </div>
-
-          <a href="/withdraw/{{id}}" role="button" aria-haspopup="true" aria-expanded="false" id="withdraw button"><button type="button" class="btn btn-danger btn-smll" id="button">
-            Cancel Request
-          </button></a>
-
           {{/each}}
 
           <p>     </p>
