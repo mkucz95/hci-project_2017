@@ -61,6 +61,8 @@ app.get('/add', add.addFavour);
 app.get('/completed/:id', completed.finished);
 app.get('/cancel/:id', cancel.cancelled);
 app.get('/own', own.view);
+// For AB Testing
+app.get('/index2',index.view2);
 // Example route
 // app.get('/users', user.list);
 

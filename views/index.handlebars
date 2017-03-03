@@ -177,18 +177,37 @@
       <ul class="nav navbar-nav">
         <li>
           <!-- Request favor button -->
-          {{#if ownRequest}}
-          <a  href="own" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>view requested favour</span></a>
+
+          <!-- For testing -->
+          {{#if two}}
+            {{#if ownRequest}}
+              <a  href="own" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>view requested favour</span></a>
+            {{else}}
+              <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>request a favour</span></a>
+            {{/if}}
+
+            <!-- Current favor button -->
+            {{#if otherRequest}}
+              <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>favour to accomplish</span></a>
+            {{else}}
+              <a class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>currently doing nothing</span></a>
+            {{/if}}
+
           {{else}}
-          <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>request a favour</span></a>
+            {{#if ownRequest}}
+              <a  href="own" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>request a favour</span></a>
+            {{else}}
+              <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>request a favour</span></a>
+            {{/if}}
+
+            <!-- Current favor button -->
+            {{#if otherRequest}}
+              <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>current favour</span></a>
+            {{else}}
+              <a class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>current favour</span></a>
+            {{/if}}
           {{/if}}
 
-          <!-- Current favor button -->
-          {{#if otherRequest}}
-          <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>favour to accomplish</span></a>
-          {{else}}
-          <a class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>currently doing nothing</span></a>
-          {{/if}}
         </li>
       </ul>
     </div>
