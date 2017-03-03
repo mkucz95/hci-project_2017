@@ -45,14 +45,17 @@
     <div class="panel panel-primary">
       <!-- Main details of favour -->
       <div class="panel-heading favours" id="top">
-        <h1 class="panel-title" id="sub">{{subject}} </h1>
-        <h3 class="panel-title" id="forName">For: {{name}} </h3>
+        <img src = "../images/{{image}}" class = "image">
+        <h1 class="panel-title" id="forName">{{name}} </h1>
       </div>
 
       <!-- Description of favour -->
       <div class="panel-body" id="bottom">
-        <h4 id="time">By {{time}}</h4>
-        <h4 id="loc">At {{location}}</h4>
+        <h3 id="sub">{{subject}} </h3>
+        <div class="well">
+          <h4 id="time">By {{time}}</h4>
+          <h4 id="loc">At {{location}}</h4>
+        </div>
         <div class="description">
           <p>{{description}}</p>
         </div>
