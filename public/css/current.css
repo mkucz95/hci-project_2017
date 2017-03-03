@@ -11,24 +11,6 @@ body {
 	color: #003399;
 }
 
-#list li{
-	    list-style-type: none;
-	    text-decoration: none;
-}
-
-#title{
-	padding-left: 17%;
-}
-
-/* Picture */
-.image {
-	height: 100px;
-	width: 100px;
-	border-radius: 100px;
-	float: left;
-	margin-right: 5px;
-}
-
 /* Logo properties */
 #logo {
 	height: 40px;
@@ -50,6 +32,41 @@ body {
 	margin-left: 5%;
 	position: fixed;
 	overflow-y: auto;
+}
+
+#list li{
+	    list-style-type: none;
+	    text-decoration: none;
+}
+
+#title{
+	padding-left: 17%;
+}
+
+/* Picture */
+.image {
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	float: left;
+	margin-right: 5px;
+}
+
+#name {
+	text-align: justify;
+	line-height: 15px;
+	color: #fff;
+}
+
+#sub {
+	text-align: center;
+	color: #000;
+}
+
+#loc,#time {
+	text-align: justify;
+	line-height: 15px;
+	color: #000;
 }
 
 /* Bottom buttons */
