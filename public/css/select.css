@@ -47,9 +47,14 @@ body {
 	color: #000;
 }
 
-#time,#loc,#sub {
+#sub {
+	text-align: center;
+	color: #000;
+}
+
+#loc,#time {
 	text-align: justify;
-	line-height: 13px;
+	line-height: 15px;
 	color: #000;
 }
 
@@ -59,6 +64,8 @@ body {
 	line-height: 12px;
 	color: #000;
 	overflow-y: auto;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 /* Accept button */
