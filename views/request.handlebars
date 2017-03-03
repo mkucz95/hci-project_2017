@@ -52,33 +52,10 @@
 	<div align = "center">
 		<div class = "maincontainer">
 
-
-			<!-- Modal -->
-			<!--<div class="modal fade" id="confirmRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h4 class="modal-title" id="myModalLabel">Favour Request Submitted</h4>
-						</div>
-						<div class="modal-body">
-							Your favour request was successfully submitted
-						</div>
-						<div class="modal-footer">
-
-							<input type="submit" id="submitBtn" class="btn navbar-btn navbar-left btn-primary btn-lg" data-toggle="modal" data-target="#confirmRequest" value="Confirm Request"></input>
-						</div>
-					</div>
-				</div> 
-			</div>-->
-
 			<!-- Favor to Request -->
 			<!--open form-->
 
-			<form id="requestFavour" role="form" method="GET" action="/add">
-				<div class="form-group">
-					<label for="name">Name:</label>
-					<input type="text" class="form-control" id="name" placeholder="Name" name="name">
-				</div>
+			<form id="requestFavour" role="form" method="POST" action="/add">
 				<div class="form-group">
 					<label for="subject">Favour Subject:</label>
 					<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">

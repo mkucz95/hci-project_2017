@@ -57,7 +57,7 @@ app.get('/current', current.viewFavour);
 app.get('/index', index.view);
 app.get('/profile', profile.view);
 app.get('/accept/:id', accept.confirmed);
-app.get('/add', add.addFavour);
+app.post('/add', add.addFavour);
 app.get('/completed/:id', completed.finished);
 app.get('/cancel/:id', cancel.cancelled);
 app.get('/own', own.view);

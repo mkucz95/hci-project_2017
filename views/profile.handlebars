@@ -66,7 +66,12 @@
 
     <div class="tab-content">
       <!-- First tab -->
+      {{#if requestBool}}
       <div id="menu1" class="tab-pane fade">
+      {{else}}
+      <div id="menu1" class="tab-pane fade in active">
+      {{/if}}
+
         <h3>Completed Favours</h3>
         <div class = "table" id = "done">
           <p>You have completed {{completed}} favours.</p>
@@ -74,7 +79,7 @@
 
         <div> Level: {{level}} </div>
          <div class="progress">
-          <div class="progress-bar {{progressBar}} progress-bar-striped active" role="progressbar" aria-valuenow="{{progressVal}}" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+          <div class="progress-bar {{progressBar}} progress-bar-striped active" role="progressbar" aria-valuenow="{{progressVal}}" aria-valuemin="0" aria-valuemax="100" style="width: {{progressVal}}%">
             <span class="sr-only"> {{levelUp}} till you level up</span>
           </div>
         </div>
@@ -99,8 +104,6 @@
               <span class="sr-only">Owed (danger)</span>
             </div>
           </div>
-
-
       </div>
 
       <!-- Third tab -->
@@ -115,7 +118,6 @@
               <div class="panel-heading favours" id="top">
               <img src = "../images/{{image}}" class = "image">
               <h1 class="panel-title" id="sub">{{subject}}</h1>
-              <h3 class="panel-title" id="forName"> For: {{name}} </h3>
             </div> 
 
             <!-- Description of favour -->
