@@ -33,7 +33,7 @@ body {
 	margin-right: 5px;
 }
 
-#sub,#name {
+#name {
 	text-align: justify;
 	line-height: 15px;
 	color: #fff;
@@ -47,7 +47,7 @@ body {
 	color: #000;
 }
 
-#time,#loc {
+#time,#loc,#sub {
 	text-align: justify;
 	line-height: 13px;
 	color: #000;

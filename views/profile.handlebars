@@ -109,11 +109,12 @@
       <!-- Third tab -->
       {{#if requestBool}}
         <div id="menu3" class="tab-pane fade in active">
-        <p>The current favour you are requesting</p> 
+        <p>The favours you are requesting</p> 
         <!-- Main part of page -->
         <div class = "main-container" align="center" id="5"> 
        
-          <!-- Favor Requested -->
+          <!-- Favors Requested -->
+          {{#each favours}}
           <div class="panel panel-primary" id="5">
               <div class="panel-heading favours" id="top">
               <img src = "../images/{{image}}" class = "image">
@@ -129,6 +130,9 @@
               </div>
             </div>
           </div>
+          {{/each}}
+
+          <p>     </p>
 
         </div>
 
@@ -137,9 +141,6 @@
         <div class="alert alert-info" role="alert">You are currently not requesting a favour</div> 
         {{/if}}
     </div>
-
-
-
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/js/bootstrap.min.js"></script>

@@ -96,23 +96,45 @@ exports.view = function( req, res ) { 
 	var completedPercent = completed/totalFavours * 100;
 		
 //define all the variables, not all will be displayed depending on requestBool
-		var userName = user.user.name;
-		var forName = requesting.name;
-		var time = requesting.time;
-		var location = requesting.location;
-		var subject = requesting.subject;
-		var description = requesting.description;
-		var image = requesting.image;
-	
+	var userName = user.user.name;
+	var forName = requesting.name;
+	var time = requesting.time;
+	var location = requesting.location;
+	var subject = requesting.subject;
+	var description = requesting.description;
+	var image = requesting.image;
+
+	// Array for multiple requests
+	var ownRequests = [];
+
+	for( i = 0; i < data.favours.length; i++ )
+	{
+		// Different variables necessary
+		var date = data.favours[ i ].time;
+		var dateObj = new Date();
+		var currentTime = dateObj.toJSON();
+		var status = data.favours[i].status;
+
+		if( userName !== data.favours[i].name ) 
+		{
+			continue; // Skip if by another user
+		}
+
+		if( date < time ) 
+		{
+			data.favours[i].status = "expired";
+			continue; // Don't add old requests
+		}
+
+		if( status === "active" )
+		{ //only include the favours that people can select
+			ownRequests[ownRequests.length] = data.favours[i];
+		}
+	}
 
 	res.render('profile', {
 		'userName': userName,
-		'forName': forName,
-		'image': image,
-		'time': time,
-		'location': location,
-		'subject': subject,
-		'description': description,
+		'favours': ownRequests,
 		'inDebt': inDebt,
 		'completed': completed,
 		'requestBool': requestBool,

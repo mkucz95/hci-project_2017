@@ -29,7 +29,7 @@ exports.view = function( req, res ) {
 		}
 
 		if(status === "active" ){ //only include the favours that people can select
-			timeSort[timeSort.length]= data.favours[i];
+			timeSort[timeSort.length] = data.favours[i];
 		}
 	}
 
