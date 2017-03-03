@@ -65,19 +65,21 @@
       <div class="panel panel-primary">
       <a  href="/select/{{id}}">    
         <!-- Favour head -->
-          <div class="panel-heading favours" id="top">
-          <!-- Image -->
-          <img src = "images/{{image}}" class = "image" href = "/html/profile.html">
-          <!-- Name -->
-          <h2 class="panel-title" id="name">{{name}}</h2>
-        </div> 
+          <div class="panel-title favours" id="top">
+            <!-- Image -->
+            <img src = "images/{{image}}" class = "image">
+            <!-- Name -->
+            <h2 id="name">{{name}}</h2>
+          </div> 
         <!-- Favour body -->
         <div class="panel-body" id="bottom">
           <!-- Subject, Time, Location -->
           <span>
-            <h5 id="sub">{{subject}}</h5>
-            <h5 id="time">By {{time}}</h5>
-            <h5 id="loc">To {{location}}</h5>
+            <h4 id="sub">{{subject}}</h4>
+            <div class="well">
+              <h5 id="time">By {{time}}</h5>
+              <h5 id="loc">To {{location}}</h5>
+            </div>
           </span>
         </div> 
       </a>
