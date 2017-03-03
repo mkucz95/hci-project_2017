@@ -92,9 +92,15 @@ exports.view2 = function( req, res ) {
 		}
 
 		if(status === "active" ){ //only include the favours that people can select
-			timeSort[timeSort.length]= data.favours[i];
-			timeSort[timeSort.length].time = Date(timeSort[timeSort.length].time);
+			timeSort[timeSort.length] = data.favours[i];
+			
+			dateObj = Date(data.favours[i].time);  //make date readable
+			dateString = dateObj.toString();
+			var date = dateString.slice(0, 21);
+
+			timeSort[timeSort.length-1].time = date;
 		}
+
 	}
 
 	var ownRequest = false; //am I requesting something
@@ -111,10 +117,13 @@ exports.view2 = function( req, res ) {
 
       }
 
+
     // For AB Testing
     var two = true;
 
+	//res.render('index', timeSort) //pass in the filtered variable
 	res.render('index', {
+		//'name': name,
 		'favours': timeSort,
 		'ownRequest': ownRequest,
 		'otherRequest': otherRequest,
