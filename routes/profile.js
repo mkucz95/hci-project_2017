@@ -16,7 +16,7 @@ exports.view = function( req, res ) { 
 	for( i = 0; i < data.favours.length; i++ )
 	{
 		// Different variables necessary
-		var date = data.favours[ i ].time;
+		var date = data.favours[i].time;
 		var dateObj = new Date();
 		var currentTime = dateObj.toJSON();
 		var status = data.favours[i].status;
@@ -35,7 +35,7 @@ exports.view = function( req, res ) { 
 			continue; // Skip if by another user
 		}
 
-		if( date < time ) 
+		if( date < dateObj ) 
 		{
 			data.favours[i].status = "expired";
 			continue; // Don't add old requests
@@ -44,6 +44,7 @@ exports.view = function( req, res ) { 
 		if( status === "active" )
 		{ //only include the favours that people can select
 			ownRequests[ownRequests.length] = data.favours[i];
+			
 			dateObj = Date(data.favours[i].time);  //make date readable
 			dateString = dateObj.toString();
 			var date = dateString.slice(0, 21);
@@ -52,12 +53,12 @@ exports.view = function( req, res ) { 
 		}
 	}
 
+	var requestBool = false; 
 
-//is your request not yet accepted
-	var requestBool = true;
-	var length = requesting.length;
-	if(requesting.status === ""){
-		requestBool = false; //did not find a requesting favour
+	for(i=0;i<ownRequests.length;i++){
+		if(ownRequests[i].status === "active"){
+			requestBool = true; //did not find a requesting favour
+		}
 	}
 
 	var level = 1;	//current level
@@ -101,6 +102,7 @@ exports.view = function( req, res ) { 
 	var totalFavours = inDebt + completed;
 	var owedPercent = inDebt/totalFavours * 100;
 	var completedPercent = completed/totalFavours * 100;
+	var numRequested = ownRequests.length;
 		
 //define all the variables, not all will be displayed depending on requestBool
 	
@@ -110,6 +112,7 @@ exports.view = function( req, res ) { 
 		'favours': ownRequests,
 		'inDebt': inDebt,
 		'completed': completed,
+		'numRequested': numRequested,
 		'requestBool': requestBool,
 		'level': level,
 		'levelUp': levelUp,

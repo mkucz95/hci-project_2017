@@ -39,6 +39,12 @@ $(document).ready(function() {
 		console.log("showModal=5");
 		$('#accepted').modal('show');
 	}
+
+	if(urlSlice ==="showModal=6"){
+		console.log("showModal=6");
+		$('#withdraw').modal('show');
+	}
+
   });
 
 function initializePage() {
