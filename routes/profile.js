@@ -8,42 +8,49 @@ exports.view = function( req, res ) { 
 	// Count up all stats and find the favour that you requested
 	var completed = 0;
 	var inDebt = 0;
-	var requesting = //create empty placeholder for what user is requesting
-      { 
-        "name": "",
-        "from": "",
-        "status": "",
-        "image": "",
-        "id": "",
-        "time": "",
-        "location": "",
-        "subject": "",
-        "description": ""
-    };
+	var userName = user.user.name;
 
-	for(i=0; i<data.favours.length; i++){
-		if(data.favours[i].from === user.user.name && data.favours[i].status === "completed"){
+	// Array for multiple requests
+	var ownRequests = [];
+
+	for( i = 0; i < data.favours.length; i++ )
+	{
+		// Different variables necessary
+		var date = data.favours[ i ].time;
+		var dateObj = new Date();
+		var currentTime = dateObj.toJSON();
+		var status = data.favours[i].status;
+
+		if(data.favours[i].from === userName && data.favours[i].status === "completed"){
 			completed++;
 		}
 
-		if(data.favours[i].name === user.user.name && data.favours[i].status === "active"){
-			 //if we find what user is actually requesting.
-			 requesting.name = data.favours[i].name;
-			 requesting.from = data.favours[i].from;
-			 requesting.status = data.favours[i].status;
-			 requesting.image = data.favours[i].image;
-			 requesting.id = data.favours[i].id;
-			 requesting.time = data.favours[i].time;
-			 requesting.location = data.favours[i].location;
-			 requesting.subject = data.favours[i].subject;
-			 requesting.description = data.favours[i].description;
-		}
-
-		if(data.favours[i].name === user.user.name && data.favours[i].status === "completed"){
+		if(data.favours[i].name === userName && data.favours[i].status === "completed"){
 			inDebt++;
 		}
+
+
+		if( userName !== data.favours[i].name ) 
+		{
+			continue; // Skip if by another user
+		}
+
+		if( date < time ) 
+		{
+			data.favours[i].status = "expired";
+			continue; // Don't add old requests
+		}
+
+		if( status === "active" )
+		{ //only include the favours that people can select
+			ownRequests[ownRequests.length] = data.favours[i];
+			dateObj = Date(data.favours[i].time);  //make date readable
+			dateString = dateObj.toString();
+			var date = dateString.slice(0, 21);
+
+			ownRequests[ownRequests.length-1].time = date;
+		}
 	}
-	// Favour you are requesting
 
 
 //is your request not yet accepted
@@ -96,41 +103,7 @@ exports.view = function( req, res ) { 
 	var completedPercent = completed/totalFavours * 100;
 		
 //define all the variables, not all will be displayed depending on requestBool
-	var userName = user.user.name;
-	var forName = requesting.name;
-	var time = requesting.time;
-	var location = requesting.location;
-	var subject = requesting.subject;
-	var description = requesting.description;
-	var image = requesting.image;
-
-	// Array for multiple requests
-	var ownRequests = [];
-
-	for( i = 0; i < data.favours.length; i++ )
-	{
-		// Different variables necessary
-		var date = data.favours[ i ].time;
-		var dateObj = new Date();
-		var currentTime = dateObj.toJSON();
-		var status = data.favours[i].status;
-
-		if( userName !== data.favours[i].name ) 
-		{
-			continue; // Skip if by another user
-		}
-
-		if( date < time ) 
-		{
-			data.favours[i].status = "expired";
-			continue; // Don't add old requests
-		}
-
-		if( status === "active" )
-		{ //only include the favours that people can select
-			ownRequests[ownRequests.length] = data.favours[i];
-		}
-	}
+	
 
 	res.render('profile', {
 		'userName': userName,

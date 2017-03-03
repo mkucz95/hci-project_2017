@@ -12,6 +12,9 @@ exports.viewFavour= function(req, res) { 
 	var subject = data.favours[id-1].subject;
 	var description= data.favours[id-1].description;
 
+	var dateObj = Date(time);  //make date readable
+	var dateString = dateObj.toString();
+	time = dateString.slice(0, 21);
 
 	res.render('select', {
 		'name': name,
