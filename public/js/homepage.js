@@ -39,9 +39,7 @@ $(document).ready(function() {
 		console.log("showModal=5");
 		$('#accepted').modal('show');
 	}
-
-
-    });
+  });
 
 function initializePage() {
 	console.log("Javascript connected!");
