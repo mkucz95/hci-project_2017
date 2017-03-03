@@ -74,10 +74,13 @@
  	    <div class="container">
 	 	    <ul class="nav navbar-nav">
 				<li>
-
+				{{#if inProgress}}
+					<div class="navbar-brand" id="title">You are currently doing a favour. You can only accept to do one at a time</div>
+				{{else}}
 					<a href="/accept/{{id}}">
 					<button class="btn bnt-primary" role="button" aria-haspopup="true" aria-expanded="false" id="buttonAccept"><span>accept favour</span></button>
 					</a>
+				{{/if}}
 				</li>
 		    </ul>
 	  </div>

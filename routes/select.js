@@ -1,9 +1,19 @@
 var data = require('../data.json');
+var user = require('../user.json');
 
 exports.viewFavour= function(req, res) { 
 	
 	var id = req.params.id; 
+	var userName = user.user.name;
 	console.log(id);
+
+	var inProgress = false;
+
+	for(i=0; i<data.favours.length; i++){
+		if(data.favours[i].status === "inProgress" && data.favours[i].from === userName){
+			inProgress = true;
+		}
+	}
 
 	var name = data.favours[id-1].name;
 	var image = data.favours[id-1].image;
@@ -23,7 +33,8 @@ exports.viewFavour= function(req, res) { 
 		'location': location,
 		'subject': subject,
 		'description': description,
-		'id': id
+		'id': id,
+		'inProgress': inProgress
 	});
  
 	console.log(subject);
