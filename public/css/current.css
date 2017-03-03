@@ -20,6 +20,15 @@ body {
 	padding-left: 17%;
 }
 
+/* Picture */
+.image {
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	float: left;
+	margin-right: 5px;
+}
+
 /* Logo properties */
 #logo {
 	height: 40px;
