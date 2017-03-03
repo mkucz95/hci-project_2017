@@ -100,11 +100,9 @@
         <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="myModalLabel">Favour Request Submitted</h4>
         </div>
+        
         <div class="modal-body">
-          Your favour request was successfully submitted
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary btn-small" data-target="#requestConfirm" data-dismiss="modal">OK</button>
+          <p>Your favour request was successfully submitted</p>
         </div>
 
       </div>
@@ -114,9 +112,10 @@
   <div class="modal fade" id="noConfirmRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog alert alert-danger" role="document">
 
-      <strong>Your Favour Request was Cancelled</strong>
-      <button type="button" class="btn" data-target="#noConfirmRequest" data-dismiss="modal">OK</button>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
+      <p><strong>Your Favour Request was Cancelled</strong></p>
+    
     </div> 
   </div>
 
@@ -129,13 +128,10 @@
         <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="myModalLabel">Favour Completed</h4>
         </div>
-        <div class="modal-body">
-          Your successfully completed your favour. Thanks!
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary btn-small" data-target="#completed" data-dismiss="modal">OK</button>
-        </div>
 
+        <div class="modal-body">
+          <p>You successfully completed your favour. Thanks!</p>
+        </div>
       </div>
     </div> 
   </div>
@@ -143,22 +139,20 @@
   <div class="modal fade" id="cancelled" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog alert alert-danger" role="document">
 
-      <strong>Your Cancelled the Favour You were doing</strong>
-      <div class="modal-body">
-        Please notify the person you were doing it for
-      </div>
-      <button type="button" class="btn" data-target="#cancelled" data-dismiss="modal">OK</button>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <p><strong>You Cancelled the Favour You were doing</strong></p>
 
+      <div class="modal-body">
+        <p>Please notify the person you were doing it for</p>
+      </div>
     </div> 
   </div>
 
   <div class="modal fade" id="withdraw" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog alert alert-danger" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
-      <strong>Your Cancelled the Favour You were requesting</strong>
-
-
-      <button type="button" class="btn" data-target="#cancelled" data-dismiss="modal" style="float: right">OK</button>
+      <p><strong>Your Cancelled the Favour You were requesting</strong></p>
 
     </div> 
   </div>
@@ -169,17 +163,13 @@
       <div class="modal-content">
 
         <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Favour Accetped</h4>
+          <h4 class="modal-title" id="myModalLabel">Favour Accepted</h4>
         </div>
         <div class="modal-body">
-          You successfully accepted to do a favour.
+          <p>You successfully accepted to do a favour.</p>
           <br>
-          <small>Note: You can only accept one favour at a time. Go to current favour to see your task</small>
+          <p><small>Note: You can only accept one favour at a time. Go to current favour to see your task</small></p>
         </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary btn-small" data-target="#accepted" data-dismiss="modal" aria-label="Close">OK</button>
-        </div>
-
       </div>
     </div> 
   </div>

@@ -9,6 +9,20 @@ body {
 	float: left;
 }
 
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+}
+
+.modal-dialog p {
+	padding-right: 15px;
+}
+
+.modal{
+	padding-top: 40%;
+}
+
+
 #title{
 	padding-left: 17%;
 }
