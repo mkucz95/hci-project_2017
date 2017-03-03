@@ -6,6 +6,7 @@ body {
 
 /* Back button */
 #back {
+	float: left;
 	margin: 5px;
 	color: #003399;
 }
