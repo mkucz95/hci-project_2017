@@ -4,9 +4,10 @@ body {
 	text-decoration: none;
 }
 
-#ham {
-	margin: 8px 5px;
-	float: left;
+/* Back button */
+#back {
+	margin: 5px;
+	color: #003399;
 }
 
 #list li{
