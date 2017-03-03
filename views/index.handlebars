@@ -62,15 +62,17 @@
     <!-- Current favors -->
     <p id="space">...</p>
     {{#each favours}}
-      <div class="panel panel-primary">
+      <div class="panel panel-info">
       <a  href="/select/{{id}}">    
         <!-- Favour head -->
+
           <div class="panel-title favours" id="top">
             <!-- Image -->
             <img src = "images/{{image}}" class = "image">
             <!-- Name -->
             <h2 id="name">{{name}}</h2>
           </div> 
+
         <!-- Favour body -->
         <div class="panel-body" id="bottom">
           <!-- Subject, Time, Location -->
@@ -154,7 +156,9 @@
     <div class="modal-dialog alert alert-danger" role="document">
 
       <strong>Your Cancelled the Favour You were requesting</strong>
-      <button type="button" class="btn" data-target="#cancelled" data-dismiss="modal">OK</button>
+
+
+      <button type="button" class="btn" data-target="#cancelled" data-dismiss="modal" style="float: right">OK</button>
 
     </div> 
   </div>
