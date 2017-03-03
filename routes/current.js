@@ -23,6 +23,12 @@ exports.viewFavour= function(req, res) {
       for(i=0; i<data.favours.length; i++){
       	if(data.favours[i].from === userName && data.favours[i].status === "inProgress"){
       		currentFavour=data.favours[i];
+			
+			dateObj = Date(data.favours[i].time);  //make date readable
+			dateString = dateObj.toString();
+			var date = dateString.slice(0, 21);
+
+			currentFavour.time = date;
       	}
       }
 
