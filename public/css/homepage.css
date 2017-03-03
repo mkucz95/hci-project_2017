@@ -64,16 +64,15 @@ body {
 	border-radius: 4px;
 }
 
-#favours h1,h2,h3,h4,h5,h6 {
-	line-height: 12px;
-	text-align: justify;
+#sub {
+	margin-left: 110px;
+	text-align: left;
 	color: #000;
 	text-decoration: none;
 }
 
-#sub,#name,#bod,#time,#loc {
-	line-height: 12px;
-	text-align: justify;
+#name,#bod,#time,#loc {
+	text-align: left;
 	color: #000;
 	text-decoration: none;
 }
