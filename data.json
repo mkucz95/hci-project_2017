@@ -7,7 +7,7 @@
         "image": "sample1.png",
         "id": "1",
         "time": "2018-07-14T19:43:37+0100",
-        "location": "here",
+        "location": "Geisel 2nd East",
         "subject": "I need food",
         "description": "Absolutely starving. Please give me food. Preference of sandwich and soda. No tomato."
       },
@@ -18,7 +18,7 @@
         "image": "sample2.png",
         "id": "2",
         "time": "2018-07-14T19:43:37+0100",
-        "location": "here",
+        "location": "Sixth College",
         "subject": "I need someone to take me to costco",
         "description": "Please?"
       },
@@ -29,7 +29,7 @@
         "image": "sample3.png",
         "id": "3",
         "time": "2018-07-14T19:43:37+0100",
-        "location": "here",
+        "location": "ERC",
         "subject": "print my paper",
         "description": "email me 4 it"
       },
@@ -40,7 +40,7 @@
         "image": "sample4.png",
         "id": "4",
         "time": "2018-07-14T19:43:37+0100",
-        "location": "here",
+        "location": "8th Floor Geisel",
         "subject": "I need food",
         "description": "Anything will do. Will reimburse."
       },
@@ -62,7 +62,7 @@
         "image": "sample6.png",
         "id": "6",
         "time": "2018-07-14T19:43:37+0100",
-        "location": "here",
+        "location": "Solis Lecture Hall",
         "subject": "can I borrow someones calculator",
         "description": "math midterm by then. plz"
       },
@@ -73,7 +73,7 @@
         "image": "sample7.png",
         "id": "7",
         "time": "2018-07-14T19:43:37+0100",
-        "location": "here",
+        "location": "UCSD Jail",
         "subject": "can I borrow a pencil",
         "description": "pen works 2"
       },
