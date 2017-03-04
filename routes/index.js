@@ -7,8 +7,7 @@ var data = require('../data.json');
 var user = require('../user.json');
 
 exports.view = function( req, res ) {
-	//make new variable here to filter
-
+	
 	var timeSort = []; //create new empty array to store all non expired favours
 	var userName = user.user.name; 
 

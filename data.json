@@ -1,7 +1,7 @@
 {
   "favours": [
       { 
-        "name": "Ben Test",
+        "name": "currentUser",
         "from": "",
         "status": "active",
         "image": "sample1.png",
@@ -13,7 +13,7 @@
       },
       { 
         "name": "Mat",
-        "from": "Ben Test",
+        "from": "currentUser",
         "status": "inProgress",
         "image": "sample2.png",
         "id": "2",
@@ -24,7 +24,7 @@
       },
       {
         "name": "Jeff",
-        "from": "Ben Test",
+        "from": "currentUser",
         "status": "completed",
         "image": "sample3.png",
         "id": "3",
@@ -46,7 +46,7 @@
       },
       {
         "name": "Eve",
-        "from": "Ben Test",
+        "from": "currentUser",
         "status": "completed",
         "image": "sample5.png",
         "id": "5",
@@ -79,7 +79,7 @@
       },
 
       {
-        "name": "Ben Test",
+        "name": "currentUser",
         "from": "Kuzco",
         "status": "completed",
         "image": "sample8.png",

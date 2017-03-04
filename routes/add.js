@@ -27,9 +27,9 @@ exports.addFavour = function(req, res) { 
 
 	data.favours.push(newFavour);
 
-	res.send(newFavour);
+	res.send(req.body);
 
-	res.redirect('/index?showModal=1');
+	res.redirect('/index');
 	//take you back to index route
  }
 
