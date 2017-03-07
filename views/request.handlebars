@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -55,16 +56,26 @@
 			<!-- Favor to Request -->
 			<!--open form-->
 			<form id="requestFavour" role="form" method="POST" action="/add">
-				<div class="form-group">
+				<div class="form-group" id="subject">
 					<label for="subject">Favour Subject:</label>
 					<input type="text" class="form-control" id="subject" placeholder="" name="subject">
 				</div>
 
 
-				<div class="form-group">
+				<!--<div class="form-group">
 					<label for="datetime-local-input">Date and time</label>
 					    <input class="form-control" type="datetime-local" value="yyy-mm-ddThh:mm:ss" id="time">
-				</div>
+				</div>-->
+
+				<div class="form-group">
+				     <label for="datetime-local-input">Date and time:</label>
+				         <div class="input-group date" id="date-picker">
+				           	<span class="input-group-addon" id="calendar"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
+				           		<input class="form-control" type="date" id="date">
+				           		<span class="input-group-addon" id="clock"><span class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
+				           		<input class="form-control" type="time" id="time">
+				         </div>
+				 </div>
 
 
 				<div class="form-group">
@@ -74,7 +85,8 @@
 
 				<div class="form-group">
 					<label for="description">Favour Description:</label>
-					<input type="text" class="form-control" id="description" placeholder="More detailed description" name="description">
+					  <textarea class="form-control" rows="5" id="description" placeholder="More detailed description"></textarea>
+
 				</div>
 
 				<!-- Accept Button -->
@@ -102,6 +114,7 @@
 			<script src="/js/jquery-1.11.0.js"></script>
 			<script src="https://code.jquery.com/jquery.js"></script>
 			<script src="/js/bootstrap.min.js"></script>
+			<script src="/js/moment.js"></script>
 			<script src="/js/click.js"></script>
 
 		</body>
