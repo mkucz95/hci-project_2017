@@ -68,6 +68,12 @@ body {
 	margin-right: 5px;
 }
 
+/* Text if already have a favour doing */
+#title {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
 /* Accept button */
 #buttonAccept {
 	color: #fff;
