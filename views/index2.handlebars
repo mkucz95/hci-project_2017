@@ -3,10 +3,10 @@
 
 <!-- Title of tab / app -->
 <head>
-  <title>Homepage</title>
+  <title>Homepage.</title>
 
   <!-- Bootstrap to stylesheet -->
-  <link href = "/css/homepage.css" rel = "stylesheet">
+  <link href = "/css/homepage2.css" rel = "stylesheet">
 
   <!-- Viewtype that prevents from zooming out when changing to phone -->
   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -47,7 +47,7 @@
 
         <!--<li><a href="html/settings.html"><span id="set">Settings</span></a></li>
         <li><a href="html/sort.html"><span id="sort">Sort Favours</span></a></li>-->
-        <li><span id="logoutFB">Log Out</span></li>
+        <li><a href=".."><span id="sort">Log Out</span></a></li>
         </ul>
         </div>
 
@@ -184,18 +184,18 @@
 
           <!-- Request favor button -->
           {{#if ownRequest}}
-            <a  href="own" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>view requested favour</span></a>
+            <a  href="own" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>view requested favour</span></a>
           {{else}}
-            <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>request a favour</span></a>
+            <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>request a favour</span></a>
           {{/if}}
 
           <!-- Current favor button -->
           {{#if otherRequest}}
-            <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>favour to accomplish</span></a>
+            <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>favour to accomplish</span></a>
           {{else}}
-            <a class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="button"><span>currently doing nothing</span></a>
+            <a class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>currently doing nothing</span></a>
           {{/if}}
-          
+
         </li>
       </ul>
     </div>
@@ -205,8 +205,6 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/homepage.js"></script>
- {{> facebook}}
-  <script src="/js/facebook.js"></script>
 
 </body>
 

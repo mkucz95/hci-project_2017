@@ -6,7 +6,7 @@
 var data = require('../data.json');
 var user = require('../user.json');
 
-exports.view = function( req, res ) {
+exports.viewTwo = function( req, res ) {
 	
 	var timeSort = []; //create new empty array to store all non expired favours
 	var userName = user.user.name; 
@@ -54,7 +54,7 @@ exports.view = function( req, res ) {
       }
 
 	//res.render('index', timeSort) //pass in the filtered variable
-	res.render('index', {
+	res.render('index2', {
 		//'name': name,
 		'favours': timeSort,
 		'ownRequest': ownRequest,

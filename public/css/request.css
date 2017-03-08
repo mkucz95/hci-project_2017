@@ -69,6 +69,15 @@ body {
   margin: 8px 5px;
 }
 
+/* Description box */
+#des {
+  font-family: sans-serif
+}
+
+.form-control {
+  font-family: sans-serif;
+}
+
 /* Bottom buttons */
 input[type=submit] {
   margin: 1px;
