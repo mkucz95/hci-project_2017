@@ -83,5 +83,8 @@ function hideModal(e){
 
 function initializePage() {
 	console.log("Javascript connected!");
-	
+	$('#navbar-btn navbar-right').click(
+		ga("send", "event", 'favorselection', 'click'));
+$('#navbar-btn navbar-left').click(
+		ga("send", "event", 'favorselection', 'click'));	
 }
