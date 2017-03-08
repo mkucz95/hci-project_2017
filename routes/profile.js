@@ -9,6 +9,10 @@ exports.view = function( req, res ) { 
 	var completed = 0;
 	var inDebt = 0;
 	var userName = user.user.name;
+	var birthday = user.user.birthday;
+	var link = user.user.link;
+	var about = user.user.about;
+	var image = user.user.image;
 
 	// Array for multiple requests
 	var ownRequests = [];
@@ -106,9 +110,15 @@ exports.view = function( req, res ) { 
 		
 //define all the variables, not all will be displayed depending on requestBool
 	
+console.log(user.user);
+
 
 	res.render('profile', {
 		'userName': userName,
+		'birthday': birthday,
+		'link': link,
+		'about': about,
+		'image': image,
 		'favours': ownRequests,
 		'inDebt': inDebt,
 		'completed': completed,

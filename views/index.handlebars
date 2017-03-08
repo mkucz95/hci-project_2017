@@ -47,7 +47,7 @@
 
         <!--<li><a href="html/settings.html"><span id="set">Settings</span></a></li>
         <li><a href="html/sort.html"><span id="sort">Sort Favours</span></a></li>-->
-        <li><a href=".."><span id="sort">Log Out</span></a></li>
+        <li><span id="logoutFB">Log Out</span></li>
         </ul>
         </div>
 
@@ -68,7 +68,7 @@
 
           <div class="panel-title favours" id="top">
             <!-- Image -->
-            <img src = "{{image}}" class = "image">
+            <img src = "images/{{image}}" class = "image">
             <!-- Name -->
             <h2 id="name">{{name}}</h2>
           </div> 
@@ -222,6 +222,8 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/homepage.js"></script>
+ {{> facebook}}
+  <script src="/js/facebook.js"></script>
 
 </body>
 

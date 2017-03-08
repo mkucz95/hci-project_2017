@@ -14,7 +14,8 @@ function statusChangeCallback(response) {
   if (response.status === 'connected') {
     // Logged into your app and Facebook.
         console.log('Successfully logged in with Facebook');
-         FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
+          FB.api('/me', {fields: 'name,first_name,picture.width(480),birthday,link,about'}, changeUser);
+
   }
 }
 
@@ -23,13 +24,31 @@ function changeUser(response){
   var data = {};
   data.image= response.picture.data.url;
   data.name= response.name;
-
+  data.birthday=response.birthday;
+  data.link = response.link;
+  data.about = response.about;
           
-  $.post("/user", {image: data.image, name: data.name}, function(result){
-      window.location.replace('/index');
-      console.log('success');
-      console.log(data);
+  $.post("/user", {image: data.image, name: data.name, birthday: data.birthday, about: data.about, link:data.link}, function(result){
+    console.log('success');
+    console.log(data);
+    window.location.replace('/index');
   });
                
-  
 }
+
+
+$('#logoutFB').click(fbLogout);
+
+function fbLogout(){
+  console.log("fblogout called");
+  FB.getLoginStatus(function(response){
+    if(response.status === 'connected'){
+      FB.logout(function(response){
+          console.log("logout success");
+                window.location.replace('/');
+
+      });
+    }
+  });
+}
+

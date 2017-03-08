@@ -13,6 +13,7 @@ exports.addFavour = function(req, res) { 
 	var from = "";
 	var status = "active";
 
+
 	var newFavour = {
 		 "name": name,
         "from": "",
@@ -27,9 +28,9 @@ exports.addFavour = function(req, res) { 
 
 	data.favours.push(newFavour);
 
-	res.send(req.body);
+	res.send(newFavour);
 
-	res.redirect('/index');
+	res.redirect('/index?showModal=1');
 	//take you back to index route
  }
 

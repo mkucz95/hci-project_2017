@@ -41,7 +41,7 @@
 
             <br>
 
-          <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+         <fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" size="xlarge" show-faces="true" onlogin="checkLoginState();">
         </fb:login-button>
 
         </p>
@@ -64,7 +64,7 @@
           <div class="container">
             <ul class="nav navbar-nav">
               <li class="navbar-btn navbar-left btn-lrg" aria-haspopup="true" aria-expanded="false" id="button">  
-                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                <fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" onlogin="checkLoginState();">
         </fb:login-button>
               </li>
             </ul>

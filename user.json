@@ -2,7 +2,10 @@
 	"user":
 	{	
 		"name": "Ben Test",
-	
-		"image": "sample1.png"
+		"image": "sample1.png",
+		"birthday": "",
+		"link": "",
+		"about":""
+
 	}
 }

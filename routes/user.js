@@ -7,12 +7,15 @@ exports.write = function(req, res){
 
 	var name = req.body.name;
 	var image = req.body.image;
-
-		console.log(name);
-		console.log(image);
+	var birthday = req.body.birthday;
+	var link = req.body.link;
+	var about = req.body.about;
 
 	user.user.name = name;
 	user.user.image = image;
+	user.user.birthday = birthday;
+	user.user.link = link;
+	user.user.about = about;
 
 	for(i=0; i<data.favours.length; i++){ //change all to current user and image
 		if(data.favours[i].name==="currentUser"){
@@ -26,4 +29,5 @@ exports.write = function(req, res){
 	}
 
 	res.send(user.user);
+	res.redirect('/index');
 }
