@@ -86,7 +86,8 @@ function initializePage() {
 }
 function abTest() {
 $('.Btest').click(
-		ga("send", "event", 'favorselection', 'click');
+		ga("send", "event", 'favorselection', 'click'));
+
     $('.Atest').click(
-		ga("send", "event", 'favorselection', 'click');
+		ga("send", "event", 'favorselection', 'click'));
 }
