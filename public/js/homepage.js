@@ -86,6 +86,11 @@ function initializePage() {
 }
 
 
-$('.Btest').click(ga("send", "event", 'favorselection', 'click'));
+	$('.Btest').click( sendBtnClick );
 
-    $('.Atest').click(ga("send", "event", 'favorselection', 'click'));
+    $('.Atest').click(sendBtnClick );
+
+
+    function sendBtnClick(event){
+ ga("send", "event", 'favorselection', 'click');
+}

@@ -30,8 +30,8 @@ exports.view = function( req, res ) {
 		if(status === "active" ){ //only include the favours that people can select
 			timeSort[timeSort.length] = data.favours[i];
 			
-			dateObj = Date(data.favours[i].time);  //make date readable
-			dateString = dateObj.toString();
+			dateObject = Date(data.favours[i].time);  //make date readable
+			dateString = dateObject.toString();
 			var date = dateString.slice(0, 21);
 
 			timeSort[timeSort.length-1].time = date;
