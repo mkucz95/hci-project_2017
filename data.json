@@ -4,7 +4,7 @@
         "name": "currentUser",
         "from": "",
         "status": "active",
-        "image": "sample1.png",
+        "image": "www.clipartkid.com/images/467/girl-stick-figure-running-clipart-panda-free-clipart-images-H2PZdb-clipart.png",
         "id": "1",
         "time": "2018-07-14T19:43:37+0100",
         "location": "Geisel 2nd East",
@@ -12,10 +12,10 @@
         "description": "Absolutely starving. Please give me food. Preference of sandwich and soda. No tomato."
       },
       { 
-        "name": "Mat",
+        "name": "Mati Kucz",
         "from": "currentUser",
         "status": "inProgress",
-        "image": "sample2.png",
+        "image": "https://scontent.xx.fbcdn.net/v/t1.0-1/16995987_10…g?oh=d8de4ff3a8769cc8f29e9d93c114511d&oe=5972AFF3",
         "id": "2",
         "time": "2018-07-14T19:43:37+0100",
         "location": "Sixth College",
@@ -23,10 +23,10 @@
         "description": "Please?"
       },
       {
-        "name": "Jeff",
+        "name": "Evelyn Chough",
         "from": "currentUser",
         "status": "completed",
-        "image": "sample3.png",
+        "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/12509160_1287157157967445_4012312603321870601_n.jpg?oh=466a9cac4fd8f9b009fa0ba9bfae52a5&oe=5963793D",
         "id": "3",
         "time": "2018-07-14T19:43:37+0100",
         "location": "ERC",
@@ -34,10 +34,10 @@
         "description": "email me 4 it"
       },
       {
-        "name": "Scott",
+        "name": "Mati Kucz",
         "from": "",
         "status": "active",
-        "image": "sample4.png",
+        "image": "https://scontent.xx.fbcdn.net/v/t1.0-1/16995987_10…g?oh=d8de4ff3a8769cc8f29e9d93c114511d&oe=5972AFF3",
         "id": "4",
         "time": "2018-07-14T19:43:37+0100",
         "location": "8th Floor Geisel",
@@ -45,10 +45,10 @@
         "description": "Anything will do. Will reimburse."
       },
       {
-        "name": "Eve",
+        "name": "Evelyn Chough",
         "from": "currentUser",
         "status": "completed",
-        "image": "sample5.png",
+        "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/12509160_1287157157967445_4012312603321870601_n.jpg?oh=466a9cac4fd8f9b009fa0ba9bfae52a5&oe=5963793D",
         "id": "5",
         "time": "2018-07-14T19:43:37+0100",
         "location": "UCSD",
@@ -56,10 +56,10 @@
         "description": "His name is Choco and he's a laborador. Responds to Latte too."
       },
       {
-        "name": "Kuzco",
+        "name": "Mati Kucz",
         "from": "",
         "status": "active",
-        "image": "sample6.png",
+        "image": "https://scontent.xx.fbcdn.net/v/t1.0-1/16995987_10…g?oh=d8de4ff3a8769cc8f29e9d93c114511d&oe=5972AFF3",
         "id": "6",
         "time": "2018-07-14T19:43:37+0100",
         "location": "Solis Lecture Hall",
@@ -67,10 +67,10 @@
         "description": "math midterm by then. plz"
       },
       {
-        "name": "Warden",
+        "name": "Ben Ward",
         "from": "",
         "status": "active",
-        "image": "sample7.png",
+        "image": "commons.wikimedia.org/wiki/Steve_Jobs#/media/File:Steve_Jobs.jpg",
         "id": "7",
         "time": "2018-07-14T19:43:37+0100",
         "location": "UCSD Jail",
@@ -80,9 +80,9 @@
 
       {
         "name": "currentUser",
-        "from": "Kuzco",
+        "from": "Mati Kucz",
         "status": "completed",
-        "image": "sample8.png",
+        "image": "commons.wikimedia.org/wiki/Linus_Torvalds#/media/File:Linus_Torvalds.jpeg",
         "id": "8",
         "time": "2018-07-14T19:43:37+0100",
         "location": "my apartment",

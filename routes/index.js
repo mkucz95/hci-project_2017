@@ -14,7 +14,6 @@ exports.view = function( req, res ) {
 
 	for(i=0; i<data.favours.length; i++){
 		var jsonDate = data.favours[i].time;
-		console.log("json"+jsonDate)
 		var dateObj = new Date();
 		var currentTime = dateObj.toJSON();
 		var status = data.favours[i].status;
@@ -32,26 +31,13 @@ exports.view = function( req, res ) {
 			timeSort[timeSort.length] = data.favours[i];
 
 			var year = jsonDate.slice(0,4);
-			console.log('year'+year);
 			var month = jsonDate.slice(5,7);
-						console.log('month'+month);
 
 			var day = jsonDate.slice(8,10);
-									console.log('day'+day);
 
 			var time = jsonDate.slice(11,16);
-									console.log('time'+time);
-
-			
-			/*dateObject = Date(data.favours[i].time);  //make date readable
-			console.log("obj"+dateObject);
-			dateString = dateObject.toString();
-			console.log("str"+dateString);
-			var date = dateString.slice(0, 21);*/
 
 			timeSort[timeSort.length-1].time = month+"/"+day+"/"+year+" Time:"+time;
-
-			console.log(timeSort[timeSort.length-1].time);
 		}
 
 	}
@@ -92,6 +78,8 @@ exports.viewTwo = function( req, res ) {
 		var currentTime = dateObj.toJSON();
 		var status = data.favours[i].status;
 
+		console.log(data.favours[i].image);
+
 		if(userName === data.favours[i].name){
 			continue; //skip this request if it is the person's who submited it
 		}
@@ -104,11 +92,15 @@ exports.viewTwo = function( req, res ) {
 		if(status === "active" ){ //only include the favours that people can select
 			timeSort[timeSort.length] = data.favours[i];
 			
-			dateObj = Date(data.favours[i].time);  //make date readable
-			dateString = dateObj.toString();
-			var date = dateString.slice(0, 21);
 
-			timeSort[timeSort.length-1].time = date;
+			var year = jsonDate.slice(0,4);
+			var month = jsonDate.slice(5,7);
+
+			var day = jsonDate.slice(8,10);
+
+			var time = jsonDate.slice(11,16);
+
+			timeSort[timeSort.length-1].time = month+"/"+day+"/"+year+" Time:"+time;
 		}
 
 	}
