@@ -32,6 +32,7 @@ body {
 	height: 40px;
 	width: 40px;
 	margin: 5px;
+	margin-top: -40px;
 	float: right;
 }
 
@@ -59,7 +60,7 @@ body {
 
 /* Favour box */
 .favour-container {
-	height: 77%;
+	height: 73%;
 	width: 90%;
 	margin-left: 5%;
 	padding-left: 10px;
@@ -78,6 +79,14 @@ body {
 	border-radius: 4px;
 }
 
+.panel-body {
+	padding: 0px 5px;
+}
+
+.well {
+	padding: 0px 15px;
+}
+
 #sub {
 	margin-left: 110px;
 	text-align: left;
@@ -91,10 +100,6 @@ body {
 	text-decoration: none;
 }
 
-#name {
-	padding-top: 15px;
-}
-
 #space {
 	color: #337ab7;
 }
@@ -105,16 +110,14 @@ body {
 	width: 120px;
 	border-radius: 100px;
 	float: left;
-	padding: 10px;
-	margin-right: 5px;
+	margin: 0px 5px;
 }
 
 /* Bottom buttons */
-#bottombutton {
+#button {
 	color: #fff;
-	width: 35%;
-	margin-left: 10%;
-	float: left;
+	width: 70%;
+	margin-left: 15%;
 	border-radius: 5px;
 	text-transform: uppercase;
 	background-color: #337ab7;
