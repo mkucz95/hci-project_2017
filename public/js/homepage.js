@@ -92,5 +92,6 @@ function initializePage() {
 
 
     function sendBtnClick(event){
+    	console.log("sendBtnClick");
  ga("send", "event", 'favorselection', 'click');
 }
