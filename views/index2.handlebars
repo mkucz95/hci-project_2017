@@ -3,20 +3,6 @@
 
 <!-- Title of tab / app -->
 <head>
-  <!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='142261811-1',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
   <title>Homepage.</title>
 
   <!-- Bootstrap to stylesheet -->
@@ -198,16 +184,16 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
           <!-- Request favor button -->
           {{#if ownRequest}}
-            <a  href="own" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>view requested favour</span></a>
+            <a  href="own" class="navbar-btn navbar-left" class="Btest" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>view requested favour</span></a>
           {{else}}
-            <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>request a favour</span></a>
+            <a  href="request" class="navbar-btn navbar-left" class="Btest" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>request a favour</span></a>
           {{/if}}
 
           <!-- Current favor button -->
           {{#if otherRequest}}
-            <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>favour to accomplish</span></a>
+            <a href="current" class="navbar-btn navbar-right" class="Btest" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>favour to accomplish</span></a>
           {{else}}
-            <a class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>currently doing nothing</span></a>
+            <a class="navbar-btn navbar-right" class="Btest" role="button" aria-haspopup="true" aria-expanded="false" id="bottombutton"><span>currently doing nothing</span></a>
           {{/if}}
 
         </li>
