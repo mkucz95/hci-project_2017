@@ -22,7 +22,7 @@ var own = require('./routes/own');
 var withdraw = require('./routes/withdraw');
 var user = require('./routes/user');
 // For AB testing
-var index2 = require('./routes/index2');
+
 /*var googleMapsClient = require('@google/maps').createClient({
   key: 'AIzaSyCOMXd7rno4R-ng4TFNG3ZM9NHB4WLOsXM'
 });*/
@@ -58,7 +58,6 @@ app.get('/index', index.view);
 app.get('/select/:id', select.viewFavour);
 app.get('/request', request.view);
 app.get('/current', current.viewFavour);
-app.get('/index', index.view);
 app.get('/profile', profile.view);
 app.get('/accept/:id', accept.confirmed);
 app.post('/add', add.addFavour);
@@ -70,7 +69,7 @@ app.post('/user', user.write);
 
 
 // For AB Testing
-app.get('/index2', index2.viewTwo);
+app.get('/index2', index.view2);
 // Example route
 // app.get('/users', user.list);
 
