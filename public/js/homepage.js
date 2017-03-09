@@ -83,10 +83,10 @@ function hideModal(e){
 
 function initializePage() {
 	console.log("Javascript connected!");
-	$('.Btest').click(
-		ga("send", "event", 'favorselection', 'click')
-		console.log("button clicked"));
+}
+function abTest() {
+$('.Btest').click(
+		ga("send", "event", 'favorselection', 'click');
     $('.Atest').click(
-		ga("send", "event", 'favorselection', 'click')
-		console.log("button clicked"));	
+		ga("send", "event", 'favorselection', 'click');
 }
