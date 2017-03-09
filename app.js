@@ -54,7 +54,6 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', login.view);
-app.get('/index', index.view);
 app.get('/select/:id', select.viewFavour);
 app.get('/request', request.view);
 app.get('/current', current.viewFavour);
@@ -69,7 +68,8 @@ app.post('/user', user.write);
 
 
 // For AB Testing
-app.get('/index2', index.view2);
+app.get('/index', index.view);
+app.get('/index2', index.viewTwo);
 // Example route
 // app.get('/users', user.list);
 
