@@ -12,6 +12,15 @@ body {
 	float: right;
 }
 
+.well{
+	padding-top: 15%;
+}
+
+.facebookLogin{
+	left: 23%;
+	padding-bottom: 30px;
+}
+
 #title{
 	padding-left: 25%;
 }

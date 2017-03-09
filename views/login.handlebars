@@ -34,19 +34,17 @@
     <div align = "center">
       <div class = "container">
 
-        <!-- Facebook-->
-
-         <p class="facebookLogin">
-          Please login through Facebook
-
-            <br>
-
+         <div class="well well-sm"><p>Please login through Facebook</p>
+          <div class= "facebookLogin">
          <fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" size="xlarge" show-faces="true" onlogin="checkLoginState();">
         </fb:login-button>
+      </div></div>
 
-        </p>
 
-        <!-- Username 
+        <!-- Facebook-->
+         
+
+        <!-- Username -->
         <div class="input-group" id="enterU">
           <span class="input-group-addon" id="basic-addon1">Username: </span>
           <input type="text" class="form-control" placeholder="enter username" aria-describedby="basic-addon1">
@@ -56,7 +54,7 @@
           <span class="input-group-addon" id="basic-addon1">Password: </span>
           <input type="password" class="form-control" placeholder="••••••••••" aria-describedby="basic-addon1">
         </div>
--->
+
         
 
         <!-- Bottom Login button -->
@@ -64,8 +62,7 @@
           <div class="container">
             <ul class="nav navbar-nav">
               <li class="navbar-btn navbar-left btn-lrg" aria-haspopup="true" aria-expanded="false" id="button">  
-                <fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" onlogin="checkLoginState();">
-        </fb:login-button>
+               LOG IN
               </li>
             </ul>
           </div>
