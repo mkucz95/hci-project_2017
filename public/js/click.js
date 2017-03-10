@@ -19,7 +19,8 @@ console.log("validate called");
 	var location = $('#locationControl').val();
 	var description = $('#descriptionControl').val();
 
-	var allComplete = false;
+
+	var allComplete = true;
 
 	//Subject ==============================================================
 
@@ -41,7 +42,6 @@ console.log("validate called");
 	else{
 		$('#subjectForm').attr('class', 'form-group has-success');
 		$('#subjectControl').attr('class', 'form-control form-control-success');
-		allComplete = true;
 	}
 
 	console.log(subject.length);
@@ -67,7 +67,6 @@ console.log("validate called");
 	else{
 		$('.form-group #description').attr('class', 'form-group has-success');
 		$('.form-control #description').attr('class', 'form-control form-control-success');
-		allComplete = true;
 
 	}
 
@@ -86,10 +85,6 @@ console.log("validate called");
 	else{
 		$('#dateTimeForm').attr('class', 'form-group has-success');
 		$('#timeControl').attr('class', 'form-control form-control-success');
-		allComplete = true;
-				console.log(time);
-
-
 	}
 
 	//date ==============================================================
@@ -99,6 +94,7 @@ console.log("validate called");
 	today=today.toJSON();
 	today=today.slice(0,10);
 
+
 	if(typeof date === "undefined"){
 		$('#dateTimeForm').attr('class', 'form-group has-error');
 		$('#dateControl').attr('class', 'form-control form-control-error');
@@ -106,20 +102,19 @@ console.log("validate called");
 		$("#dateTimeFeedback").html("Please Enter A Date");
 	}
 
-	else if(date < today){
+	else if(Date.parse(date) < Date.parse(today)){
 		$('#dateTimeForm').attr('class', 'form-group has-error');
 		$('#dateControl').attr('class', 'form-control form-control-error');
 		allComplete = false;
 		$("#dateTimeFeedback").html("Make Sure Your Date is in the future");
+
+		console.log(Date.parse(date) +"|||" + Date.parse(today));
 
 	}
 
 	else{
 		$('#dateTimeForm').attr('class', 'form-group has-success');
 		$('#timeControl').attr('class', 'form-control form-control-success');
-		 allComplete = true;
-		 				console.log(date + today);
-
 	}
 
 	//LOCATION ==============================================================
@@ -130,8 +125,6 @@ console.log("validate called");
 		$('#locationControl').attr('class', 'form-control form-control-error');
 		allComplete = false;
 		$("#locationFeedback").html("Make Sure Your Specify a Location");
-
-
 	}
 
 
@@ -147,7 +140,6 @@ console.log("validate called");
 	else{
 		$('#locationForm').attr('class', 'form-group has-success');
 		$('#locationControl').attr('class', 'form-control form-control-success');
-		allComplete = true;
 
 	}
 
