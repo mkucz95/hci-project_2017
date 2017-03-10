@@ -70,7 +70,7 @@
         "name": "Ben Ward",
         "from": "",
         "status": "active",
-        "image": "commons.wikimedia.org/wiki/Steve_Jobs#/media/File:Steve_Jobs.jpg",
+        "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/15844641_1548643898485143_2890937435093107551_o.jpg?oh=91be89d1ae56b96556d30e38ccfe736d&oe=592CC97A",
         "id": "7",
         "time": "2018-07-14T19:43:37+0100",
         "location": "UCSD Jail",
@@ -88,6 +88,17 @@
         "location": "my apartment",
         "subject": "wick",
         "description": "someone get me some dayquil or somethn. fever and cough"
+      },
+      {
+        "name": "Ben W",
+        "from": "",
+        "status": "active",
+        "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/15844641_1548643898485143_2890937435093107551_o.jpg?oh=91be89d1ae56b96556d30e38ccfe736d&oe=592CC97A",
+        "id": "9",
+        "time": "2018-07-14T19:43:37+0100",
+        "location": "UCSD",
+        "subject": "math 18 help",
+        "description": "please"
       }
   ]
 }
