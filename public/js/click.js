@@ -151,7 +151,12 @@ console.log("validate called");
 
 	}
 
-	return allComplete;
+	if(allComplete){
+		return;
+	}
+	else{
+		e.preventDefault();
+	}
 }
 
 
