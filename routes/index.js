@@ -13,6 +13,7 @@ exports.view = function( req, res ) {
 
 
 	for(i=0; i<data.favours.length; i++){
+		console.log(data.favours[i]);
 		var jsonDate = data.favours[i].time;
 		var dateObj = new Date();
 		var currentTime = dateObj.toJSON();

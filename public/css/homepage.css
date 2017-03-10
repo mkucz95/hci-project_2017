@@ -9,6 +9,10 @@ body {
 	float: left;
 }
 
+p{ /*for the warnings*/
+/*make this red*/
+}
+
 .modal-dialog {
   display: inline-block;
   text-align: left;
