@@ -13,6 +13,7 @@ exports.addFavour = function(req, res) { 
 	var from = "";
 	var status = "active";
 
+console.log("date time request: t"+ time);
 
 	var newFavour = {
 		 "name": name,
