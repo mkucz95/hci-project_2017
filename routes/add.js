@@ -4,6 +4,7 @@ var user = require("../user.json");
 exports.addFavour = function(req, res) {    
 
 	var name = user.user.name;
+	var date = req.body.date;
 	var time = req.body.time;
 	var location = req.body.location;
 	var subject = req.body.subject;
@@ -13,7 +14,9 @@ exports.addFavour = function(req, res) { 
 	var from = "";
 	var status = "active";
 
-console.log("date time request: t"+ time);
+
+
+	var jsonDate = date+"T"+time;
 
 	var newFavour = {
 		 "name": name,
@@ -21,7 +24,7 @@ console.log("date time request: t"+ time);
         "status": status,
         "image": image,
         "id": id,
-        "time": time,
+        "time": jsonDate,
         "location": location,
         "subject": subject,
         "description": description

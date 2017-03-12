@@ -5,7 +5,6 @@
 $(document).ready(function() {
   	initializePage(event);
   	 $('#requestFavour').submit(validate);
-
 });
 
 
@@ -15,16 +14,17 @@ console.log("validate called");
 
 	var subject = $('#subjectControl').val();
 	var date = $('#dateControl').val();
+	console.log("date: "+date);
 	var time = $('#timeControl').val();
+		console.log("time: "+time);
+
 	var location = $('#locationControl').val();
 	var description = $('#descriptionControl').val();
-
-
 	var allComplete = true;
 
 	//Subject ==============================================================
 
-	if(typeof subject ==="undefined" || subject.length == 0){
+	if(typeof subject === "undefined" || subject.length == 0){
 			$('#subjectForm').attr('class', 'form-group has-error');
 			$('#subjectControl').attr('class', 'form-control form-control-error');
 			allComplete = false;
@@ -36,15 +36,20 @@ console.log("validate called");
 		$('#subjectForm').attr('class', 'form-group has-error');
 			$('#subjectControl').attr('class', 'form-control form-control-error');
 			allComplete = false;
-			$("#subjectFeedback").html("The Subject Was Not Long Enough");
+			$("#subjectFeedback").html("The Subject Is Not Long Enough");
+	}
+
+	else if(subject.length>20){
+		$('#subjectForm').attr('class', 'form-group has-error');
+			$('#subjectControl').attr('class', 'form-control form-control-error');
+			allComplete = false;
+			$("#subjectFeedback").html("The Subject Is Too Long ");
 	}
 
 	else{
 		$('#subjectForm').attr('class', 'form-group has-success');
 		$('#subjectControl').attr('class', 'form-control form-control-success');
 	}
-
-	console.log(subject.length);
 
 	//DESCRIPTION ==============================================================
 
@@ -55,13 +60,11 @@ console.log("validate called");
 		$("#descriptionFeedback").html("Please Enter A description");
 	}
 
-	else if(description.length<10){
+	else if(description.length<7){
 		$('#descriptionForm').attr('class', 'form-group has-error');
 		$('#descriptionControl').attr('class', 'form-control form-control-error');
 		allComplete = false;
 		$("#descriptionFeedback").html("Please Enter A More Specific Description");
-
-
 	}
 
 	else{
@@ -73,11 +76,11 @@ console.log("validate called");
 	//time ==============================================================
 
 
-	if(typeof time === "undefined"){
+	if(typeof time === "undefined" ||time.length==0){
 		$('#dateTimeForm').attr('class', 'form-group has-error');
 		$('#timeControl').attr('class', 'form-control form-control-error');
 		allComplete = false;
-		console.log(time);
+		//console.log(time);
 		$("#dateTimeFeedback").html("Please Enter A Time");
 
 	}
@@ -88,14 +91,12 @@ console.log("validate called");
 	}
 
 	//date ==============================================================
-
-
 	var today = new Date();
 	today=today.toJSON();
 	today=today.slice(0,10);
 
 
-	if(typeof date === "undefined"){
+	if(typeof date === "undefined" ||date.length==0){
 		$('#dateTimeForm').attr('class', 'form-group has-error');
 		$('#dateControl').attr('class', 'form-control form-control-error');
 		allComplete = false;
@@ -108,8 +109,7 @@ console.log("validate called");
 		allComplete = false;
 		$("#dateTimeFeedback").html("Make Sure Your Date is in the future");
 
-		console.log(Date.parse(date) +"|||" + Date.parse(today));
-
+		//console.log(Date.parse(date) +"|||" + Date.parse(today));
 	}
 
 	else{
@@ -128,24 +128,30 @@ console.log("validate called");
 	}
 
 
-	else if(location.length <10){
+	else if(location.length <8){
 		$('#locationForm').attr('class', 'form-group has-error');
 		$('#locationControl').attr('class', 'form-control form-control-error');
 		allComplete = false;
 		$("#locationFeedback").html("Define your location more specifically");
+	}
 
 
+	else if(location.length>20){
+		$('#locationForm').attr('class', 'form-group has-error');
+			$('#locationControl').attr('class', 'form-control form-control-error');
+			allComplete = false;
+			$("#locationFeedback").html("The Location Is Too Detailed");
 	}
 
 	else{
 		$('#locationForm').attr('class', 'form-group has-success');
 		$('#locationControl').attr('class', 'form-control form-control-success');
-
 	}
 
 	if(allComplete){
 		return;
 	}
+
 	else{
 		e.preventDefault();
 	}

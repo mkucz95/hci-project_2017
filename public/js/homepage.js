@@ -103,6 +103,7 @@ function initializePage() {
 }
 
 
+/*
 	$('.Btest').click( sendBtnClick );
 
     $('.Atest').click(sendBtnClick );
@@ -111,4 +112,4 @@ function initializePage() {
     function sendBtnClick(event){
     	console.log("sendBtnClick"); 
  ga("send", "event", 'favorselection', 'click');
-}
+}*/
