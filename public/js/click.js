@@ -68,8 +68,8 @@ console.log("validate called");
 	}
 
 	else{
-		$('.form-group #description').attr('class', 'form-group has-success');
-		$('.form-control #description').attr('class', 'form-control form-control-success');
+		$('#descriptionForm').attr('class', 'form-group has-success');
+		$('#descriptionControl').attr('class', 'form-control form-control-success');
 
 	}
 
@@ -91,23 +91,20 @@ console.log("validate called");
 	}
 
 	//date ==============================================================
-	var today = new Date();
-	today=today.toJSON();
-	today=today.slice(0,10);
+	var favourTime = new Date(date +','+time);
 
-
-	if(typeof date === "undefined" ||date.length==0){
+	if(typeof date === "undefined" || date.length==0){
 		$('#dateTimeForm').attr('class', 'form-group has-error');
 		$('#dateControl').attr('class', 'form-control form-control-error');
 		allComplete = false;
 		$("#dateTimeFeedback").html("Please Enter A Date");
 	}
 
-	else if(Date.parse(date) < Date.parse(today)){
+	else if(Date.parse(favourTime) < Date.now()){
 		$('#dateTimeForm').attr('class', 'form-group has-error');
 		$('#dateControl').attr('class', 'form-control form-control-error');
 		allComplete = false;
-		$("#dateTimeFeedback").html("Make Sure Your Date is in the future");
+		$("#dateTimeFeedback").html("Make Sure Your Date and Time is in the future");
 
 		//console.log(Date.parse(date) +"|||" + Date.parse(today));
 	}
