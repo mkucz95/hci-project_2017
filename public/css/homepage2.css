@@ -1,6 +1,6 @@
 /* Whole app */
 body {
-	padding-top: 55px;
+	padding-top: 60px;
 	text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ body {
 
 /* Favour box */
 .favour-container {
-	height: 73%;
+	height: 77%;
 	width: 90%;
 	margin-left: 5%;
 	padding-left: 10px;
@@ -117,10 +117,21 @@ body {
 }
 
 /* Bottom buttons */
-#bottombutton {
+#lbottombutton {
 	color: #fff;
-	width: 70%;
-	margin-left: 15%;
+	width: 40%;
+	float: left;
+	margin-left: 5%;
+	border-radius: 5px;
+	text-transform: uppercase;
+	background-color: #337ab7;
+}
+
+#rbottombutton {
+	color: #fff;
+	width: 40%;
+	float: left;
+	margin-left: 5%;
 	border-radius: 5px;
 	text-transform: uppercase;
 	background-color: #337ab7;

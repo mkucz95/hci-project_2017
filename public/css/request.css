@@ -80,16 +80,25 @@ body {
 
 /* Bottom buttons */
 input[type=submit] {
-  margin: 1px;
   color: #fff;
-  width: 64%;
   border-radius: 5px;
   text-transform: uppercase;
 }
 
-#button {
+#submitBtn {
   color: #fff;
-  width: 70%;
+  width: 40%;
+  margin-left: 7%;
+  float: left;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+#cancelBtn {
+  color: #fff;
+  width: 40%;
+  margin-left: 5%;
+  float: left;
   border-radius: 5px;
   text-transform: uppercase;
 }
