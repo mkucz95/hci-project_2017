@@ -31,14 +31,14 @@ exports.view = function( req, res ) { 
 			
 		var year = jsonDate.slice(0,4);
 		var month = jsonDate.slice(5,7);
-		console.log(month);
 
 		var day = jsonDate.slice(8,10);
 		var time = jsonDate.slice(11,16);
 		var hours=time.slice(0,2);
 		var minutes=time.slice(3,5);
-//month is too much by one!
-		var favourTime = new Date(year, month, day, hours, minutes, 0, 0);
+
+		var monthInt = parseInt(month)-1; //because javascript jan:0
+		var favourTime = new Date(year, monthInt, day, hours, minutes, 0, 0);
 
 
 		if(data.favours[i].from === userName && data.favours[i].status === "completed"){
@@ -64,7 +64,7 @@ exports.view = function( req, res ) { 
 			if(data.favours[i].status==="inProgress"){ //old but someone is still doing it
 				var newFavour = ownRequests.length; //new element at end
 
-				ownRequests.push({
+				ownRequests.push({ //push empty because it otherwise gives pointers
 				name: "",
 				date: "",
 				time: "",

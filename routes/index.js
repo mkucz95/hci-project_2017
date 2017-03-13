@@ -24,7 +24,8 @@ exports.view = function( req, res ) {
 		var hours=time.slice(0,2);
 		var minutes=time.slice(3,5);
 
-		var favourTime = new Date(year, month, day, hours, minutes, 0, 0);
+		var monthInt = parseInt(month)-1; //because javascript jan:0
+		var favourTime = new Date(year, monthInt, day, hours, minutes, 0, 0);
 
 
 		var status = data.favours[i].status;
