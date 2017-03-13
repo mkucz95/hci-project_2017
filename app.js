@@ -69,7 +69,7 @@ app.post('/user', user.write);
 
 // For AB Testing
 app.get('/index', index.view);
-app.get('/index2', index.viewTwo);
+//app.get('/index2', index.viewTwo);
 // Example route
 // app.get('/users', user.list);
 
