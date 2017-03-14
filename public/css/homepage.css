@@ -61,8 +61,8 @@ body {
 /* Favour box */
 .favour-container {
 	height: 77%;
-	width: 90%;
-	margin-left: 5%;
+	width: 98%;
+	margin-left: 1%;
 	padding-left: 10px;
 	padding-right: 10px;
 	position: fixed;
@@ -80,6 +80,7 @@ body {
 
 .panel {
 	border-bottom: 5px solid #337ab7;
+	margin-bottom: 0px;
 }
 
 .panel-body {
@@ -87,7 +88,14 @@ body {
 }
 
 .well {
+	width: 35%;
+	float: left;
 	padding: 0px 5px;
+	margin-bottom: 5px;
+}
+
+#right {
+	margin-left: 1%;
 }
 
 #sub {
@@ -109,8 +117,8 @@ body {
 
 /* Picture */
 .image {
-	height: 120px;
-	width: 120px;
+	height: 100px;
+	width: 100px;
 	border-radius: 100px;
 	float: left;
 	margin: 0px 5px;
