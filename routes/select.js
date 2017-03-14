@@ -17,19 +17,23 @@ exports.viewFavour= function(req, res) { 
 
 	var name = data.favours[id-1].name;
 	var image = data.favours[id-1].image;
-	var time = data.favours[id-1].time;
 	var location = data.favours[id-1].location;
 	var subject = data.favours[id-1].subject;
 	var description= data.favours[id-1].description;
 
-	var dateObj = Date(time);  //make date readable
-	var dateString = dateObj.toString();
-	time = dateString.slice(0, 21);
+	var jsonDate = data.favours[id-1].time;
+			
+		var year = jsonDate.slice(0,4);
+		var month = jsonDate.slice(5,7);
+		var day = jsonDate.slice(8,10);
+		var time = jsonDate.slice(11,16);
+
+	var timeFavour = month+"/"+day+"/"+year+" Time: "+time;
 
 	res.render('select', {
 		'name': name,
 		'image': image,
-		'time': time,
+		'time': timeFavour,
 		'location': location,
 		'subject': subject,
 		'description': description,

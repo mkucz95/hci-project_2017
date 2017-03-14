@@ -1,6 +1,6 @@
 /* Whole app */
 body {
-	padding-top: 60px;
+	padding-top: 55px;
 	text-decoration: none;
 }
 
@@ -24,7 +24,7 @@ body {
 
 
 #title{
-	padding-left: 17%;
+	padding-left: 28%;
 }
 
 /* Logo properties */
@@ -61,10 +61,10 @@ body {
 /* Favour box */
 .favour-container {
 	height: 77%;
-	width: 90%;
-	margin-left: 5%;
-	padding-left: 10px;
-	padding-right: 10px;
+	width: 100%;
+	margin-left: 0%;
+	padding-left: 0px;
+	padding-right: 0px;
 	position: fixed;
 	overflow-y: auto;
 	border-radius: 4px;
@@ -91,7 +91,8 @@ body {
 }
 
 #sub {
-	margin-left: 110px;
+	margin-left: 85px;
+	margin-top: 0px;
 	text-align: left;
 	color: #000;
 	text-decoration: none;
@@ -103,14 +104,18 @@ body {
 	text-decoration: none;
 }
 
+#name{
+	font-size: 22px;
+}
+
 #space {
 	color: #fff;
 }
 
 /* Picture */
 .image {
-	height: 120px;
-	width: 120px;
+	height: 70px;
+	width: 70px;
 	border-radius: 100px;
 	float: left;
 	margin: 0px 5px;

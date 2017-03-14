@@ -61,7 +61,6 @@
   <!-- Favors list container -->
   <div class = "favour-container" id="favour-container" align="center">
     <!-- Current favors -->
-    <p id="space">...</p>
     {{#each favours}}
       <div class="panel panel-info">
       <a  href="/select/{{id}}" class="Atest">    
@@ -81,14 +80,17 @@
             <h4 id="sub">{{subject}}</h4>
             <div class="well">
               <h5 id="time">By {{time}}</h5>
-              <h5 id="loc">At {{location}}</h5>
             </div>
+
+              <div class="well">
+                <h5 id="loc">At {{location}}</h5>
+              </div>
+
           </span>
         </div> 
       </a>
     </div>
     {{/each}}
-    <p id="space">...</p>
   </div>
 
 
@@ -194,7 +196,7 @@
           {{#if otherRequest}}
             <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="rbutton"><span>favour to accomplish</span></a>
           {{else}}
-            <a class="navbar-btn navbar-left" style="background-color:#79a6d2" role="button" aria-haspopup="true" aria-expanded="false" id="rbutton"><span>not performing a favour</span></a>
+            <a class="navbar-btn navbar-left" style="background-color:#79a6d2" role="button" aria-haspopup="true" aria-expanded="false" id="rbutton"><span>no favour to do</span></a>
           {{/if}}
           
         </li>

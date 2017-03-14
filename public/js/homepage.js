@@ -12,24 +12,11 @@ $(document).ready(function() {
  	var urlLength = url.length;
  	var found = false;
  	var i = 0;
- 		 var urlSlice = "";
-
-
- 	for(i=0; i<url.length-11; i++){
- 			var find = url.slice(i, i+10);
- 			if(find ==="showModal="){
- 				found = true;
- 				urlSlice = url.slice(i, i+11);
- 				break;  //can we find a show modal in the url
- 			}
- 	}
-
+ 	var urlSlice = url.slice(url.length-11, url.length);
 
 //see which modal was called based on where redirected from
 //open modal
 //automatically close after 3 seconds
-
-if(found){
 
 	console.log("url path: " + url);
 	console.log("url slice: " + urlSlice);
@@ -89,8 +76,6 @@ if(found){
 			hideModal('#withdraw')
 		}, 5000);
 	}
-} //close if-found
-
   });
 
 function hideModal(e){
@@ -101,8 +86,6 @@ function hideModal(e){
 function initializePage() {
 	console.log("Javascript connected!");
 }
-
-
 /*
 	$('.Btest').click( sendBtnClick );
 
