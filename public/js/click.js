@@ -39,7 +39,7 @@ console.log("validate called");
 			$("#subjectFeedback").html("The Subject Is Not Long Enough");
 	}
 
-	else if(subject.length>20){
+	else if(subject.length>25){
 		$('#subjectForm').attr('class', 'form-group has-error');
 			$('#subjectControl').attr('class', 'form-control form-control-error');
 			allComplete = false;
@@ -133,11 +133,11 @@ console.log("validate called");
 	}
 
 
-	else if(location.length>20){
+	else if(location.length>15){
 		$('#locationForm').attr('class', 'form-group has-error');
 			$('#locationControl').attr('class', 'form-control form-control-error');
 			allComplete = false;
-			$("#locationFeedback").html("The Location Is Too Detailed");
+			$("#locationFeedback").html("The Location Is Too Long");
 	}
 
 	else{

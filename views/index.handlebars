@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+
+<!-- Title of tab / app -->
+<head>
+ 
+  <title>Homepage</title>
+
+  <!-- Viewtype that prevents from zooming out when changing to phone -->
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+  <!-- Bootstraps-->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap to stylesheet -->
+  <link href = "/css/homepage.css" rel = "stylesheet">
+
+</head>
+
+<!-- Actual app -->
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+       
+        <button class="btn" type="button" data-toggle="collapse" data-target="#menubar" aria-expanded="false" aria-controls="collapseExample" id="ham">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+
+        <!-- Title at top -->
+        <div class="navbar-brand" id="title">What People Need</div>
+
+        <!-- Logo photo -->
+        <a href="/index"><img id="logo" src="/images/logo-here.png"></a>  
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="menubar">
+          <div class="card card-block">
+        <!-- Inside of navigation bar -->
+        <li><a href="/profile"><span id="pro">Profile</span></a></li>
+
+        <!--<li><a href="html/settings.html"><span id="set">Settings</span></a></li>
+        <li><a href="html/sort.html"><span id="sort">Sort Favours</span></a></li>-->
+        <li><span id="logoutFB">Log Out</span></li>
+        </ul>
+        </div>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+  <!-- Favors list container -->
+  <div class = "favour-container" id="favour-container" align="center">
+    <!-- Current favors -->
+    <p id="space">...</p>
+    {{#each favours}}
+      <div class="panel panel-info">
+      <a  href="/select/{{id}}" class="Atest">    
+        <!-- Favour head -->
+
+          <div class="panel-title favours" id="top">
+            <!-- Image -->
+            <img src = "{{image}}" class = "image">
+            <!-- Name -->
+            <h2 id="name">{{name}}</h2>
+          </div> 
+
+        <!-- Favour body -->
+        <div class="panel-body" id="bottom">
+          <!-- Subject, Time, Location -->
+        <h4 id="sub">{{subject}}</h4>
+
+           <div class="well" id="left">
+              <h5 id="time"><strong>By</strong> {{time}}</h5>
+            </div>
+            <div class="well" id="right">
+              <h5 id="loc"><strong>At</strong> {{location}}</h5>
+            </div>
+          
+<!--
+       <div class="row">
+          <div class="col-sm-6">
+            <div class="well" id="left">
+              <h5 id="time"><strong>By</strong> {{time}}</h5>
+            </div>
+          <div class="col-sm-6">
+            <div class="well" id="right">
+              <h5 id="loc"><strong>At</strong> {{location}}</h5>
+            </div>
+          </div>
+          </div>
+        </div>
+-->
+
+
+       </div> <!--container-->
+      </a>
+    </div>
+    {{/each}}
+    <p id="space">...</p>
+  </div>
+
+
+
+  <!--REQUEST MODALS-->
+  <div class="modal fade" id="requestConfirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Favour Request Submitted</h4>
+        </div>
+        
+        <div class="modal-body">
+          <p>Your favour request was successfully submitted</p>
+        </div>
+
+      </div>
+    </div> 
+  </div>
+
+  <div class="modal fade" id="noConfirmRequest" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog alert alert-danger" role="document">
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+      <p><strong>Your Favour Request was Cancelled</strong></p>
+    
+    </div> 
+  </div>
+
+
+  <!--CANCEL/COMPLETE MODALS-->
+  <div class="modal fade" id="completed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Favour Completed</h4>
+        </div>
+
+        <div class="modal-body">
+          <p>You successfully completed your favour. Thanks!</p>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="modal fade" id="cancelled" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog alert alert-danger" role="document">
+
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <p><strong>You Cancelled the Favour You were doing</strong></p>
+
+      <div class="modal-body">
+        <p>Please notify the person you were doing it for</p>
+      </div>
+    </div> 
+  </div>
+
+  <div class="modal fade" id="withdraw" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog alert alert-danger" role="document">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+      <p><strong>Your Cancelled the Favour You were requesting</strong></p>
+
+    </div> 
+  </div>
+
+  <!--ACCEPTED MODALS-->
+  <div class="modal fade" id="accepted" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Favour Accepted</h4>
+        </div>
+        <div class="modal-body">
+          <p>You successfully accepted to do a favour.</p>
+          <br>
+          <p><small>Note: You can only accept one favour at a time. Go to current favour to see your task</small></p>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+
+
+  <!-- Bottom buttons -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li>
+
+          <!-- Request favor button -->
+          {{#if ownRequest}}
+            <a  href="own" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="lbutton"><span>view requested favour</span></a>
+          {{else}}
+            <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="lbutton"><span>request a favour</span></a>
+          {{/if}}
+
+          <!-- Current favor button -->
+          {{#if otherRequest}}
+            <a href="current" class="navbar-btn navbar-right" role="button" aria-haspopup="true" aria-expanded="false" id="rbutton"><span>favour to accomplish</span></a>
+          {{else}}
+            <a class="navbar-btn navbar-left" style="background-color:#79a6d2" role="button" aria-haspopup="true" aria-expanded="false" id="rbutton"><span>no favour to do</span></a>
+          {{/if}}
+          
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="/js/jquery-1.11.0.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/homepage.js"></script>
+ {{> facebook}}
+  <script src="/js/facebook.js"></script>
+
+</body>
+<!-- End of file -->
+</html>
