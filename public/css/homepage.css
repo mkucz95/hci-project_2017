@@ -60,34 +60,28 @@ body {
 
 /* Favour box */
 .favour-container {
-	height: 77%;
-	width: 100%;
-	margin-left: 0%;
-	padding-left: 0px;
+	height: 85%;
+	width: 99%;
+	margin-left: 1%;
 	padding-right: 0px;
 	position: fixed;
 	overflow-y: auto;
 	border-radius: 4px;
 }
 
-/* Each favour */
-#favours {
-	height: 110px;
-	width: 100%;
-	background-color: #ffffff;
-	border-radius: 4px;
-}
-
 .panel {
 	border-bottom: 5px solid #337ab7;
+	width: 100%;
+
 }
 
 .panel-body {
-	padding: 0px 5px;
+	margin-top: 0px;
+	padding: 0px 5px 0px;
 }
 
 .well {
-	padding: 0px 5px;
+	padding: 0px 0px;
 }
 
 #sub {

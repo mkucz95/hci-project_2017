@@ -62,11 +62,11 @@
   <div class = "favour-container" id="favour-container" align="center">
     <!-- Current favors -->
     {{#each favours}}
-      <div class="panel panel-info">
+      <div class="panel panel-primary">
       <a  href="/select/{{id}}" class="Atest">    
         <!-- Favour head -->
 
-          <div class="panel-title favours" id="top">
+          <div class="panel-heading" id="top">
             <!-- Image -->
             <img src = "{{image}}" class = "image">
             <!-- Name -->
@@ -76,17 +76,22 @@
         <!-- Favour body -->
         <div class="panel-body" id="bottom">
           <!-- Subject, Time, Location -->
-          <span>
             <h4 id="sub">{{subject}}</h4>
+
+
+          <div class="row">
+          <div class="col-xs-6">
             <div class="well">
-              <h5 id="time">By {{time}}</h5>
+              <h5 id="time"><strong>By</strong> {{time}}</h5>
             </div>
+          </div>
 
+          <div class="col-xs-6">
               <div class="well">
-                <h5 id="loc">At {{location}}</h5>
+                <h5 id="loc"><strong>At</strong> {{location}}</h5>
               </div>
-
-          </span>
+          </div>
+          </div>
         </div> 
       </a>
     </div>
