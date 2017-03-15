@@ -29,6 +29,7 @@ exports.addFavour = function(req, res) { 
         "subject": subject,
         "description": description
 	}
+console.log("new: "+ newFavour.description);
 
 	data.favours.push(newFavour);
 
