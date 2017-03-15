@@ -47,7 +47,7 @@
               <ul id="list">
             <!-- Inside of navigation bar -->
               <li><a href="/index"><span id="pro">Home</span></a></li>
-              <li><fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" size="small" show-faces="false" onlogin="checkLoginState();">
+              <li><fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" size="small" show-faces="false" onlogin="checkLoginState();" id="logoutButton">
         </fb:login-button></li>
               </ul>
             </div>
@@ -165,7 +165,7 @@
               </div>
             </div>
             <!-- Withdraw button -->
-            <a href="/withdraw/{{id}}" role="button" aria-haspopup="true" aria-expanded="false" id="withdraw button"><button type="button" class="btn btn-danger btn-smll" id="button">
+            <a href="/withdraw/{{status}}/{{name}}/{{subject}}/{{location}}/{{id}}" role="button" aria-haspopup="true" aria-expanded="false" id="withdraw button"><button type="button" class="btn btn-danger btn-smll" id="button">
               Cancel Request
             </button></a>
 
@@ -185,6 +185,7 @@
     <script src="/js/bootstrap.min.js"></script>
     {{> facebook}}
      <script src="/js/facebook.js"></script>
+     <script src="/js/logout.js"></script>
 
   </body>
 <script>

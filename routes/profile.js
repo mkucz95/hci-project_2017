@@ -22,7 +22,8 @@ exports.view = function( req, res ) { 
 
 		// Different variables necessary
 		var status = data.favours[i].status;
-		if(status==="cancelled"){
+		if(status === "cancelled"){
+
 			continue;
 		}
 
@@ -50,7 +51,7 @@ exports.view = function( req, res ) { 
 		}
 
 
-		if( userName !== data.favours[i].name ) 
+		if(data.favours[i].name !== userName) 
 		{
 			continue; // Skip if by another user
 		}

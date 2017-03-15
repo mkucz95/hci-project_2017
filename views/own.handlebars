@@ -37,6 +37,7 @@
         <div class = "main-container" align="center" id="5">
        
           <!-- Favor Requested -->
+          {{#each ownRequest}}
           <div class="panel panel-primary" id="5">
             <!-- Main details of favour -->
               <div class="panel-heading favours" id="top">
@@ -49,14 +50,14 @@
 
             <!-- Description of favour -->
             <div class="panel-body" id="bottom">
-              <h4 id="time">By {{time}}</h4>
-              <h4 id="loc">At {{location}}</h4>
+              <h4 id="time"><strong>By</strong> {{time}}</h4>
+              <h4 id="loc"><strong>At</strong> {{location}}</h4>
               <div class="description" id="describe">
                 <p>{{description}}</p>
               </div>
             </div>
           </div>
-
+        {{/each}}
       </div>
 
     </div>

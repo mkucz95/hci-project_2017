@@ -43,14 +43,15 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="menubar">
           <div class="card card-block">
+        <div class="row">
         <!-- Inside of navigation bar -->
-        <li><a href="/profile"><span id="pro">Profile</span></a></li>
+        <div class = "col-xs-6"><a  class="btn btn-primary btn-small" role="button" aria-haspopup="true" aria-expanded="false"><span>Profile</span></a></div>
 
         <!--<li><a href="html/settings.html"><span id="set">Settings</span></a></li>
         <li><a href="html/sort.html"><span id="sort">Sort Favours</span></a></li>-->
-        <li><fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" size="small" show-faces="false" onlogin="checkLoginState();">
-        </fb:login-button></li>
-        </ul>
+        <div class = "col-xs-6"><fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" size="small" show-faces="false" onlogin="checkLoginState();" id="logoutButton">
+        </fb:login-button></div>
+        </div>
         </div>
 
       </div><!-- /.navbar-collapse -->
@@ -204,7 +205,7 @@
 
           <!-- Request favor button -->
           {{#if ownRequest}}
-            <a  href="own" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="lbutton"><span>view requested favour</span></a>
+            <a  class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="lbutton"><span>max requests reached</span></a>
           {{else}}
             <a  href="request" class="navbar-btn navbar-left" role="button" aria-haspopup="true" aria-expanded="false" id="lbutton"><span>request a favour</span></a>
           {{/if}}
@@ -227,6 +228,8 @@
   <script src="/js/homepage.js"></script>
  {{> facebook}}
   <script src="/js/facebook.js"></script>
+  <script src="/js/logout.js"></script>
+
 
 </body>
 <!-- End of file -->

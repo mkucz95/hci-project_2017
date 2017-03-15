@@ -1,10 +1,10 @@
 {
   "favours": [
       { 
-        "name": "currentUser",
+        "name": "Ben Ward",
         "from": "",
         "status": "active",
-        "image": "",
+        "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/15844641_1548643898485143_2890937435093107551_o.jpg?oh=91be89d1ae56b96556d30e38ccfe736d&oe=592CC97A",
         "id": "1",
         "time": "2018-07-14T19:43:37+0100",
         "location": "Geisel 2nd East",
@@ -13,8 +13,8 @@
       },
       { 
         "name": "Mati Kucz",
-        "from": "currentUser",
-        "status": "inProgress",
+        "from": "",
+        "status": "active",
         "image": "https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/16995987_10155075744838584_7090526173010482888_n.jpg?oh=30d4f5bbb31cb9e763296028dc568109&oe=596E7043",
         "id": "2",
         "time": "2018-07-14T19:43:37+0100",
@@ -24,7 +24,7 @@
       },
       {
         "name": "Evelyn Chough",
-        "from": "currentUser",
+        "from": "Mati Kucz",
         "status": "completed",
         "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/12509160_1287157157967445_4012312603321870601_n.jpg?oh=466a9cac4fd8f9b009fa0ba9bfae52a5&oe=5963793D",
         "id": "3",
@@ -46,7 +46,7 @@
       },
       {
         "name": "Evelyn Chough",
-        "from": "currentUser",
+        "from": "Ben Ward",
         "status": "completed",
         "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/12509160_1287157157967445_4012312603321870601_n.jpg?oh=466a9cac4fd8f9b009fa0ba9bfae52a5&oe=5963793D",
         "id": "5",
@@ -79,10 +79,10 @@
       },
 
       {
-        "name": "currentUser",
+        "name": "Ben Ward",
         "from": "Mati Kucz",
         "status": "completed",
-        "image": "",
+        "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/15844641_1548643898485143_2890937435093107551_o.jpg?oh=91be89d1ae56b96556d30e38ccfe736d&oe=592CC97A",
         "id": "8",
         "time": "2018-07-14T19:43:37+0100",
         "location": "my apartment",

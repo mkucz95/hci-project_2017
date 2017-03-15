@@ -5,7 +5,6 @@
 // Getting our favour data
 var data = require('../data.json');
 var user = require('../user.json');
-//var requests = require('../requests.json');
 
 exports.view = function( req, res ) {
 	
@@ -71,11 +70,12 @@ exports.view = function( req, res ) {
 	}
 
 	var ownRequest = false; //am I requesting something
+	var ownRequestNum = 0;
 	var otherRequest = false; //am I doing something for someone
 
       for(i=0; i<data.favours.length; i++){
       	if(data.favours[i].name === userName && data.favours[i].status === "inProgress"){
-      		ownRequest=true;
+      		ownRequestNum++;
       	}
 
       	if(data.favours[i].from === userName && data.favours[i].status === "inProgress"){
@@ -83,6 +83,10 @@ exports.view = function( req, res ) {
       	}
 
       }
+
+    if(ownRequestNum<5){
+    	ownRequest = false;
+    }
 
 
 console.log("timesort length"+ timeSort.length);

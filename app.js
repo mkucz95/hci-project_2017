@@ -21,6 +21,7 @@ var cancel = require('./routes/cancel');
 var own = require('./routes/own');
 var withdraw = require('./routes/withdraw');
 var user = require('./routes/user');
+var logout = require('./routes/logout');
 // For AB testing
 
 /*var googleMapsClient = require('@google/maps').createClient({
@@ -63,8 +64,9 @@ app.post('/add', add.addFavour);
 app.get('/completed/:id', completed.finished);
 app.get('/cancel/:id', cancel.cancelled);
 app.get('/own', own.view);
-app.get('/withdraw/:id', withdraw.view);
+app.get('/withdraw/:status/:name/:subject/:location/:id', withdraw.view);
 app.post('/user', user.write);
+app.get('/logout', logout.out);
 
 
 // For AB Testing
