@@ -9,13 +9,13 @@ exports.view = function( req, res ) {
 
 
 	data.favours[id].status="cancelled";
-	
+
 	console.log(data.favours[id].subject+" :element at old id");
 
 	console.log(data.favours[id]);
 
 
-	data.favours.splice(id, 1);
+	//data.favours.splice(id, 1);
 
 	console.log(data.favours);
 
