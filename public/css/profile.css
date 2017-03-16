@@ -9,26 +9,27 @@ body {
 	float: left;
 }
 
-#title{
-	transform: translateX(-52%);
-	margin-left: 50%;
-}
-
 #list li{
 	list-style-type: none;
 	text-decoration: none;
 }
-
 #list a{
 	font-size: 20px;
 }
 
+.navbar-brand {
+  transform: translateX(-52%);
+  margin-left: 35%;
+  position: absolute;
+}
+
 /* Logo properties */
 #logo {
-	height: 40px;
-	width: 40px;
-	margin: 5px;
-	float: right;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 #favoursRequested{

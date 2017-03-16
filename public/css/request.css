@@ -57,15 +57,17 @@ body {
 
 .navbar-brand {
   transform: translateX(-52%);
-  margin-left: 50%;
+  margin-left: 35%;
+  position: absolute;
 }
 
 /* Logo properties */
 #logo {
   height: 40px;
   width: 40px;
-  margin: 5px;
-  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 /* Back button */
@@ -93,7 +95,7 @@ input[type=submit] {
 #submitBtn {
   color: #fff;
   width: 40%;
-  margin-left: 7%;
+  margin-left: 8%;
   float: left;
   border-radius: 5px;
   text-transform: uppercase;

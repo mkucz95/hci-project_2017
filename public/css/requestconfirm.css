@@ -11,17 +11,19 @@ body {
 	float: left;
 }
 
-/* Logo properties */
-#logo {
-	height: 40px;
-	width: 40px;
-	margin: 5px;
-	float: right;
+.navbar-brand {
+  transform: translateX(-52%);
+  margin-left: 35%;
+  position: absolute;
 }
 
-.nav-brand{
-	transform: translateX(-52%);
-	margin-left: 50%;
+/* Logo properties */
+#logo {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 /* Centering top text */
