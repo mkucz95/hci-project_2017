@@ -26,9 +26,9 @@ body {
 	padding-top: 40%;
 }
 
-
 #title{
-	padding-left: 17%;
+	transform: translateX(-52%);
+	margin-left: 50%;
 }
 
 /* Logo properties */
@@ -100,15 +100,13 @@ body {
 
 
 #right {
-	margin-left: 3%;
 	float: right;
 	padding: 0px 5px;
 	margin: 5px 0px;
 }
 
 #sub {
-	margin-left: 110px;
-	text-align: left;
+	text-align: center;
 	color: #000;
 	text-decoration: none;
 }

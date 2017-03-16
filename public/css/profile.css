@@ -10,7 +10,8 @@ body {
 }
 
 #title{
-	padding-left: 25%;
+	transform: translateX(-52%);
+	margin-left: 50%;
 }
 
 #list li{
