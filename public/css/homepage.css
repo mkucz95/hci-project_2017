@@ -26,18 +26,19 @@ body {
 	padding-top: 40%;
 }
 
-#title{
-	transform: translateX(-52%);
-	margin-left: 50%;
+.navbar-brand {
+  transform: translateX(-52%);
+  margin-left: 35%;
+  position: absolute;
 }
 
 /* Logo properties */
 #logo {
-	height: 40px;
-	width: 40px;
-	margin: 5px;
-	margin-top: -40px;
-	float: right;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 /* Centering the title of page */
@@ -93,6 +94,7 @@ body {
 
 
 #left {
+	width: 35%;
 	float: left;
 	padding: 0px 5px;
 	margin: 5px 0px;
