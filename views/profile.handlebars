@@ -44,10 +44,10 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="menubar">
             <div class="card card-block">
-              
-              <ul>
+
+              <ul id="list">
               <!-- Inside of navigation bar -->
-              <li><a href="/profile"><span id="pro">Profile</span></a></li>
+              <li><a href="/index">Home</a></li>
 
               <!--<li><a href="html/settings.html"><span id="set">Settings</span></a></li>
               <li><a href="html/sort.html"><span id="sort">Sort Favours</span></a></li>-->
@@ -144,7 +144,7 @@
       <!-- Third tab -->
       {{#if requestBool}}
         <div id="menu3" class="tab-pane fade in active">
-        <p>The favours you are requesting</p> 
+        <div class="well" id="favoursRequested">The favours you are requesting</div> 
         <!-- Main part of page -->
         <div class = "main-container" align="center" id="5"> 
        
