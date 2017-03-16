@@ -2,6 +2,7 @@
 body {
 	padding-top: 70px;
 	text-decoration: none;
+	font-family: "Gill Sans";
 }
 
 #ham {
@@ -22,6 +23,12 @@ body {
 #list a {
 	font-size: 17px;
 }
+
+#center{
+		text-align: center;
+
+}
+
 
 .navbar-brand {
   transform: translateX(-52%);
@@ -67,7 +74,6 @@ body {
 .panel h1,h2,h3,h4,h5,h6 {
 	text-align: justify;
 	line-height: 15px;
-	color: #fff;
 }
 
 .body p {

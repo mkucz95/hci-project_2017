@@ -4,11 +4,12 @@
   <title>Login - Favor4Favour</title>
 
   <!-- Bootstrap to stylesheet -->
-  <link href = "/css/login.css" rel = "stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href = "/css/login.css" rel = "stylesheet">
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
@@ -22,7 +23,7 @@
       <div class="navbar-header">
 
         <!-- Title at top -->
-        <div class="navbar-brand" id="title">Favor4Favour - Login</div>
+        <div class="navbar-brand" id="title"></div>
 
         <!-- Logo photo -->
         <img id="logo" src="/images/logo-here.png">
@@ -34,7 +35,8 @@
     <div align = "center">
       <div class = "container">
 
-         <div class="well well-sm"><p>Please login through Facebook</p>
+         <div class="well well-sm" id="message"><p>Please login through Facebook</p>
+          <br>
           <div class= "facebookLogin">
          <fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" size="xlarge" show-faces="true" onlogin="checkLoginState();">
         </fb:login-button>

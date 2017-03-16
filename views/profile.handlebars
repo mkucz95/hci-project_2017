@@ -3,12 +3,13 @@
   <head>
     <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href = "/css/profile.css" rel = "stylesheet">
 
     <!-- Bootstraps-->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href = "/css/profile.css" rel = "stylesheet">
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
@@ -69,7 +70,7 @@
         <li class = "active"><a data-toggle="tab" href="#menu3">Current Requests ({{numRequested}})</a></li>
         <li><a data-toggle="tab" href="#menu0">My Info</a></li>
         <li><a data-toggle="tab" href="#menu1">Completed</a></li>
-        <li><a data-toggle="tab" href="#menu2">Stats</a></li>
+        <li><a data-toggle="tab" href="#menu2">Owed</a></li>
 
         {{else}}
         <li><a data-toggle="tab" href="#menu0">My Info</a></li>
@@ -125,7 +126,7 @@
             <span class="sr-only"> {{levelUp}} till you level up</span>
           </div>
         </div>
-        <div class="well well-sm"> Complete {{levelUp}} more favours to level up!</div>
+        <div class="well well-sm" id="center"> Complete {{levelUp}} more favours to level up!</div>
 
       </div>
 
@@ -188,7 +189,7 @@
 
         {{else}}
         <br><br>
-        <div class="alert alert-info" role="alert">You are currently not requesting a favour</div> 
+        <div class="alert alert-info" role="alert" id="center">You are currently not requesting a favour</div> 
         {{/if}}
    
 
@@ -197,7 +198,6 @@
     <script src="/js/bootstrap.min.js"></script>
     {{> facebook}}
      <script src="/js/facebook.js"></script>
-     <script src="/js/logout.js"></script>
 
   </body>
 <script>
