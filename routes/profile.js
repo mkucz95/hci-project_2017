@@ -115,7 +115,7 @@ exports.view = function( req, res ) { 
 			});
 
 			ownRequests[newFavour].name=data.favours[i].name;
-			ownRequests[newFavour].time= month+"/"+day+"/"+year+" Time: "+time;
+			ownRequests[newFavour].time= month+"/"+day+"/"+year+" - "+time;
 			ownRequests[newFavour].location=data.favours[i].location;
 			ownRequests[newFavour].subject=data.favours[i].subject;
 			ownRequests[newFavour].description=data.favours[i].description;
@@ -125,7 +125,6 @@ exports.view = function( req, res ) { 
 			ownRequests[newFavour].status=data.favours[i].status;
 
 			console.log("ownRequests date prof.js: "+ownRequests[ownRequests.length-1].time);
-
 		}
 	}
 

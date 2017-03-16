@@ -55,7 +55,7 @@ exports.view = function( req, res ) {
 			});
 
 			timeSort[newFavour].name=data.favours[i].name;
-			timeSort[newFavour].time=month+"/"+day+"/"+year+" Time: "+time;
+			timeSort[newFavour].time=month+"/"+day+"/"+year+" - "+time;
 			timeSort[newFavour].location=data.favours[i].location;
 			timeSort[newFavour].subject=data.favours[i].subject;
 			timeSort[newFavour].description=data.favours[i].description;

@@ -19,7 +19,7 @@ exports.write = function(req, res){
 		console.log("user.js: "+ user.user.name);
 
 
-	for(i=0; i<data.favours.length; i++){ //change all to current user and image
+	/*for(i=0; i<data.favours.length; i++){ //change all to current user and image
 		if(data.favours[i].name==="currentUser"){
 			data.favours[i].name = name;
 			//data.favours[i].image = image;
@@ -28,7 +28,7 @@ exports.write = function(req, res){
 		if(data.favours[i].from === "currentUser"){
 			data.favours[i].from = name;
 		}
-	}
+	}*/
 
 	res.send(user.user);
 	res.redirect('/index');

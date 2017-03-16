@@ -43,15 +43,14 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="menubar">
           <div class="card card-block">
-        <div class="row">
+        <ul>
         <!-- Inside of navigation bar -->
-        <div class = "col-xs-6"><a  class="btn btn-primary btn-small" role="button" aria-haspopup="true" aria-expanded="false"><span>Profile</span></a></div>
+        <li><a href="/profile"><span id="pro">Profile</span></a></li>
 
         <!--<li><a href="html/settings.html"><span id="set">Settings</span></a></li>
         <li><a href="html/sort.html"><span id="sort">Sort Favours</span></a></li>-->
-        <div class = "col-xs-6"><fb:login-button scope="public_profile, user_friends, user_birthday, user_education_history, email"  autologoutlink="true" size="small" show-faces="false" onlogin="checkLoginState();" id="logoutButton">
-        </fb:login-button></div>
-        </div>
+        <li id="logoutFB">Log Out</li>
+        </ul>
         </div>
 
       </div><!-- /.navbar-collapse -->

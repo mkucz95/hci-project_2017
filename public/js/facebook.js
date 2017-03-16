@@ -5,6 +5,7 @@ function checkLoginState() {
   });
 }
 
+
 function statusChangeCallback(response) {
   console.log('Facebook login status changed.');
   console.log(response);
@@ -46,7 +47,7 @@ function fbLogout(){
     if(response.status === 'connected'){
       FB.logout(function(response){
           console.log("logout success");
-                window.location.replace('/');
+                window.location.replace('/logout');
 
       });
     }
