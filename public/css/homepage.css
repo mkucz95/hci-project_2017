@@ -37,9 +37,7 @@ body {
 }
 
 .navbar-brand {
-  transform: translateX(-52%);
-  margin-left: 35%;
-  position: absolute;
+  
 }
 
 /* Logo properties */
