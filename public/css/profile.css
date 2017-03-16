@@ -9,17 +9,23 @@ body {
 	float: left;
 }
 
-#list li{
+#list li {
+	font-size: 25px;
 	list-style-type: none;
 	text-decoration: none;
 }
-#list a{
-	font-size: 20px;
+
+#list #pro {
+	margin-top: 10px;
+}
+
+#list a {
+	font-size: 17px;
 }
 
 .navbar-brand {
   transform: translateX(-52%);
-  margin-left: 35%;
+  margin-left: 50%;
   position: absolute;
 }
 
