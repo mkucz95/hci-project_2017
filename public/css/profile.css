@@ -14,8 +14,8 @@ body {
 }
 
 #list li{
-	    list-style-type: none;
-	    text-decoration: none;
+	list-style-type: none;
+	text-decoration: none;
 }
 
 /* Logo properties */
@@ -28,7 +28,7 @@ body {
 
 /* Favour box */
 .main-container {
-	height: 80%;
+	height: 75%;
 	width: 90%;
 	position: fixed;
 	overflow-y: auto;
