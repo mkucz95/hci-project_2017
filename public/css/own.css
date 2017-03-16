@@ -10,6 +10,11 @@ body {
 	color: #003399;
 }
 
+.navbar-brand {
+	transform: translateX(-52%);
+	margin-left: 50%;
+}
+
 /* Logo properties */
 #logo {
 	height: 40px;

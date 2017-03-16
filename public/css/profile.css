@@ -10,12 +10,13 @@ body {
 }
 
 #title{
-	padding-left: 25%;
+	transform: translateX(-52%);
+	margin-left: 50%;
 }
 
 #list li{
-	    list-style-type: none;
-	    text-decoration: none;
+	list-style-type: none;
+	text-decoration: none;
 }
 
 /* Logo properties */
@@ -28,7 +29,7 @@ body {
 
 /* Favour box */
 .main-container {
-	height: 80%;
+	height: 75%;
 	width: 90%;
 	position: fixed;
 	overflow-y: auto;

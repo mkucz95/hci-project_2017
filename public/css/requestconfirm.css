@@ -20,8 +20,8 @@ body {
 }
 
 .nav-brand{
-	margin:0;
-	float:none;
+	transform: translateX(-52%);
+	margin-left: 50%;
 }
 
 /* Centering top text */

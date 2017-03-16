@@ -26,9 +26,9 @@ body {
 	padding-top: 40%;
 }
 
-
 #title{
-	padding-left: 17%;
+	transform: translateX(-52%);
+	margin-left: 50%;
 }
 
 /* Logo properties */
@@ -64,7 +64,7 @@ body {
 
 /* Favour box */
 .favour-container {
-	height: 77%;
+	height: 85%;
 	width: 98%;
 	margin-left: 1%;
 	padding-left: 10px;
@@ -95,21 +95,18 @@ body {
 #left {
 	float: left;
 	padding: 0px 5px;
-	margin-bottom: 5px;
+	margin: 5px 0px;
 }
 
 
 #right {
-	margin-left: 3%;
-	width: 45%;
 	float: right;
 	padding: 0px 5px;
-	margin-bottom: 5px;
+	margin: 5px 0px;
 }
 
 #sub {
-	margin-left: 110px;
-	text-align: left;
+	text-align: center;
 	color: #000;
 	text-decoration: none;
 }

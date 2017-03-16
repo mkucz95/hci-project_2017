@@ -18,6 +18,11 @@ body {
 	float: right;
 }
 
+.navbar-brand {
+	transform: translateX(-52%);
+	margin-left: 50%;
+}
+
 /* Favour box */
 .main-container {
 	width: 90%;
