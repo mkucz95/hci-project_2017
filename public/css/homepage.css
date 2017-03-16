@@ -13,15 +13,19 @@ body {
  	font-size: 20px;
 }
 
-#list li{
+#list li {
+	font-size: 25px;
 	list-style-type: none;
 	text-decoration: none;
 }
 
-#list a{
-	font-size: 20px;
+#list #pro {
+	margin-top: 10px;
 }
 
+#list a {
+	font-size: 17px;
+}
 
 .modal-dialog {
   display: inline-block;
@@ -37,7 +41,9 @@ body {
 }
 
 .navbar-brand {
-  
+  transform: translateX(-52%);
+  margin-left: 50%;
+  position: absolute;
 }
 
 /* Logo properties */
@@ -47,12 +53,6 @@ body {
   position: absolute;
   top: 5px;
   right: 5px;
-}
-
-/* Centering the title of page */
-.navbar-brand {
-	margin: 0;
-	float: none;
 }
 
 /* Navigational Bar */
@@ -102,17 +102,22 @@ body {
 
 
 #left {
-	width: 35%;
+	width: 47%;
 	float: left;
 	padding: 0px 5px;
-	margin: 5px 0px;
+	margin-left: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 
 #right {
+	width: 47%;
 	float: right;
 	padding: 0px 5px;
-	margin: 5px 0px;
+	margin-right: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 #sub {
