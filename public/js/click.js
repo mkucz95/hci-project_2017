@@ -125,7 +125,7 @@ console.log("validate called");
 	}
 
 
-	else if(location.length <8){
+	else if(location.length <3){
 		$('#locationForm').attr('class', 'form-group has-error');
 		$('#locationControl').attr('class', 'form-control form-control-error');
 		allComplete = false;
