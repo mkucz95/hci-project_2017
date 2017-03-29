@@ -4,6 +4,10 @@ UCSD CSE 170: HCI - Prof. Scott Klemmer
 ====
 Done in collaboration with Ben Ward, Evelyn Chough
 ====
+
+NOTE: view in iPhone 6 format (optimized for mobile web app)
+----
+
 Project Description:
 
 This project is a web app for a favor exchange application that focuses on the user experience from the point of view of one user (multiple concurrent user functionalities not implemented). The idea behind the project was that society could be much better off if we shared our time between each other; doing things for our friends when we have some time to spare and getting favors done for us when we need them most. 
