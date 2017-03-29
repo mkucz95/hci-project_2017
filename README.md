@@ -3,7 +3,7 @@ Exchange Web App Project
 UCSD CSE 170: HCI - Prof. Scott Klemmer
 ====
 Done in collaboration with Ben Ward, Evelyn Chough
-====
+____
 
 NOTE: view in iPhone 6 format (optimized for mobile web app)
 ----
