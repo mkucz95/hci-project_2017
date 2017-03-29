@@ -1,4 +1,7 @@
-UCSD CSE 170: HCI - Prof. Scott Klemmer: Exchange Web App Project
+Exchange Web App Project
+====
+UCSD CSE 170: HCI - Prof. Scott Klemmer
+====
 Done in collaboration with Ben Ward, Evelyn Chough
 ====
 Project Description:
